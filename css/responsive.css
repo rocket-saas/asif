@@ -1,0 +1,1043 @@
+@media screen and (min-width: 992px) {
+	.collapse.navbar-collapse.justify-content-lg-between{
+		display: -webkit-flex !important;
+		display: -moz-flex !important;
+		display: -ms-flex !important;
+		display: -o-flex !important;
+		display: flex !important;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+	    padding-right: .8rem;
+	    padding-left: .8rem;
+	    padding-top: 6px;
+	    padding-bottom: 6px;
+	}
+	.navbar-expand-lg .language-wpml {
+		-webkit-order: 2;
+		-moz-order: 2;
+		-ms-order: 2;
+		-o-order: 2;
+		order: 2;
+	}
+}
+
+@media screen and (min-width: 768px){
+section#imas_mainsec .sec_title .small_txt{
+	top: 15px;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+	    padding-right: 0.6rem;
+	    padding-left: 0.6rem;
+	}
+	.container{
+		max-width: 900px;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	section#imas_mainsec .scroll_next {
+	    margin-top: .5em;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	body{
+		font-size: 13px;
+	}
+	.btn{
+		font-size: 13px;
+	}
+    .bath_asse figure, .excercise_video figure, .as_videosec figure{
+        padding: 0 15px 0 0;
+    }
+    .excercise_video figure br{
+        display: none;
+    }
+    form#your-profile{
+        width: 59%;
+    }
+    .openhealth_page section h2, section#imas_involve .respondant_txt h3 span{
+    	font-size: 35px;
+    }
+    section#imas_mainsec .mental_health_box .detail_block .desc_txt{
+    	font-size: 16px;
+    }
+    section#imas_mainsec .mental_health_box .detail_block .cal_num{
+    	font-size: 30px;
+    }
+    section#imas_mainsec .mental_health_box .detail_block .cal_num small {
+	    font-size: 22px;
+	}
+	
+	.mar-l-2 {
+		padding: 40px;
+		height: 460px;
+	}
+	
+	.flipbook {
+		height: 700px;
+	}
+}
+@media screen and (max-width: 1070px){
+	.navbar-brand img{
+		max-width: 150px;
+	}
+	.navbar-nav li.nav-item:last-child a{
+		margin-left: 0;
+	}
+	.language-wpml img.world-ASD {
+	    max-width: 54px;
+	    margin-right: 5px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+	    padding-right: 0.6rem;
+	    padding-left: 0.6rem;
+	}
+	.content-offset {
+	    padding: 45px 0px;
+	}
+	.box_info {
+    	padding: 1.8em 1em;
+    }
+    footer{
+    	padding: 2em 0;
+    }
+    .ankylosing-img{
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 991px){
+	.flipbook {
+		height: 950px;
+	}
+	p, li{
+		font-size: 13px;
+	}
+	.navbar-expand-lg {
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+	}
+	.language-wpml{
+		margin-left: auto;
+		margin-right: 15px;
+	}
+	.world-map h2{
+		font-size: 1.76em;
+		width: 200px;
+	}
+	.copy_right a, .copy_right p{
+		font-size: 10.5px;
+	}
+	.w100p .flag-list li, .w20p{
+		width: 25%;
+	}
+	.flag-list li{
+		font-size: 13px;
+	}
+	.detail-information p, .detail-information{
+		font-size: 12px;
+	}
+    .professional-desc .btn-blue {
+        margin: 0 7px 0 0;
+        font-size: 12px;
+        min-width: 120px;
+    }
+    .rsrc_brder .col-md-10 {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+    .professionl-group h2{
+        font-size: 14px;
+    }
+    .nass-sec{
+        padding: 0 10px;
+    }
+    .bath_asse figure{
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    .bath_asse figure .rscr_btn{
+        font-size: 10px;
+        min-width: auto;
+    }
+    .asas_list ul{
+        padding: 0 100px 0px 15px;
+    }
+    form#your-profile {
+        width: 560px;
+    }
+	section#imas_mainsec .scroll_next {
+	    margin-bottom: 2em;
+	}
+	section#imas_vision .sec_title{
+		margin-top: 2em;
+	}
+	section#imas_involve .respondant_txt h3 span{
+		font-size: 34px;
+	}
+	section#imas_involve .respondant_txt h3{
+		width: 100%;
+		font-size: 18px;
+	}
+	section#imas_vision .padng_lft {
+	    padding-left: 0;
+	}
+	#glt-translate-trigger {  
+	    right: auto !important;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	section#imas_mainsec .scroll_next, section#imas_vision .dot_bg{
+		display: none;
+	}
+	section#imas_mainsec .txt_block {
+	    padding-right: 0;
+	}
+	section#imas_mainsec .mental_health_box .inner_box {
+	    max-width: 400px;
+	    margin: 0 auto;
+	}
+	section#imas_vision{
+		padding-top: 5em;
+	}
+}
+
+@media screen and (max-width: 767px){.flipbook {
+		height: 700px;
+	}
+	.mt-5, .my-5 {
+	    margin-top: 1.5rem!important;
+	}
+	.pt-4, .py-4 {
+	    padding-top: 0.8rem!important;
+	}
+	.mt-4, .my-4 {
+	    margin-top: 0.8rem!important;
+	}
+	.world-map .row {
+	    margin-top: -12%;
+	}
+	.box_outer{
+		max-width: 320px;
+		margin: 0 auto 30px;
+	}
+	.image{
+		margin-top: 25px;
+	}
+	.col-md-3 h2{
+		text-align: center;
+		margin-top: 2.6em;
+	}
+	.copy_right{
+		margin-top: 22px;
+		text-align: center;
+	}
+	.copy_right a, .copy_right p{
+		font-size: 12px;
+	}
+	.w100p .flag-list li, .w20p{
+		width: 33%;
+	}
+	.team li{
+		width: 33.33%;
+	}
+	.detail-information{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.detail-information p, .detail-information{
+		font-size: 14px;
+	}
+    .ankylosing-desc{
+        padding: 0px;
+    }
+    .ankylosing-img {
+        width: 14%;
+        margin-right: 10px;
+    }
+    .bath_asse figure{
+        width: 33.3%;
+    }
+    .excercise_video figure {
+        width: 33.3%;
+    }
+    .excercise_video h2{
+        font-size: 14px!important;
+    }
+    .asas_list ul{
+        padding: 0 0 0px 15px;
+    }
+	.selfiwall {
+      height:590px;
+    }
+    section#imas_partner .partner_list ul li {
+	    width: calc(100% / 2 - 30px);
+	    margin: 30px 15px 15px;
+	}
+	section#imas_connected .txt_wrapper {
+	    width: calc(100% - 2em);
+	    margin: 2.5em 2em 0 0;
+	}
+	section#imas_involve .respondant_txt h3 span, section#imas_mainsec .mental_health_box .detail_block .cal_num {
+	    font-size: 24px;
+	}
+	section#imas_vision .sec_title h4{
+		margin-top: -10px;
+	}
+	section#imas_vision .sec_list ul li{
+		font-size: 16px;
+	}
+
+    section#imas_mainsec .imas_logo {
+	    justify-content: flex-start;
+	    margin: 1em 0 2em;
+	}
+
+	section .sec_title .small_txt{
+		top: -45px;
+	}
+	section#imas_mainsec{
+		padding-top: 5em;
+	}
+}
+
+@media screen and (max-width: 599px){
+    .asas_list li{
+        width: 100%;
+    }
+    .asas_list ul{
+        padding: 0 0 0px 15px;
+    }
+    form#your-profile {
+        width: 100%;
+    }
+    .page-id-833 #primary .col-sm-6{
+    width:100%;
+}
+
+}
+@media screen and (max-width: 575px){
+	.btn{
+		font-size: 14px;
+	}
+	.logo img{
+		max-width: 150px;
+	}
+	.text-title h2{
+		margin-bottom: 0.75em;
+	}
+	.content-offset {
+	    padding: 30px 0px;
+	}
+	.world-map h3{
+		font-size: 1.6em;
+	}
+	.world_map{
+		margin-top: -2em;
+	}
+	.text-title h2{
+		font-size: 1.6em;
+	}
+	.form_area{
+		margin-top: 4em;
+	}
+	.ms-login{
+		width: 100%;
+		margin-bottom: 12px;
+		text-align: right;
+	}
+	.ms-login .btn{
+		font-size: 12px;
+		padding: 5px 8px;
+	}
+	.rules{
+		padding-left: 75px;
+	}
+	.person-info{
+		font-size: 12px;
+	}
+	.mb-detail{
+		margin-bottom: 32px;
+	}
+     .bath_asse figure{
+        width: 100%;
+    }
+    .excercise_video figure{
+        width: 100%;
+        text-align: left;
+    }
+    .excercise_video figure h2{
+        text-align: left;
+    }
+    .as_videosec figure{
+        width: 100%;
+        text-align: left;
+    }
+    .as_videosec figure h2{
+        text-align: left;
+    }
+    .professionl-group figure{
+        width: 100%;
+    }
+    .professional-desc .btn-blue{
+        margin: 0 7px 10px 0;
+    }
+	.person .person-pic{
+		width: 100%;
+		height: 100%;
+	}
+    form#your-profile .form-table th, form#your-profile .form-table td{
+        float: left;
+        width: 100%;
+    }
+    form#your-profile select#display_name {
+        width: 100% !important;
+    }
+    form#your-profile .form-table input.regular-text{
+        width: 100%
+    }
+    section#imas_involve .respondant_txt h3{
+    	display: block;
+    	height: auto;
+    	padding: 15px;
+    	line-height: 1;
+    }
+    section#imas_involve .respondant_txt h3 span{
+    	display: block;
+    	padding-bottom: .25em;
+    }
+    section#imas_partner .partner_list ul li {
+	    width: calc(100% - 30px);
+	    display: flex;
+	    align-items: center;
+	}
+	section#imas_partner .partner_list ul li .icon_box {
+	    width: auto;
+	    margin-bottom: 0;
+	    padding-right: 1.5em;
+	}
+	section#imas_partner .partner_list ul li a {
+	    font-size: 14px;
+	    width: inherit;
+	}
+	section#imas_partner .partner_list ul li:last-child{
+		display: block;
+	}
+	section#imas_mainsec .sec_title h2{
+		font-size: 30px;
+	}
+	section#imas_mainsec .mental_health_box{
+		padding: 15px 15px 0;
+	}
+	section .sec_title .small_txt{
+		top: -45px;
+	}
+	section#imas_mainsec{
+		padding-top: 5em;
+	}
+	section#imas_mainsec .mental_health_box .lrn_more_btn a.button{
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		padding: 0 10px;
+	}
+	section#imas_involve .respondant_txt h3{
+		font-size: 14px;
+	}
+	.py_3 {
+	    padding-bottom: 3em;
+	}
+	section#second_nav nav ul li a{
+		font-size: 13px;
+		padding: 1.25em 0;
+	}
+	section#imas_publication .card .card-header a{
+		padding: 10px 50px 10px 20px;
+	}
+	section#imas_publication .card .card-header a:after{
+		background-position: top 27px right 35px;
+		width: 60px;
+		height: 62px;
+	}
+	section#imas_publication .card .card-header a[aria-expanded="true"]:after{
+		background-position: top 27px right 35px;
+	}
+	section#imas_publication .card .card-body ul.pdf_list li{
+		padding: 20px;
+	}
+	.parabola_bg {
+	    width: 60%;
+	    top: 45%;
+	}
+}
+
+@media screen and (max-width: 479px){
+	.flipbook {
+		height: 500px;
+	}
+	body{
+		font-size: 13px;
+	}
+	.navbar-brand img{
+		max-width: 90px;
+	}
+	.language-wpml img.world-ASD{
+		max-width: 40px;
+	}
+	.language-choose select{
+		width: 60px;
+		font-size: 0.8em;
+	}
+	.language-choose p{
+		font-size: 12px;
+	}
+	.language-wpml{
+		margin-right: 0;
+	}
+	.navbar-toggler{
+		padding-right: 0;
+	}
+	.world-map h4{
+		margin-top: 8px;
+	}
+	.flag-list li{
+		font-size: 12px;
+	}
+	.w100p .flag-list li{
+		width: 50%;
+	}
+	.w20p{
+		width: 100%;
+	}
+	.team li{
+		width: 49%;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: top;
+		float: none;
+	}
+	.team li{
+		min-height: 250px;
+	}
+	.project-group figure{
+		width: 48%;
+	}
+	.breadcrumb-item{
+		font-size: 9px;
+	}
+    .asas_list li{
+        width: 100%;
+    }
+    .asas_list ul{
+        padding: 0 0 0 15px;
+    }
+.custom_register {
+    position: relative;
+    bottom: 118px;
+    left: 53px;
+}
+#glt-translate-trigger {
+    right: auto !important;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 7px 3px !important;
+    font-size: 13px !important;
+}
+}
+
+@media screen and (max-width: 380px){
+section#second_nav nav ul li a{
+	font-size: 10.5px;
+	padding: 1.35em 0;
+}
+}
+
+@media screen and (max-width: 410px){
+	section#imas_mainsec .sec_title h2{
+		font-size: 23px;
+	}
+}
+
+@media screen and (max-width: 320px){
+.custom_register {
+    position: relative;
+    bottom: 141px;
+    left: 53px;
+
+} 
+}
+
+/* D2D page */
+@media (max-width: 767px){
+section#more-resources .card .card-body a .download_icon img{
+	margin-top: 0px;
+}	
+	#more-resources .col-12 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+section#more-resources .card .card-header a:after {
+    height: 36px;
+    background-position: top 18px right 30px;
+}
+	.card span{
+		line-height: 26px; color: white;
+		    font-size: 14px;
+	}
+	.flexed {
+	display: flex;
+		margin-top: 10px;
+}
+	
+	
+	.header-and-text {
+    width: 100%;
+}
+	
+	.d2d-top-image {
+    margin-top: 10px;
+}
+	
+	.fixed-width {
+    width: 100%;
+    text-align: center;
+}
+	
+	.dflex.dflex-d2d {
+    display: inline-block;
+}
+	
+	.d2d-top-top-text, .d2d-top-img, .d2d-top-text, .d2d-top-image {
+		width: 100%;
+	}
+
+	h2.d2d {
+		font-size: 30px;	
+	}
+	h3.d2d {
+		font-size: 16px;
+	}
+	
+	.flexed h3.d2d{
+		font-size: 26px;
+	}
+	
+	.pair {
+    	display: block;
+	}
+	
+	.pair h3 {
+		width:100%;
+	}
+	
+	.d2d-movie iframe, #delay-to-diagnosis iframe, .bottom-iframe {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	
+	.change-at-small-screen {
+		width: 300px;
+	}
+	
+	.d2d-top-image {
+    margin-bottom: 30px;
+}
+	
+	.dflex.dflex-d2d.change-to-flex{
+		     flex-direction: column; 
+     display: flex;
+	}
+	
+	.dflex.dflex-d2d.change-to-flex .header-and-text{
+		order: 2;
+	}
+	
+	li.d2d {
+    list-style-type: disc;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'gothambold1';
+    color: #fff;
+    margin-bottom: .5em;
+    line-height: 1.5;
+}
+}
+	
+@media (max-width: 575px){
+	
+	.d2d-top-text, .d2d-top-image {
+		width: 100%;
+	}
+	
+	.d2d-top-image img {
+    width: 150px;
+}
+}
+
+@media(max-width: 500px){
+	hr.special-style{
+	 margin-left:50px;
+}
+	
+		img.d2d.fixed-wid {
+    height:50px;
+    margin-right: 50px;
+}
+}
+/*D2D Page*/
+
+/*World As Day*/
+
+@media (max-width: 1200px){
+	.placeholder-spacer {
+		height: 273px;
+	}
+	
+	.fixed-height-images {
+		height: 275px;
+	}
+	
+	.wad-video {
+		width: 100%;
+		height: 280px;
+	}
+}
+@media(max-width: 991px){
+	.fixed-height-images {
+		height: 180px;
+	}
+	img.resources-images {
+		width: 300px;
+	}
+	
+	img.resources-images-small {
+		width: 160px;
+	}
+	
+	img.involved-images {
+		width: 260px;
+	}
+	
+	.theme-p {
+    	line-height: 1.4 !important;
+		margin-top: 30px;
+	}
+	
+	img.circle-2.circle {
+		display: none;
+	}
+	
+	img.circle-4.circle {
+		display: none;
+	}
+	.res-img {
+		height: 240px;
+	}
+	.placeholder-spacer {
+		height: 181px;
+	}
+	
+	.wad-video {
+		width: 100%;
+		height: 220px;
+	}
+	.images-row{
+		display: none
+	}
+	
+	.d1{
+		display: flex;
+	}
+	
+	.show-mobile{
+		position: relative;
+	}
+	
+	.show-mobile img{
+		width: 120px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 767px){
+	.top-image{
+		margin-bottom: 50px;
+		margin-right: 0px !important;
+	}
+	.fixed-height-images {
+		height: max-content;
+	}
+	img.circle-1.circle {
+		display: none;
+	}
+	
+	img.circle-3.circle {
+		display: none;
+	}
+	
+	img.circle-5.circle {
+		display: none;
+	}
+	
+	.world-as-page .dflex.figure {
+		display: inline-flex;
+	}
+	
+	.world-as-page .dflex {
+		display: flow-root;
+	}
+	
+	.left-side.world-as-day, .right-div, .left-div, .right-side.world-as-day {
+		width: 100%;
+	}
+	
+	.top_images.image_top.wad {
+		margin: 50px auto 0px auto;
+	}
+	
+	.dflex.figure .right-side.world-as-day{
+		width: 0%;
+		padding: 0px;
+	}
+	.dflex.figure .left-side.world-as-day{
+		width: 100%;
+	}
+	.world-as-day-header {
+		width: 100%;
+	}
+	
+	.width-title {
+		width: 100%;
+		margin: 0px auto 25px;
+	}
+	
+	.theme-p {
+		text-align: center !important;
+	}
+	
+	.changed-width {
+		margin: auto;
+	}
+	
+	.middle-div {
+		width: 100%;
+	}
+	
+	.world-as-page p, .world-as-page li, .width-title {
+		text-align: left;
+	}
+	
+	.strong-fixed-height {
+		text-align: left;
+	}
+	
+	.right-div, .left-div {
+		padding: 0px 0px;
+	}
+	
+	.placeholder-spacer {
+		display:none;
+	}
+	
+	.hide-mobile{
+		display: none;
+	}
+	.slideshow{
+		display: block;
+	}
+	
+	img.img-partners {
+		max-width: 300px;
+		width: 300px;
+		height: auto;
+		padding: 5px;
+	}
+	#slideshow-example{
+		display: block;
+	}
+	[data-component="slideshow"] .slide {
+			display: none;
+		  text-align: center;
+		}
+
+		[data-component="slideshow"] .slide.active {
+			display: block;
+		}
+	.partners {
+		margin: 0px auto;
+	}
+	.wad-video {
+		width: 100%;
+		height: 280px;
+	}
+}
+
+@media(max-width: 500px){
+	.dflex.figure .right-side.world-as-day{
+		display: none;
+	}
+	
+	br.no-mobile {
+		display: none;
+	}	
+}
+
+@media(max-width: 450px){
+	.world-as-day-header {
+		font-size: 30px;
+		padding: 12px 24px;
+	}
+	
+	.wad-video {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+@media(max-width: 400px){
+	img.resources-images {
+		width: 250px;
+	}
+	.res-img {
+		height: 200px;
+	}
+	
+	.show-mobile img {
+		width: 75px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 380px){
+	img.messages-images {
+		height: 100px;
+	}
+	
+	.smaller-mobile-top-heighter{
+		height: 130px;
+	}
+}
+/*----------------*/
+
+@media screen and (max-width: 575px){
+	section#second_nav nav ul li a {
+		padding: 1.25em 5px;
+	}
+	
+	.smaller-mobile-top-heighter{
+		height: 230px;
+	}
+}
+
+@media (max-width: 450px){
+	.wad-video {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+@media (max-width: 767px){
+	.wad-video {
+		width: 100%;
+		height: 280px;
+	}	
+}
+
+@media (max-width: 991px){
+.wad-video {
+    width: 100%;
+    height: 220px;
+}
+	
+	.mar-l-2 {
+    padding: 10px;
+    height: max-content;
+}
+}
+
+@media (max-width: 1200px){
+	.wad-video {
+		width: 100%;
+		height: 280px;
+	}
+}
+
+@media(max-width: 767px){
+	.fixed-header-width {
+		width: 100%;
+	}
+	
+	.event-page .left{
+		padding-bottom: 100px;
+	}
+	
+	.event-page .left, .event-page .right{
+		width: 100%;
+	}
+	
+	.event-page .d-flex, .event-page .dflex {
+		display: block !important;
+	}
+	
+	.easterly {
+		margin-bottom: 20px;
+	}
+	
+	.no-flex-mobile {
+		display: block !important;
+	}
+	
+	.no-flex-mobile li.list-el {
+		width:100% !important;
+		margin: 20px 0px !important;
+	}
+	
+	.title-width {
+		width: 100%;
+	}
+}
+
+@media(max-width: 450px){
+	.mar-l-2{
+		padding: 10px;
+		height: max-content;
+	}
+	
+}
+
+@media (max-width: 1160px){
+	.d2d-movie iframe, #delay-to-diagnosis iframe, .bottom-iframe, .top-image {
+		width: 450px !important;
+	}
+}
+
+@media (max-width: 990px){
+	.d2d-movie iframe, #delay-to-diagnosis iframe, .bottom-iframe, .top-image {
+		width: 300px !important;
+	}
+}
+
+@media (max-width: 767px){
+	.d2d-movie iframe, #delay-to-diagnosis iframe, .bottom-iframe, .top-image {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 1000px){
+	.mobile-100w{
+		width: 100% !important;
+	}
+}

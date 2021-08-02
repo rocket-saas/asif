@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="44px" viewBox="0 0 36 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BE9508B5-08A8-44C1-B407-D49216CE99A4</title>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-design_v1" transform="translate(-200.000000, -4097.000000)" stroke="#FFFFFF">
+            <g id="4.-Resources" transform="translate(-1.000000, 2986.000000)">
+                <g id="Abstract" transform="translate(153.000000, 1093.000000)">
+                    <g id="Icon-/-Disease-management" transform="translate(50.000000, 20.000000)">
+                        <line x1="15.9600005" y1="17.2900006" x2="15.9600005" y2="25.2700008" id="Path" stroke-width="3" stroke-linecap="square"></line>
+                        <line x1="11.9700004" y1="21.2800007" x2="19.9500006" y2="21.2800007" id="Path" stroke-width="3" stroke-linecap="square"></line>
+                        <rect id="Rectangle" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="31.920001" height="39.9000013" rx="1"></rect>
+                        <polyline id="Path" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" points="22.6100007 5.32000017 26.6000009 5.32000017 26.6000009 34.5800011 5.32000017 34.5800011 5.32000017 5.32000017 9.3100003 5.32000017"></polyline>
+                        <path d="M9.3100003,3.99000013 L9.3100003,9.3100003 L13.6990004,9.3100003 C14.0980005,8.51200027 15.0290005,7.98000026 15.9600005,7.98000026 C16.8910005,7.98000026 17.8220006,8.51200027 18.2210006,9.3100003 L22.6100007,9.3100003 L22.6100007,3.99000013 L9.3100003,3.99000013 Z" id="Path" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

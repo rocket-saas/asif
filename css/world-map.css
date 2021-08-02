@@ -1,0 +1,194 @@
+/*global*/
+.world-map{
+    padding-bottom: 50px;
+}
+
+/*heading*/
+.world-map__heading{
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+@media(max-width: 992px){
+    .world-map__heading__countries{
+        display: none;
+    }
+}
+
+/*map*/
+.world-map__container{
+    margin-top: 50px;
+}
+.world-map__container__inner{
+    position: relative;
+    padding-bottom: 40%;
+}
+.world-map__container__inner svg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.world-map__container__inner .world-map__img__circle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+@media(max-width: 992px){
+    .world-map__container__inner{
+        padding-bottom: 48%;
+    }
+    .world-map__container__inner svg ,.world-map__container__inner .world-map__img__circle{
+        width: 120%;
+        left: -10%
+    }
+}
+
+.map__countries .country path.country__body,.map__countries .country polygon.country__body,.map__countries .country polyline.country__body{
+    fill: #fff !important;
+}
+.map__countries .country.active path.country__body,.map__countries .country.active polygon.country__body,.map__countries .country.active polyline.country__body{
+    fill: #7FC3BF !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.map__countries .country.active:hover path.country__body,.map__countries .country.active:hover polygon.country__body,.map__countries .country.active:hover polyline.country__body{
+    fill: #7FC3BF !important;
+    filter: drop-shadow( 0 0 7px rgba(255, 255, 255, .7));
+}
+
+.world-map{
+    position: relative;
+}
+
+.world-map__popup{
+    position: absolute;
+    transform: translateY(-100%) translateX(-50%);
+    margin-top: -5px;
+    background-color: #fff;
+    display: none;
+    width: 380px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+.world-map__popup:hover{
+    display: block !important;
+    opacity: 1 !important;
+}
+
+
+.world-map__popup:before{
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+.world-map__popup__members{
+    max-height: 300px;
+    overflow: auto;
+}
+.world-map__popup__member{
+    padding: 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.world-map__popup__member:nth-last-child(1){
+    border-bottom: 0px;
+}
+.world-map__popup__member__inner{
+    display: flex;
+}
+.world-map__popup__member__image{
+    width: 25%;
+    min-width: 25%;
+    margin-right: 20px;
+}
+.world-map__popup__member__image img{
+    width: 100%;
+    height: auto;
+}
+.world-map__popup__member__content{
+    width: 100%;
+}
+
+
+.world-map__popup__member__content h4{
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.world-map__popup__member__content__text{
+    color: #3a4764;
+    font-size: 14px;
+}
+
+.world-map__popup__member__content .button{
+    color: #3a4764;
+    display: inline-block;
+    margin-left: auto;
+    transition: 0.8s;
+}
+.world-map__popup__member__content .button:hover{
+    opacity: 0.8;
+}
+
+.world-map__international{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+h3.world-map__international__title{
+    cursor: pointer;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transform: translateX(50%);
+
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.world-map__international__img{
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+@media(max-width: 992px){
+    .world-map__international{
+        display: none;
+    }
+}
+
+/*accordion*/
+.world-map__accordion__wrapper{
+    display: none;
+    padding-top: 30px;
+}
+.world-map__accordion__item{
+    padding: 5px 0;
+}
+.world-map__accordion__item__header{
+    cursor: pointer;
+}
+.world-map__accordion__item__header h4{
+    margin: 0;
+    padding-bottom: 5px;
+}
+.world-map__accordion__item__content p{
+    margin: 0;
+    padding-bottom: 5px;
+}
+@media(max-width: 992px){
+    .world-map__accordion__wrapper{
+        display: block;
+    }
+}
