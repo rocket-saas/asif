@@ -120,6 +120,99 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6107f7c086504": {
+                    "key": "layout_6107f7c086504",
+                    "name": "icon-lists",
+                    "label": "Icons + content list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6107f88b8650a",
+                            "label": "List",
+                            "name": "iconList",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6107f89e8650b",
+                                    "label": "Icon",
+                                    "name": "iconList_icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6107f8d18650c",
+                                    "label": "Label",
+                                    "name": "iconList_label",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6107f8dc8650d",
+                                    "label": "Content",
+                                    "name": "iconList_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -139,7 +232,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/tmp-home.php"
+                "value": "template-parts\/projecttemplate.php"
             }
         ]
     ],
@@ -153,5 +246,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1627911675
+    "modified": 1627912625
 }
