@@ -1,0 +1,47 @@
+.bg
+    &--grey
+        background-color: $color-light-grey
+    &--blue
+        background-color: $color-secondary
+
+.section
+    padding-top: 85px
+    padding-bottom: 85px
+    &__title
+        color: $color-grey
+        font-weight: bold
+        font-size: 12px
+        line-height: 16px
+        text-align: right
+        letter-spacing: 2.57143px
+        text-transform: uppercase
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            width: 50px
+            height: 3px
+            bottom: -10px
+            right: 0
+            background-color: $color-grey
+    &__scroll
+        a
+            position: relative
+            display: inline-block
+            width: 60px
+            height: 60px
+            border: 2px solid transparentize($color-grey, 0.75)
+            box-sizing: border-box
+            border-radius: 50%
+            transition: 0.3s
+            &:hover
+                background: transparentize($color-grey, 0.75)
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 13px
+                height: auto
+                transform: translate3d(-50%,-50%,0)
+
+                

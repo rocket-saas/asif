@@ -301,7 +301,7 @@ function twentysixteen_scripts() {
 
 
 	/* Styles and scripts for Projects Home and axSpa pages*/
-	if ( is_page_template('templates/tmp-home.php') || is_page_template('templates/tmp-axspa.php') ) {
+	if ( is_page_template('templates/tmp-blocks.php') || is_page_template('templates/tmp-axspa.php') ) {
 
 		//fonts
 		wp_enqueue_style( 'montserrat-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap', false );
@@ -312,7 +312,7 @@ function twentysixteen_scripts() {
 		wp_enqueue_script('main', get_template_directory_uri() . '/dist/main.min.js', array('jquery'), '1.0.0', true);
 
 	}
-	
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

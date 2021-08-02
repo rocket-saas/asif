@@ -11,3 +11,153 @@
             font-weight: 600
         &-700
             font-weight: 700
+.text
+    &--bg
+        &--primary
+            background-color: $color-primary
+            color: #fff
+            padding: 0 14px
+            margin-left: -14px
+
+.text-block
+    color: $font-color
+    p,h1,h2,h3,h4,h5,h6
+        padding: 16px 0
+        margin-bottom: 0
+        +max-screen($breakpoint-md)
+            padding: 10px 0
+        &:nth-child(1)
+            padding-top: 0
+        &:nth-last-child(1)
+            padding-bottom: 0
+
+    p,ul,ol
+        font-size: 18px
+        line-height: 26px
+    a
+        &:not(.button)
+            transition: 0.3s
+            &:hover
+                opacity: 0.8
+
+    ul
+        padding: 16px 0
+        padding-left: 22px
+        +max-screen($breakpoint-md)
+            padding-left: 60px
+        +max-screen($breakpoint-sm)
+            padding-left: 30px
+        
+        &>li
+            display: block
+            position: relative
+            margin-bottom: 16px
+            &:nth-last-child(1)
+                margin-bottom: 0
+            &:before
+                content: ''
+                width: 8px
+                height: 8px
+                min-width: 8px
+                border-radius: 50%
+                margin-top: .25em
+                margin-right: 14px
+                font-weight: 700
+                background-color: $font-color
+                position: absolute
+                right: 100%
+                top: 6px
+            ol
+                padding: 10px
+                padding-left: 30px
+                &>li
+                    margin-bottom: 0
+            ul
+                padding: 10px
+                padding-left: 30px
+    ol
+        list-style-type: decimal
+        counter-reset: my-counter
+        padding: 16px 0
+        padding-left: 90px
+        +max-screen($breakpoint-md)
+            padding-left: 60px
+        +max-screen($breakpoint-sm)
+            padding-left: 30px
+        &>li
+            list-style-type: decimal
+            counter-increment: my-counter
+            margin-bottom: 24px
+            position: relative
+            &:nth-last-child(1)
+                margin-bottom: 0
+            &::marker
+                margin-bottom: 5px
+                font-weight: 700
+            &:before
+				//content: counter(my-counter) "."
+                margin-right: 6px
+                margin-top: 0
+                font-weight: 700
+                position: absolute
+                right: 100%
+                top: 0
+            ol
+                padding: 10px
+                padding-left: 30px
+            ul
+                padding: 10px 0
+                padding-left: 30px
+    img
+        width: 100%
+        height: auto
+        border-radius: 10px
+        overflow: hidden
+    code
+        margin: 12px 0
+        line-height: $default-line-height
+        padding: 2px 4px
+        border: 1px solid #dde4e9
+        background-color: #F6F6F6
+        color: #232527
+        display: inline-block
+    pre
+        white-space: pre-wrap
+    blockquote
+        margin: rem(24px 0)
+        position: relative
+        padding-left: 75px
+        padding-top: 20px
+        +max-screen($breakpoint-sm)
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 5px
+        p
+            font-size: 30px
+            line-height: 42px
+            font-weight: 400
+            +max-screen($breakpoint-md)
+                font-size: 24px
+                line-height: 1.25em
+        a
+            font-size: 14px
+            line-height: 19px
+        & *
+            z-index: 1
+
+        &:before
+
+.text-block h1, .h1
+    font-family: $font-family-2
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 56px
+    margin-bottom: 0
+.text-block h4, .h4
+    font-family: $font-family-2
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 27px
+    margin-bottom: 0
