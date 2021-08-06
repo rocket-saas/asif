@@ -70,8 +70,11 @@ endif;
                                             $link_title = $link['title'];
                                             $link_target = $link['target'] ? $link['target'] : '_self';
                                         ?>
-                                            <div style="text-align:right;">
-                                                <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                            <div style="">
+                                                <a class="button-arrow world-map__popup__member__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                                                    <span class="button-arrow__text"><?php echo esc_html( $link_title ); ?></span>
+                                                    <img class="button-arrow__icon" src="<?php echo get_template_directory_uri().'/images/icons/icon-arrow-right-blue.svg'; ?>" alt="arrow">
+                                                </a>
                                             </div>
                                         <?php endif; ?>
 

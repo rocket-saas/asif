@@ -9,21 +9,25 @@ jQuery(function($){
     });
     map.find('.map__countries .country').hover(function(event){
         let country = $(this);
+        country.addClass('hover');
         let countryName = $(this).attr('id');
-        $('.world-map__popup').hide();
+        setTimeout(function(){
+            $('.world-map__popup').hide();
 
-        var relX = event.pageX - mapContainer.offset().left;
-        var relY = event.pageY;
-        console.log(event.pageY,mapContainer.offset().top);
-        var coord = {x: relX, y: relY };
+            var relX = event.pageX - mapContainer.offset().left;
+            var relY = event.pageY;
+            console.log(event.pageY,mapContainer.offset().top);
+            var coord = {x: relX, y: relY };
 
-        let currentPopup = $('.world-map__popup[data-country="'+countryName+'"]');
-        let countryPosition = country.position();
-        currentPopup.show();
-        currentPopup.css('left',coord.x);
-        currentPopup.css('top',coord.y);
+            let currentPopup = $('.world-map__popup[data-country="'+countryName+'"]');
+            let countryPosition = country.position();
+            currentPopup.show();
+            currentPopup.css('left',coord.x);
+            currentPopup.css('top',coord.y);
+        },400);
     },function(){
         let country = $(this);
+        country.removeClass('hover');
         let countryName = $(this).attr('id');
         let currentPopup = $('.world-map__popup[data-country="'+countryName+'"]');
         currentPopup.hide();
