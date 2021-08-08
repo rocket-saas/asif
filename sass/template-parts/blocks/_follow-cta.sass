@@ -1,0 +1,108 @@
+.axspa__title
+    position: relative
+    font-size: 40px
+    line-height: 1.3
+    font-family: $font-family-1
+    color: $font-color
+    margin-bottom: 70px
+    color: $color-secondary
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        bottom: 10px
+        display: block
+        width: 50px
+        height: 3px
+        background-color: $color-grey-2
+        +max-screen($breakpoint-md)
+            top: -20px
+            right: 15px
+    h2
+        font-weight: 700
+    span
+        font-family: $font-family-2
+        color: white
+        background: $color-secondary
+        padding: 5px
+        +max-screen($breakpoint-md)
+            line-height: 2
+    .axspa__label
+        position: absolute
+        right: 0
+        top: 0
+        font-size: 12px
+        text-align: right
+        text-transform: uppercase
+        +max-screen($breakpoint-md)
+            top: -50px
+            right: 15px
+    &--light
+        span
+            background: $color-primary
+        .axspa__label
+            color: $color-primary
+    
+.socialList
+    margin-left: -8px
+    margin-right: -8px
+    margin-bottom: 15px
+    &__title
+        font-size: 18px
+        margin-bottom: 15px
+        margin-top: 32px
+    &__item
+        padding-left: 8px
+        padding-right: 8px
+        &:hover
+            svg
+                background: white
+                border-color: $color-primary
+                path
+                    fill: $color-primary
+    svg
+        width: 60px
+        height: 60px
+        padding: 13px
+        background: $color-primary
+        border-radius: 50%
+        transition: 0.5s
+        border: 2px solid transparent
+
+.followCta
+    padding-top: 82px
+    padding-bottom: 82px
+    .container
+        position: relative
+    &--row
+        align-items: center
+    &__contentWrapper
+        +max-screen($breakpoint-md)
+            margin-bottom: 35px
+    &__content
+        max-width: 645px
+        margin-bottom: 32px
+        color: $font-color
+    &__quoteWrapper
+        position: relative
+    &__quote
+        max-width: 385px
+        padding: 26px 29px
+        background: $color-primary
+        box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.2)
+        border-radius: 8px
+        color: white
+        margin: 0 auto
+        margin-bottom: 14px
+    &__quoteAuthor
+        display: block
+        text-align: center
+        margin-top: 14px
+    &__quoteBg
+        position: absolute
+        top: -40px
+        right: 0
+        width: 125px
+        height: 125px
+        object-fit: contain
+        z-index: -1

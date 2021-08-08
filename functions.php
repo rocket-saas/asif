@@ -579,3 +579,11 @@ function custom_content($limit, $field ,$post_id=-1) {
     $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
     return $excerpt;
 }
+
+
+
+/**
+ * Incude custom acf-functions
+ */
+
+include( get_template_directory() . '/inc/acf-functions.php' );
