@@ -916,6 +916,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_611139e973ecc": {
+                    "key": "layout_611139e973ecc",
+                    "name": "employment-impact",
+                    "label": "Employment impact",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -949,5 +958,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1628504761
+    "modified": 1628518902
 }
