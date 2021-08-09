@@ -1,0 +1,57 @@
+.treatmentGoals
+    position: relative
+    padding-top: 80px
+    padding-bottom: 80px
+    background: $color-secondary
+    font-size: 16px
+    color: white
+    overflow: hidden
+    &::after
+        content: ""
+        background: url("../images/imas/bg-circle.svg") no-repeat center
+        background-size: contain
+        display: block
+        position: absolute
+        max-width: 50%
+        max-height: 33%
+        width: 325px
+        height: 265px
+        bottom: 0
+        right: 0
+    &__content
+        margin-top: 35px
+        margin-bottom: 35px
+    &__content--accent
+        position: relative
+        padding-left: 70px
+        &::before
+            content: ""
+            background: url('../images/imas/dot-pattern-vertical.svg') no-repeat center
+            background-size: contain
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 23px
+    &__list     
+    &__listItem
+        ul
+            padding-left: 20px  
+        li
+            position: relative
+            margin-bottom: 10px
+            &::before
+                content: ""
+                position: absolute
+                left: -20px
+                top: 50%
+                transform: translateY(-50%)
+                display: block
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                background: white 
+                line-height: 1.6  
+        strong
+            font-size: 18px
+        
