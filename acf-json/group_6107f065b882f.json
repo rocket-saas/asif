@@ -907,6 +907,42 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6110f38be2651": {
+                    "key": "layout_6110f38be2651",
+                    "name": "pre-diagnosis",
+                    "label": "Pre Diagnosis",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6110f394e2652": {
+                    "key": "layout_6110f394e2652",
+                    "name": "diagnosis",
+                    "label": "Diagnosis",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6110f39fe2653": {
+                    "key": "layout_6110f39fe2653",
+                    "name": "treatment",
+                    "label": "Treatment",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6110f3a5e2654": {
+                    "key": "layout_6110f3a5e2654",
+                    "name": "comorbities",
+                    "label": "Comorbities",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -928,6 +964,13 @@
                 "operator": "==",
                 "value": "template-parts\/projecttemplate.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tmp-blocks.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -940,5 +983,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1628497203
+    "modified": 1628510953
 }
