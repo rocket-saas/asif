@@ -1,0 +1,225 @@
+.livingAxspa
+    position: relative
+    padding-top: 82px
+    padding-bottom: 82px
+    background: $color-secondary
+    color: white
+    font-family: $font-family-1
+    .container
+        position: relative
+    &--row
+        align-items: center
+    &__riskStats
+        max-width: 286px
+        margin-bottom: 65px
+    &__riskNumber
+        font-weight: 700
+        font-size: 100px
+        line-height: .8
+        margin-bottom: 16px
+    &__riskSign
+        font-size: 50px
+        line-height: 1.1
+        margin-bottom: 16px
+    &__riskSubtitle
+        font-size: 18px
+    &__riskContent
+        font-size: 12px
+        color: #ffffff99
+    &__riskGroupsWrapper
+        max-width: 384px
+        margin-bottom: 65px
+        strong
+            display: block
+            text-align: center
+            margin-bottom: 24px
+    &__riskGroupsItem
+        padding: 16px 40px
+        background-color: #253654
+        border-radius: 40px
+        margin-bottom: 24px
+        display: flex
+        align-items: center
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 8px
+            height: 8px
+            background-color: white
+            position: absolute
+            border-radius: 50%
+        &:nth-child(1)
+            &::after
+                right: -159px
+                bottom: -7px
+            svg
+                &:nth-child(2)
+                    right: -155px
+                    width: 155px
+                    
+                    
+                    top: 30px
+        &:nth-child(2)
+            &::after
+                right: -141px
+                bottom: -3px
+            svg
+                &:nth-child(2)
+                    right: -140px
+                    width: 140px
+                    height: auto
+                    top: 30px
+        &:nth-child(3)
+            &::after
+                right: -144px
+                top: -3px
+            svg
+                &:nth-child(2)
+                    top: 0
+                    right: -141px
+                    width: 140px
+        &:nth-child(4)
+            &::after
+                right: -146px
+                top: -73px
+            svg
+                &:nth-child(2)
+                    width: 144px
+                    top: -71px
+                    right: -144px
+        svg
+            width: 32px
+            height: 32px
+            margin-right: 16px
+            &:nth-child(2)
+                position: absolute
+                margin-right: 0
+                height: auto
+    &__activitiesWrapper
+        max-width: 482px
+        margin-bottom: 24px
+    &__activitiesInner
+        padding: 47px 43px
+        background-color: #253654
+        border-radius: 8px
+    &__activitiesTitle
+        margin-bottom: 32px
+        font-size: 16px
+        line-height: 1.6
+    &__activity
+        margin-bottom: 24px
+        &:last-child
+            margin-bottom: 0
+    &__activityName
+        display: block
+        font-size: 14px
+        margin-bottom: 8px
+    &__activityBar
+        position: relative
+        width: 100%
+        height: 10px
+        margin-top: 8px
+        border-radius: 16px
+        background-color: $color-secondary
+        &--filled
+            position: absolute
+            top: 0
+            left: 0
+            min-width: 5px
+            height: 100%
+            display: block
+            background-color: $color-primary
+            border-radius: 16px
+    &__risksWrapper
+        max-width: 384px
+        font-size: 16px
+        margin-bottom: 24px
+        ul
+            position: relative
+            padding-left: 60px
+            &::before
+                content: ""
+                background: url('../images/imas/dot-pattern-vertical.svg') no-repeat center
+                background-size: contain
+                position: absolute
+                left: 0
+                top: 0
+                height: 100%
+                width: 23px
+        li
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+
+    &__risksInner
+        height: 100%
+        padding: 47px 43px
+        background-color: #253654
+        border-radius: 8px
+    &__risksTitle
+        font-size: 16px
+        text-transform: uppercase
+        line-height: 1.6
+        margin-bottom: 43px
+    &__risksDisclaimer
+        max-width: 482px
+        font-size: 12px
+        color: #ffffff99
+    &__relationWrapper
+        margin-top: 80px
+    &__relationTitle
+        text-transform: uppercase
+        line-height: 1.6
+        font-size: 16px
+        font-weight: 700
+        margin-bottom: 32px
+    &__relationItem
+        width: 20%
+        min-width: 178px
+        +max-screen($breakpoint-md)
+            max-width: 33%
+        +max-screen($breakpoint-sm)
+            width: 50%
+
+    &__relationItem__inner
+        padding: 21px 26px
+        background-color: #253654
+        border-radius: 8px
+    &__relationIcon
+        width: 90px
+        height: 90px
+        margin: 0 auto
+        border-radius: 8px
+        background: $color-secondary
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 20px
+        svg
+            width: 45px
+            height: 45px
+    &__relationContent
+        margin-top: 20px
+        text-align: center
+        font-size: 16px
+    &__relationPercent
+        display: inline-block
+        font-weight: 700
+    &__relationGroup
+        margin-bottom: 0
+    &__circle
+        position: absolute
+        right: -151px
+        top: 0
+
+path
+    stroke-dasharray: 500
+    stroke-dashoffset: 500
+    animation: dash 5s linear alternate forwards
+
+@keyframes dash
+    from
+        stroke-dashoffset: 500
+    to
+        stroke-dashoffset: 0

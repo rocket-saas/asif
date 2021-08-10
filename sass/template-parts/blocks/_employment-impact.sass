@@ -1,0 +1,105 @@
+.emplymentImpact
+    font-family: $font-family-1
+    font-size: 16px
+    padding-top: 81px
+    padding-bottom: 81px
+    &__numbersList
+        display: flex
+        flex-direction: column
+    &__numbersItem
+        margin-bottom: 48px
+        border-bottom: 1px solid #DDE0E5
+        &:last-child
+            margin-bottom: 0
+            border-bottom: 0
+    &__number
+        font-size: 80px
+        line-height: 1
+        margin-bottom: 8px
+        color: $color-primary
+        display: flex
+        align-items: flex-end
+        span
+            font-size: 40px
+            line-height: 1.4
+            font-weight: 400
+    &__label
+        margin-bottom: 49px
+        font-size: 18px
+        color: $color-secondary
+    &__fact
+        color: white
+        display: flex
+        align-items: center
+        border-radius: 8px
+        padding: 25px 28px
+        background-color: $color-secondary
+        margin-bottom: 36px
+    &__factIcon
+        width: 80px
+        height: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: white
+        margin-right: 24px
+        border-radius: 8px
+        svg
+            height: 40px
+            margin: 0 auto
+    &__factNumber
+        color: $color-primary
+        display: flex
+        align-items: flex-end
+        border-radius: 8px
+        span
+            font-weight: 400
+    &__factMain
+        width: calc(100% - 104px)
+    &__issuesWrapper
+        position: relative
+        padding: 55px 50px
+        background: $color-light-grey
+        border-radius: 8px
+        margin-bottom: 15px
+        &::before
+          content: ""
+          display: block
+        .arrow-top
+            position: absolute
+            width: 100px
+            height: 100px
+            left: 20px
+            background: $color-light-grey
+            transform: rotate(45deg) 
+            border-radius: 10px
+
+        .triangle
+            position: absolute
+            height: 100px
+            width: 40px
+            overflow: hidden
+            left: 50%
+            transform: translateX(-50%) rotate(90deg)
+            top: -50px
+            z-index: -1
+    &__issuesTitle
+        margin-bottom: 32px
+        display: block
+    &__issuesItem
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 10px
+        &::last-child
+            margin-bottom: 0
+    &__issuesLabel
+        margin-bottom: 0
+    &__issuesValue
+        display: block
+        min-width: 50px
+    &__disclaimer
+        font-size: 14px
+        color: #252525cc
+.emplymentImpact__issuesLabel
+    margin-bottom: 0
