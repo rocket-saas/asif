@@ -908,17 +908,17 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_6110f38be2651": {
-                    "key": "layout_6110f38be2651",
+                "layout_611236c88525a": {
+                    "key": "layout_611236c88525a",
                     "name": "pre-diagnosis",
-                    "label": "Pre Diagnosis",
+                    "label": "Pre-diagnosis",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
-                "layout_6110f394e2652": {
-                    "key": "layout_6110f394e2652",
+                "layout_611236cb8525b": {
+                    "key": "layout_611236cb8525b",
                     "name": "diagnosis",
                     "label": "Diagnosis",
                     "display": "block",
@@ -926,8 +926,8 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_6110f39fe2653": {
-                    "key": "layout_6110f39fe2653",
+                "layout_611236cd8525c": {
+                    "key": "layout_611236cd8525c",
                     "name": "treatment",
                     "label": "Treatment",
                     "display": "block",
@@ -935,10 +935,28 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_6110f3a5e2654": {
-                    "key": "layout_6110f3a5e2654",
-                    "name": "comorbities",
-                    "label": "Comorbities",
+                "layout_611236ce8525d": {
+                    "key": "layout_611236ce8525d",
+                    "name": "comorbidities",
+                    "label": "Comorbidities",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6111026f7b52b": {
+                    "key": "layout_6111026f7b52b",
+                    "name": "living-with-axspa",
+                    "label": "Living with axspa",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_611139e973ecc": {
+                    "key": "layout_611139e973ecc",
+                    "name": "employment-impact",
+                    "label": "Employment impact",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -983,5 +1001,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1628510953
+    "modified": 1628583944
 }

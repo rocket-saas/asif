@@ -17,6 +17,7 @@
                                     <p class="diagnosis__stat__bubbles__main__text text--18">
                                         More than <span class="font-w-700">50%</span> wait <b>5 or more years</b> for a diagnosis
                                     </p>
+                                    <span class="diagnosis__stat__bubbles__main__notice text--color--white text--12">Total n = 1652</span>
                                     <ul class="diagnosis__stat__bubbles__main__list">
                                         <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-1__content">
                                             <div class="diagnosis__stat__bubble__content__inner">
@@ -102,6 +103,27 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="diagnosis__content">
+                    <div class="diagnosis__map">
+                        <h3 class="subtitle subtitle--md text--color--white">Mean diagnostic delay per country:</h3>
+                        <div class="diagnosis__map__block">
+                            <div class="diagnosis__map__wrapper">
+                                <img class="diagnosis__map__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-map.svg" alt="#">
+                            </div>
+                            <ul class="diagnosis__map__list">
+                                <li class="diagnosis__map__item">
+                                    <div class="text--center diagnosis__map__item__inner">
+                                        <p class="text--18 text--color--secondary diagnosis__map__item__text">Sweden <br/><span class="text--32 font-w-700">7.6 years*</span></p>
+                                        <span class="text--12 diagnosis__map__item__notice">* Data from fewer than 100 people</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="diagnosis__prof">
+                        <h3 class="subtitle subtitle--md text--color--white">Diagnosing healthcare professional:</h3>
                     </div>
                 </div>
             </div>
