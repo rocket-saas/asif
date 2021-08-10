@@ -1,4 +1,5 @@
 .diagnosis
+    padding-bottom: 0
     &__stat
         position: relative
         display: flex
@@ -158,6 +159,9 @@
                 left: 50%
                 opacity: 0
                 transition: 0.3s
+    &__content
+        margin-top: 35px
+        position: relative
     &__map
         position: relative
         &__block
@@ -187,5 +191,115 @@
                 width: 100%
                 height: auto
             
+    &__prof
+        position: absolute
+        right: 0
+        top: 0
+        width: 300px
+        max-width: 35%
+        &__stat
+            margin-top: 15px
+            border-radius: 8px
+            background: transparentize($color-blue-grey, 0.4)
+            box-shadow: 0px 4px 24px rgba(9, 20, 41, 0.6)
+            padding: 14px 30px
+            &__txt
+                display: flex
+                align-items: center
+                justify-content: space-between
+                &__big
+                    font-size: 50px
+                    line-height: 1em
+                    font-weight: 700
+                    margin-right: 25px
+                    span
+                        opacity: 0.6
+        .stat-bar
+            padding-top: 25px
+        .stat-bar__item__bar
+            background-color: transparentize(#fff, 0.9)
+    &__delay
+        padding-top: 20px
+        &__title
+            padding-left: 270px
+        &__content
+            display: flex
+            align-items: center
+        &__women
+            width: 190px
+            min-width: 190px
+            margin-right: 80px
+            &__img
+                width: 55px
+                height: auto
+            &__title
+                padding-top: 16px
+                span
+                    display: block
+                    padding-bottom: 8px
+            &__text
+                padding-top: 15px
+                opacity: 0.6
+                max-width: 164px
+                margin: auto
+        &__stat
+            width: 100%
+            display: flex
+            align-items: flex-end
+            margin: 0 -25px
+            &__item
+                padding: 25px
+                padding-bottom: 0
+                &:nth-child(1)
+                    .diagnosis__delay__stat__item__inner
+                        width: 93px
+                    
+                &:nth-child(2)
+                    .diagnosis__delay__stat__item__inner
+                        width: 100px
+                    .diagnosis__delay__stat__item__body img
+                        opacity: 0.8
+                &:nth-child(3)
+                    .diagnosis__delay__stat__item__inner
+                        width: 112px
+                    .diagnosis__delay__stat__item__body img
+                        opacity: 0.6
+                &:nth-child(4)
+                    .diagnosis__delay__stat__item__inner
+                        width: 125px
+                    .diagnosis__delay__stat__item__body img
+                        opacity: 0.4
+                &__inner
+                    position: relative
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: flex-end
+                &__body
+                    order: 2
+                    width: 100%
+                    img
+                        width: 100%
+                &__head
+                    position: relative
+                    width: 90px
+                    margin-bottom: 17px
+                    img
+                        width: 100%
+                        height: auto
+                    p
+                        position: absolute
+                        width: 100%
+                        top: 45%
+                        left: 50%
+                        transform: translate3d(-50%,-50%,0)
+                        padding: 10px
+                &__age
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    text-align: center
+
 
         

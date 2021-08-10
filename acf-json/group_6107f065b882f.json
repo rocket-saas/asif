@@ -912,10 +912,6 @@
                     "key": "layout_611236c88525a",
                     "name": "pre-diagnosis",
                     "label": "Pre-diagnosis",
-                "layout_6111026f7b52b": {
-                    "key": "layout_6111026f7b52b",
-                    "name": "living-with-axspa",
-                    "label": "Living with axspa",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -925,10 +921,6 @@
                     "key": "layout_611236cb8525b",
                     "name": "diagnosis",
                     "label": "Diagnosis",
-                "layout_611139e973ecc": {
-                    "key": "layout_611139e973ecc",
-                    "name": "employment-impact",
-                    "label": "Employment impact",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -961,10 +953,19 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_61125eb7c9460": {
-                    "key": "layout_61125eb7c9460",
+                "layout_611139e973ecc": {
+                    "key": "layout_611139e973ecc",
+                    "name": "employment-impact",
+                    "label": "Employment impact",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61127f202779f": {
+                    "key": "layout_61127f202779f",
                     "name": "dark-light-stats",
-                    "label": "Dark\/Light stats",
+                    "label": "Dark\/light stats",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -990,6 +991,13 @@
                 "operator": "==",
                 "value": "template-parts\/projecttemplate.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tmp-blocks.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1002,5 +1010,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1628583944
+    "modified": 1628602176
 }

@@ -124,6 +124,104 @@
                     </div>
                     <div class="diagnosis__prof">
                         <h3 class="subtitle subtitle--md text--color--white">Diagnosing healthcare professional:</h3>
+                        <div class="diagnosis__prof__stat">
+                            <p class="diagnosis__prof__stat__txt text--color--white">
+                                <span class="diagnosis__prof__stat__txt__big text--32">4<span class="font-w-400 text--18">/5</span></span>
+                                <span class="">patients are diagnosed by a rheumatologist</span>
+                            </p>
+                        </div>
+                        <ul class="text--color--white stat-bar">
+                                <li class="stat-bar__item">
+                                    <span class="stat-bar__item__title">Rheumatologist - 78.4%</span>
+                                    <div class="stat-bar__item__bar">
+                                        <div class="stat-bar__item__bar__inner"></div>
+                                    </div>
+                                </li>
+                                <li class="stat-bar__item">
+                                    <span class="stat-bar__item__title">Rheumatologist - 78.4%</span>
+                                    <div class="stat-bar__item__bar">
+                                        <div class="stat-bar__item__bar__inner"></div>
+                                    </div>
+                                </li>
+                                <li class="stat-bar__item">
+                                    <span class="stat-bar__item__title">Rheumatologist - 78.4%</span>
+                                    <div class="stat-bar__item__bar">
+                                        <div class="stat-bar__item__bar__inner"></div>
+                                    </div>
+                                </li>
+                                <li class="stat-bar__item">
+                                    <span class="stat-bar__item__title">Rheumatologist - 78.4%</span>
+                                    <div class="stat-bar__item__bar">
+                                        <div class="stat-bar__item__bar__inner"></div>
+                                    </div>
+                                </li>
+                                <li class="stat-bar__item">
+                                    <span class="stat-bar__item__title">Rheumatologist - 78.4%</span>
+                                    <div class="stat-bar__item__bar">
+                                        <div class="stat-bar__item__bar__inner"></div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="diagnosis__delay text--color--white">
+                        <h3 class="diagnosis__delay__title subtitle subtitle--md text--color--white">Diagnosing healthcare professional:</h3>
+                        <div class="diagnosis__delay__content">
+                            <div class="diagnosis__delay__women text--center">
+                                <img class="diagnosis__delay__women__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-women.svg" alt="#">
+                                <h4 class="text--16 diagnosis__delay__women__title"><span class="text--32 font-w-700">2 year</span> longer delay for women</h4>
+                                <p class="text--12 diagnosis__delay__women__text">Mean diagnostic delay: 8.24 years (SD: 8.9) for women vs. 6.14 years (SD: 7.4) for men</p>
+                            </div>
+                            <ul class="diagnosis__delay__stat">
+                                <li class="diagnosis__delay__stat__item">
+                                    <div class="diagnosis__delay__stat__item__inner">
+                                        <div class="diagnosis__delay__stat__item__body">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-body.svg" alt="#">
+                                        </div>
+                                        <h4 class="subtitle diagnosis__delay__stat__item__age">18-34</h4>
+                                        <div class="diagnosis__delay__stat__item__head">
+                                            <img class="diagnosis__delay__stat__item__circle" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-circle.svg" alt="#">
+                                            <p class="text--center text--16 font-w-700">4.4 <br>years</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="diagnosis__delay__stat__item">
+                                    <div class="diagnosis__delay__stat__item__inner">
+                                        <div class="diagnosis__delay__stat__item__body">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-body.svg" alt="#">
+                                        </div>
+                                        <h4 class="subtitle diagnosis__delay__stat__item__age">35-51</h4>
+                                        <div class="diagnosis__delay__stat__item__head">
+                                            <img class="diagnosis__delay__stat__item__circle" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-circle.svg" alt="#">
+                                            <p class="text--center text--16 font-w-700">7.9 <br>years</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="diagnosis__delay__stat__item">
+                                    <div class="diagnosis__delay__stat__item__inner">
+                                        <div class="diagnosis__delay__stat__item__body">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-body.svg" alt="#">
+                                        </div>
+                                        <h4 class="subtitle diagnosis__delay__stat__item__age">52-68</h4>
+                                        <div class="diagnosis__delay__stat__item__head">
+                                            <img class="diagnosis__delay__stat__item__circle" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-circle.svg" alt="#">
+                                            <p class="text--center text--16 font-w-700">9.5 <br>years</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="diagnosis__delay__stat__item">
+                                    <div class="diagnosis__delay__stat__item__inner">
+                                        <div class="diagnosis__delay__stat__item__body">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-body.svg" alt="#">
+                                        </div>
+                                        <h4 class="subtitle diagnosis__delay__stat__item__age">>68</h4>
+                                        <div class="diagnosis__delay__stat__item__head">
+                                            <img class="diagnosis__delay__stat__item__circle" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-circle.svg" alt="#">
+                                            <p class="text--center text--16 font-w-700">7.3 <br>years</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
