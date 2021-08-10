@@ -1,4 +1,4 @@
-<div class="emplymentImpact">
+<div class="emplymentImpact" id="emplymentImpact">
     <div class="container">
         <div class="row">
             <div class="col-lg-3"></div>

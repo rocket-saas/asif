@@ -1,0 +1,117 @@
+.switchStats
+    padding-top: 72px
+    padding-bottom: 72px
+    background-color: $color-secondary
+    color: white
+    font-family: $font-family-1
+    transition: .7s all
+    &.light
+        background-color: #F2F2F2
+        color: $color-secondary
+        .switchStats
+            &__disclaimer
+                color: #172541cc
+            &__activityBar
+                background-color: white
+            &__switcherGroup
+                background-color: #ffffff99
+                color: $font-color
+            &__hr
+                background-color: #DDE0E5
+    &__title
+        font-weight: 700
+        margin-bottom: 35px
+        display: block
+    &__listCarousel
+        display: flex
+        width: 200%
+        transition: .7s all
+        &.light
+            transform: translateX(-50%)
+            .two span + .bg
+                width: 190px
+                margin-left: -50px
+        .two.active
+            color: white
+    &__listWrapper
+        overflow: hidden
+        margin-bottom: 48px
+    &__list
+        margin-top: 50px
+        width: 50%
+    &__label
+        display: block
+        width: 382px
+        max-width: 100%
+        font-size: 14px
+        font-weight: 300
+    &__activityBar
+        background: #1F2F4C
+        margin-top: 0
+        margin-right: 31px
+    &__activityBarWrapper
+        display: flex
+        align-items: center
+        span
+            padding: 0
+    &__item
+        display: flex
+        align-items: center
+        width: 100%
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+    &__switcherGroup
+        width: 354px
+        height: 60px
+        padding: 10px 40px
+        position: relative
+        z-index: 1
+        background-color: #1F2F4C
+        border-radius: 100px
+        margin-left: auto
+        text-transform: uppercase
+        .one
+            float: left
+            line-height: 40px
+            color: white
+            text-decoration: none
+            transition: 1.0s
+        .two
+            float: right
+            text-decoration: none
+            line-height: 40px
+            color: #a6afbf
+        .two:hover ~ .one 
+            color:#fff
+        .two > span:hover 
+            color: white
+        .bg
+            background-color: $color-primary
+            height: 60px
+            width: 190px
+            position: absolute
+            top: 0
+            margin-left: -203px
+            z-index: -1
+            transition: 1.0s
+            border-radius: 100px
+        span:hover + .bg
+            width: 190px
+            margin-left: -40px
+        span
+            padding: 10px 0
+            transition: 1.0s
+    &__hr
+        position: absolute
+        left: 15px
+        top: 50%
+        width: calc(100% - 30px)
+        transform: translateY(-50%)
+        height: 1px
+        background-color: #2B3D5F
+        margin: 0
+    &__disclaimer
+        font-size: 14px
+        margin-top: 48px
+        color: #ffffffcc

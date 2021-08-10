@@ -1,4 +1,4 @@
-<section id="" class="section bg--grey icon-lists">
+<section id="list-item-2" class="section bg--grey icon-lists">
 	<div class="container">
 			<div class="row">
                 <div class="dot_bg" style="background-image: url(<?php echo get_template_directory_uri();?>/images/dot-pattern.svg);"></div>

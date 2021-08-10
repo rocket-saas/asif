@@ -1,0 +1,51 @@
+.axspa-nav
+    position: fixed
+    top: 85px
+    left: calc((100vw - 1110px) / 2) 
+    &__item
+        position: relative
+        color: $color-grey
+        font-size: 12px
+        font-family: $font-family-1
+        background-color: transparent
+        margin-bottom: 18px
+        padding: 0
+        padding-left: 21px
+        border: 0
+        transition: .2s all
+        &:last-child
+            &::before
+                display: none
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            left: 3px
+            bottom: -48px
+            transform: translateY(-50%)
+            height: 40px
+            width: 1px
+            background-color: $color-grey
+            transition: .2s all
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 7px
+            width: 7px
+            border-radius: 50%
+            background-color: $color-grey
+            transition: .2s all
+            z-index: 10
+        &.active
+            background-color: transparent
+            color: $color-primary
+            &::after
+                background-color: $color-primary
+            &::before
+                background-color: transparent
+                background: repeating-linear-gradient( to bottom, $color-primary, $color-primary 1px, transparent 2px, transparent 2px, transparent 3px)
+
