@@ -73,7 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-spy="scroll" data-target="#axspa-nav" data-offset="0" class="scrollspy-axspa" style="position: relative;">
 
     <div id="wrapper">
       <header class="wi-full">
