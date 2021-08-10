@@ -4,3 +4,25 @@
             max-width: 585px
     .section__scroll
         margin-top: 55px
+    .axspa__title
+        +max-screen($breakpoint-md)
+            margin-bottom: 35px
+        +max-screen($breakpoint-sm)
+            margin-bottom: 20px
+            
+        h2
+            color: $font-color
+            +max-screen($breakpoint-md)
+                font-size: 30px
+            +max-screen($breakpoint-sm)
+                font-size: 20px
+        span
+            display: inline-block
+            margin-top: 5px
+        &::after
+            bottom: unset
+            top: 30px
+            +max-screen($breakpoint-sm)
+                top: -20px
+        .axspa__label
+            color: $color-grey
