@@ -13,10 +13,8 @@
 <div id="axspa-nav" class="list-group axspa-nav">
   <a class="list-group-item axspa-nav__item" href="#block-1">Pre-diagnosis</a>
   <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-  <a class="list-group-item axspa-nav__item" href="#2">Comorbidities</a>
-  <a class="list-group-item axspa-nav__item" href="#1">Living with axSpA</a>
-  <a class="list-group-item axspa-nav__item" href="#emplymentImpact">Impact on employment / occupation</a>
-  <a class="list-group-item axspa-nav__item" href="#switchStats">Patients’ fears and hopes</a>
+  <a class="list-group-item axspa-nav__item" href="#emplymentImpact">Treatment</a>
+
 </div>
 <?php /* page content end */ ?>
 

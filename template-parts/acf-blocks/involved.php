@@ -1,13 +1,30 @@
+<?php 
+
+$title = "Who is";
+$titleAccent = "involved?";
+$label = "2. Who is involved";
+?>
+
 <section class="section section--bg bg--blue involved">
     <div class="container">
 
         <div class="row involved__header">
-            <div class="col-12 col-lg-6">
+            <!-- <div class="col-12 col-lg-6">
                 <h2 class="h1">Who is <span class="text--bg--primary">involved?</span></h2>
             </div>
             <div class="col-12 col-lg-6">
                 <h3 class="section__title">2. Who is involved</h3>
-            </div>
+            </div> -->
+            <?php if ($title || $titleAccent) : ?>
+                    <div class="axspa__title axspa__title--light accordion__title col-12">
+                        <h2><?php echo $title; ?>
+                            <?php if ($titleAccent) : ?>
+                                <span><?php echo $titleAccent; ?>
+                            <?php endif;?>
+                        </h2>
+                        <div class="axspa__label"><?php echo $label;?></div>
+                    </div>
+                <?php endif;?>
         </div>
 
         <div class="involved__map">
@@ -20,18 +37,19 @@
                         <div class="text-block">
                             <h4>Spain</h4>
                             <p>680 participants</p>
-                            <p>In partnership with:</p>
+                            <br>
+                            <p><strong>In partnership with:</strong></p>
                             <ul>
                                 <li>Spanish Coordinator of Associations of Spondylarthritis (CEADE)</li>
-                                <li></li>Victoria Navarro-Compán , Pedro Zarco , Eduardo Collantes-Estévez , Alvaro Hidalgo Vega , Jordi Gratacós Masmitja </li>
+                                <!-- <li>Victoria Navarro-Compán , Pedro Zarco , Eduardo Collantes-Estévez , Alvaro Hidalgo Vega , Jordi Gratacós Masmitja </li> -->
                             </ul>
-                            <p>
+                            <!-- <p>
                             a Department of Rheumatology, University Hospital La Paz, IdiPaz. Madrid, Spain</br>
                             b Department of Rheumatology, Foundation Hospital of Alcorcón, Madrid, Spain</br>
                             c Department of Rheumatology, Reina Sofia University Hospital, Maimonides Biomedical Research Institute of Cordoba (IMIBIC), University of Cordoba, Cordova, Spain</br>
                             d Universidad de Castilla-La Mancha, Toledo, Spain</br>
                             e Department of Rheumatology, Hospital Universitari Parc Taulí, Sabadell, I3PT, UAB, Spain
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </li>

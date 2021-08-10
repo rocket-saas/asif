@@ -16,32 +16,33 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
                 <div class="axspa__title axspa__title--light accordion__title col-12">
                     <h2><?php echo $title; ?>
                         <?php if ($titleAccent) : ?>
-                            <span><?php echo $titleAccent; ?></h2>
+                            <span><?php echo $titleAccent; ?>
                         <?php endif;?>
+                    </h2>
                     <div class="axspa__label"><?php echo $label;?></div>
                 </div>
             <?php endif;?>
             <?php if ($content) : ?>
-            <div class="followCta__contentWrapper col-12 col-lg-7">
-                <div class="followCta__content">
-                    <?php echo $content; ?>
+                <div class="followCta__contentWrapper col-12 col-lg-7">
+                    <div class="followCta__content">
+                        <?php echo $content; ?>
+                    </div>
+                    <?php if( have_rows('media_list','option') ): ?>
+                        <h4 class="socialList__title"><?php printf( _e('Follow us on', 'twentysixteen'))?></h4>
+                        <ul class="socialList row">
+                            <?php while ( have_rows('media_list','option') ) : the_row();
+                                $icon = get_sub_field('media_icon');
+                                $url = get_sub_field('media_url');
+                            ?>
+                                <li class="socialList__item col-auto">
+                                    <a href="<?php echo $url;?>" target="_blank" class="socialList__link">
+                                        <?php echo file_get_contents(wp_get_original_image_path($icon['id'])); ?>
+                                    </a>
+                                </li>
+                            <?php endwhile;?>
+                        </ul>
+                    <?php endif;?>
                 </div>
-                <?php if( have_rows('media_list','option') ): ?>
-                    <h4 class="socialList__title"><?php printf( _e('Follow us on', 'twentysixteen'))?></h4>
-                    <ul class="socialList row">
-                        <?php while ( have_rows('media_list','option') ) : the_row();
-                            $icon = get_sub_field('media_icon');
-                            $url = get_sub_field('media_url');
-                        ?>
-                            <li class="socialList__item col-auto">
-                                <a href="<?php echo $url;?>" target="_blank" class="socialList__link">
-                                    <?php echo file_get_contents(wp_get_original_image_path($icon['id'])); ?>
-                                </a>
-                            </li>
-                        <?php endwhile;?>
-                    </ul>
-                <?php endif;?>
-            </div>
             <?php endif;?>
             <?php if ($quote) : ?>
                 <div class="followCta__quoteWrapper col-12 col-lg-5">
@@ -54,7 +55,6 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
                     </div>
                 </div>
             <?php endif; ?>
-            </div>
         </div>
     </div>
 </section>
