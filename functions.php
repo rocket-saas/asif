@@ -289,6 +289,7 @@ function twentysixteen_scripts() {
 	wp_enqueue_style( 'twentysixteen-ie7', get_template_directory_uri() . '/css/ie7.css', array( 'twentysixteen-style' ), '20160816' );
 	wp_style_add_data( 'twentysixteen-ie7', 'conditional', 'lt IE 8' );
 
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( ), '20160816' );
 	wp_enqueue_style( 'world-map', get_template_directory_uri() . '/css/world-map.css', array( ), '20160816' );
 
 	// Load the html5 shiv.
@@ -297,6 +298,7 @@ function twentysixteen_scripts() {
 
 	wp_enqueue_script( 'twentysixteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160816', true );
 
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '20160816', true );
 	wp_enqueue_script( 'world-map', get_template_directory_uri() . '/js/world-map.js', array(), '20160816', true );
 
 
