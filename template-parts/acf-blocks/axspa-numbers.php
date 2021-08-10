@@ -1,7 +1,25 @@
+<?php 
+
+$title = "axSpA in";
+$titleAccent = "numbers";
+$label = "3. axspa in numbers";
+?>
+
 <section id="" class="section bg--grey axspa-numbers">
 	<div class="container">
         <div class="row">
-	    		<div class="col-12 col-lg-9">
+                <?php if ($title || $titleAccent) : ?>
+                    <div class="axspa__title accordion__title col-12">
+                        <h2><?php echo $title; ?>
+                            <?php if ($titleAccent) : ?>
+                                <span><?php echo $titleAccent; ?>
+                            <?php endif;?>
+                        </h2>
+                        <div class="axspa__label"><?php echo $label;?></div>
+                    </div>
+                <?php endif;?>
+	    		<!-- <div class="col-12 col-lg-9">
+
 	    			<div class="text-block">
                         <h1>axSpA in <span class="text--bg--secondary">numbers</span></h1>
 		    			<p><b>Understanding the impact of axSpA on people’s lives</b></p>
@@ -10,7 +28,7 @@
 	    		</div>
 	    		<div class="col-12 col-lg-3">
 	    			<h3 class="section__title">3. axspa in numbers</h3>
-	    		</div>
+	    		</div> -->
 
 	    </div>
 
@@ -18,7 +36,7 @@
 	    	<div class="col-12 col-lg-6">
                 <h5 class="axspa-numbers__result__num">2846</h5>
                 <h4 class="subtitle axspa-numbers__result__title">Total number of participants in europe</h4>
-                <span class="text--12 axspa-numbers__result__notice">The following results are exclusively from the European dataset.</span>
+                <span class="text--14 axspa-numbers__result__notice">The following results are exclusively from the European dataset.</span>
 			</div>
     		<div class="col-12 col-lg-3">
 	    		<div class="axspa-numbers__result__gender">
