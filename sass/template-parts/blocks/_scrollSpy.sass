@@ -5,6 +5,11 @@
     top: 85px
     left: calc((100vw - 1110px) / 2) 
     z-index: 201
+    +max-screen($breakpoint-lg)
+        display: none
+    & + section
+        +max-screen($breakpoint-lg)
+            margin-top: 0 !important
     & > .row
         flex-direction: column
     &--horizontal
