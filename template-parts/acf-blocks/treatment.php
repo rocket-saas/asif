@@ -1,4 +1,4 @@
-<section class="section treatment">
+<section id="treatment" class="section treatment">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 offset-lg-3">

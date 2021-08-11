@@ -4,6 +4,39 @@
 
 <?php /* page content */ ?>
 
+    <style>
+    .site-content {
+        padding-top: 0;
+    }
+    </style>
+    <script>
+	jQuery(document).ready(function(){
+    const navOffset = jQuery('#axspa-nav').offset().top; // I don`t know what is "30"
+    const navHeight = jQuery('#axspa-nav').height();
+    const navHeightAdmin = navHeight + 32;
+    jQuery(window).scroll(function(){
+        //console.log(navOffset);
+        const scrolled = jQuery(this).scrollTop();
+        console.log(scrolled);
+        const headerHeight = jQuery('#header').height() + 'px';
+        console.log(navHeight);
+        // console.log(navOffset);
+        // console.log(scrolled);
+        if(scrolled > navOffset) {
+			jQuery('.axspa-nav').css("position","fixed");
+			jQuery('.axspa-nav + section').css("margin-top",navHeight);
+			jQuery('.admin-bar .axspa-nav + section').css("margin-top",navHeight);
+            // $('.content-area').css('margin-top',navHeight);
+            // $(' .content-area').css('margin-top',navHeightAdmin);
+            
+        } else if (scrolled <= navOffset){
+			jQuery('.axspa-nav').css("position","static");
+			jQuery('.axspa-nav + section').css("margin-top",0);
+            // $('.content-area').css('margin-top',0);
+        }
+    });
+});
+</script>
     <?php 
         if ( ! post_password_required() ) :
             ?>
@@ -23,26 +56,17 @@
             
             endif;  ?> 
 
-            <div id="axspa-nav" class="list-group axspa-nav">
-                <a class="list-group-item axspa-nav__item" href="#block-1">Pre-diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#block-1">Pre-diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-                <a class="list-group-item axspa-nav__item" href="#livingAxspa">Diagnosis</a>
-            </div>
+
 
             <?php
-            get_template_part('template-parts/acf-blocks/hero-text');
-            get_template_part('template-parts/acf-blocks/icon-lists');
-            get_template_part('template-parts/acf-blocks/involved');
-            get_template_part('template-parts/acf-blocks/axspa-numbers');
-            get_template_part('template-parts/acf-blocks/treatment-goals');
-            get_template_part('template-parts/acf-blocks/downloads-accordeon');
-            get_template_part('template-parts/acf-blocks/stay-connected');
-            get_template_part('template-parts/acf-blocks/partners');
+            // get_template_part('template-parts/acf-blocks/hero-text');
+            // get_template_part('template-parts/acf-blocks/icon-lists');
+            // get_template_part('template-parts/acf-blocks/involved');
+            // get_template_part('template-parts/acf-blocks/axspa-numbers');
+            // get_template_part('template-parts/acf-blocks/treatment-goals');
+            // get_template_part('template-parts/acf-blocks/downloads-accordeon');
+            // get_template_part('template-parts/acf-blocks/stay-connected');
+            // get_template_part('template-parts/acf-blocks/partners');
             ?>
             </div>
             <?php

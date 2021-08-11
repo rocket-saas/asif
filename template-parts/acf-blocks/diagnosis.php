@@ -1,4 +1,4 @@
-<section class="section diagnosis bg--blue">
+<section id="diagnosis" class="section diagnosis bg--blue">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 offset-lg-3">
