@@ -19,42 +19,42 @@
                                     </p>
                                     <span class="diagnosis__stat__bubbles__main__notice text--color--white text--12">Total n = 1652</span>
                                     <ul class="diagnosis__stat__bubbles__main__list">
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-1__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-1__content" data-index="1">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
                                                 experience 8-10 years delay
                                             </div>
                                         </li>
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-2__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-2__content" data-index="2">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
                                                 experience 8-10 years delay
                                             </div>
                                         </li>
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-3__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-3__content" data-index="3">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
                                                 experience 8-10 years delay
                                             </div>
                                         </li>
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-4__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-4__content" data-index="4">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
                                                 experience 8-10 years delay
                                             </div>
                                         </li>
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-5__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-5__content" data-index="5">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
                                                 experience 8-10 years delay
                                             </div>
                                         </li>
-                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-6__content">
+                                        <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-6__content" data-index="6">
                                             <div class="diagnosis__stat__bubble__content__inner">
                                                 9.3%
                                                 (246)
@@ -65,37 +65,37 @@
                                 </div>
                             </div>
                             <ul class="diagnosis__stat__bubbles__list">
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-1">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-1" data-index="1">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">13.4%</span>
                                     </div>
                                     <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-1.svg" alt="#">
                                 </li>
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-2">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-2" data-index="2">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">14.5%</span>
                                     </div>
                                     <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-2.svg" alt="#">
                                 </li>
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-3">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-3" data-index="3">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">18.6%</span>
                                     </div>
                                     <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-3.svg" alt="#">
                                 </li>
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-4">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-4" data-index="4">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">20.7%</span>
                                     </div>
                                     <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-4.svg" alt="#">
                                 </li>
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-5">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-5" data-index="5">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">9.3%</span>
                                     </div>
                                     <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-5.svg" alt="#">
                                 </li>
-                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-6">
+                                <li class="diagnosis__stat__bubble diagnosis__stat__bubble-6" data-index="6">
                                     <div class="diagnosis__stat__bubble__inner">
                                         <span class="diagnosis__stat__bubble__text">29.5%</span>
                                     </div>

@@ -42,6 +42,9 @@ function compileJs() {
           },
         ],
       },
+      externals: {
+        jquery: 'jQuery'
+      },
     }), webpack)
     .pipe(gulp.dest('dist'));
   
@@ -55,7 +58,7 @@ gulp.task('vendorjs', function(){
 
 function watchFiles() {
   gulp.watch('sass/**/*.sass', css);
-  gulp.watch('js/*.js', compileJs);
+  gulp.watch('js/**/*.js', compileJs);
 }
 
 
