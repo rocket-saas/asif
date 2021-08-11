@@ -1,7 +1,47 @@
+.admin-bar
+    .axspa-nav--horizontal
+        top: 32px
 .axspa-nav
-    position: fixed
     top: 85px
     left: calc((100vw - 1110px) / 2) 
+    z-index: 201
+    & > .row
+        flex-direction: column
+    &--horizontal
+        width: 100%
+        top: 0
+        left: 0
+        background-color: #E6E8ED
+        padding: 0 15px
+        & > .row
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+        .axspa-nav
+            &__item
+                padding: 24px 10px
+                margin-bottom: 0
+                font-size: 16px
+                color: $font-color
+                font-weight: 700
+                margin-right: 40px
+                &.active
+                    color: $font-color
+                    &::before
+                        background: transparent
+                        background-color: $color-grey
+                &:last-child
+                    &::before
+                        display: block
+                &::before
+                    bottom: -2px
+                    left: 15%
+                    width: 70%
+                    height: 5px
+                    background-color: transparent
+                &::after
+                    display: none
+                    
     &__item
         position: relative
         color: $color-grey

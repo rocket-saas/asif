@@ -1,4 +1,4 @@
-<section class="accordion accordion--downloads">
+<section id="accordion--downloads" class="accordion accordion--downloads">
     <div class="container">
         <div class="row">
             <div class="axspa__title accordion__title axspa__title col-12">
@@ -53,7 +53,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 </section>

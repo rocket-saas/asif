@@ -5,7 +5,7 @@ $titleAccent = "involved?";
 $label = "2. Who is involved";
 ?>
 
-<section class="section section--bg bg--blue involved">
+<section id="involved" class="section section--bg bg--blue involved">
     <div class="container">
 
         <div class="row involved__header">

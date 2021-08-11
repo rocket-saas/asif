@@ -6,7 +6,7 @@ $label = "1. About Imas";
 ?>
 
 
-<section id="block-1" class="section hero-text">
+<section id="hero-text" class="section hero-text">
 		<div class="container">
 	    	<div class="row">
 			<?php if ($title || $titleAccent) : ?>

@@ -5,7 +5,7 @@ $titleAccent = "numbers";
 $label = "3. axspa in numbers";
 ?>
 
-<section id="" class="section bg--grey axspa-numbers">
+<section id="axspa-numbers" class="section bg--grey axspa-numbers">
 	<div class="container">
         <div class="row">
                 <?php if ($title || $titleAccent) : ?>
