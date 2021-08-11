@@ -33,7 +33,7 @@ $label = "3. axspa in numbers";
 	    </div>
 
         <div class="row axspa-numbers__result">
-	    	<div class="col-12 col-lg-6">
+	    	<div class="col-12 col-lg-6 axspa-numbers__result__col">
                 <h5 class="axspa-numbers__result__num">2846</h5>
                 <h4 class="subtitle axspa-numbers__result__title">Total number of participants in europe</h4>
                 <span class="text--14 axspa-numbers__result__notice">The following results are exclusively from the European dataset.</span>
