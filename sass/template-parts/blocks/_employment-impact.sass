@@ -9,6 +9,8 @@
     &__numbersItem
         margin-bottom: 48px
         border-bottom: 1px solid #DDE0E5
+        +max-screen($breakpoint-lg)
+            text-align: center
         &:last-child
             margin-bottom: 0
             border-bottom: 0
@@ -19,6 +21,8 @@
         color: $color-primary
         display: flex
         align-items: flex-end
+        +max-screen($breakpoint-lg)
+            justify-content: center
         span
             font-size: 40px
             line-height: 1.4

@@ -9,7 +9,7 @@ $contentAccent = get_sub_field('content_accent');
 ?>
 
 
-<section id="#list-item-3" class="treatmentGoals">
+<section id="treatmentGoals" class="treatmentGoals">
     <div class="container">
         <div class="row followCta--row">
             <?php if ($title || $titleAccent) : ?>
@@ -59,7 +59,6 @@ $contentAccent = get_sub_field('content_accent');
                 <?php endif;?>
             </div>
             <?php endif;?>
-            </div>
         </div>
     </div>
 </section>

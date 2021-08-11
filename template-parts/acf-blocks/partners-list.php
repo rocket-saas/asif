@@ -3,7 +3,7 @@
 $title = get_sub_field('partners_title');
 ?>
 
-<section class="partnersList">
+<section id="partnersList" class="partnersList">
     <div class="container">
         <div class="row">
             <div class="axspa__title partnersList__title axspa__title col-12">

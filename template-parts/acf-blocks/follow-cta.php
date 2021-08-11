@@ -9,7 +9,7 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
 ?>
 
 
-<section id="" class="followCta">
+<section id="followCta" class="followCta">
     <div class="container">
         <div class="row followCta--row">
             <?php if ($title || $titleAccent) : ?>
