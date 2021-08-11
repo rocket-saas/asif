@@ -9,6 +9,12 @@
 .section
     padding-top: 85px
     padding-bottom: 85px
+    +max-screen($breakpoint-md)
+        padding-top: 60px
+        padding-bottom: 60px
+    +max-screen($breakpoint-sm)
+        padding-top: 40px
+        padding-bottom: 40px
     &__title
         color: $color-grey
         font-weight: bold

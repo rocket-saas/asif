@@ -168,8 +168,10 @@
                         <div class="diagnosis__delay__content">
                             <div class="diagnosis__delay__women text--center">
                                 <img class="diagnosis__delay__women__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-women.svg" alt="#">
-                                <h4 class="text--16 diagnosis__delay__women__title"><span class="text--32 font-w-700">2 year</span> longer delay for women</h4>
-                                <p class="text--12 diagnosis__delay__women__text">Mean diagnostic delay: 8.24 years (SD: 8.9) for women vs. 6.14 years (SD: 7.4) for men</p>
+                                <div>
+                                    <h4 class="text--16 diagnosis__delay__women__title"><span class="text--32 font-w-700">2 year</span> longer delay for women</h4>
+                                    <p class="text--12 diagnosis__delay__women__text">Mean diagnostic delay: 8.24 years (SD: 8.9) for women vs. 6.14 years (SD: 7.4) for men</p>
+                                </div>
                             </div>
                             <ul class="diagnosis__delay__stat">
                                 <li class="diagnosis__delay__stat__item">

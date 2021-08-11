@@ -4,11 +4,16 @@
         position: relative
         display: flex
         justify-content: flex-end
+        +max-screen($breakpoint-md)
+            flex-wrap: wrap
         &__content
             display: flex
             position: absolute
             top: 0
             left: 0
+            +max-screen($breakpoint-md)
+                position: relative
+                width: 100%
             .dot_bg
                 height: 130px
         &__text
@@ -19,6 +24,9 @@
             width: 770px
             padding-bottom: 52%
             position: relative
+            max-width: 100%
+            &__wrapper
+                width: 100%
             &__main
                 position: absolute
                 width: 48%
@@ -52,10 +60,14 @@
                     transform: translate3d(-50%,-50%,0)
                     color: $color-secondary
                     text-align: center
+                    +max-screen($breakpoint-md)
+                        font-size: 14px
                     span
                         font-size: 80px
                         line-height: 1em
                         display: block
+                        +max-screen($breakpoint-md)
+                            font-size: 40px
                 &__notice
                     position: absolute
                     top: 100%
@@ -154,6 +166,8 @@
                 transform: translate3d(-50%,-50%,0)
                 font-weight: 700
                 font-size: 16px
+                +max-screen($breakpoint-md)
+                    font-size: 12px
             &__line
                 position: absolute
                 top: 0
@@ -165,6 +179,10 @@
         position: relative
     &__map
         position: relative
+        .subtitle
+            max-width: 60%
+            +max-screen($breakpoint-md)
+                max-width: 100%
         &__block
             position: relative
         &__item
@@ -198,6 +216,11 @@
         top: 0
         width: 300px
         max-width: 35%
+        +max-screen($breakpoint-md)
+            position: relative
+            width: 100%
+            max-width: 100%
+            padding-top: 30px
         &__stat
             margin-top: 15px
             border-radius: 8px
@@ -208,6 +231,8 @@
                 display: flex
                 align-items: center
                 justify-content: space-between
+                +max-screen($breakpoint-md)
+                    justify-content: flex-start
                 &__big
                     font-size: 50px
                     line-height: 1em
@@ -221,20 +246,39 @@
             background-color: transparentize(#fff, 0.9)
     &__delay
         padding-top: 20px
+        +max-screen($breakpoint-md)
+            padding-top: 40px
+
         &__title
             padding-left: 270px
+            +max-screen($breakpoint-xl)
+                padding-left: 0
         &__content
             display: flex
             align-items: center
+            +max-screen($breakpoint-xl)
+                flex-wrap: wrap
         &__women
             width: 190px
             min-width: 190px
             margin-right: 80px
+            +max-screen($breakpoint-xl)
+                width: 100%
+                margin-right: 0
+                max-width: 100%
+                display: flex
+                align-items: center
+                padding-top: 20px
+                text-align: left
             &__img
                 width: 55px
                 height: auto
+                +max-screen($breakpoint-xl)
+                    margin-right: 25px
             &__title
                 padding-top: 16px
+                +max-screen($breakpoint-xl)
+                    padding-top: 0
                 span
                     display: block
                     padding-bottom: 8px
@@ -243,14 +287,23 @@
                 opacity: 0.6
                 max-width: 164px
                 margin: auto
+                +max-screen($breakpoint-xl)
+                    margin-left: 0
         &__stat
             width: 100%
             display: flex
             align-items: flex-end
             margin: 0 -25px
+            +max-screen($breakpoint-sm)
+                flex-wrap: wrap
             &__item
                 padding: 25px
                 padding-bottom: 0
+                +max-screen($breakpoint-md)
+                    max-width: 25%
+                +max-screen($breakpoint-sm)
+                    width: 50%
+                    max-width: 50%
                 &:nth-child(1)
                     .diagnosis__delay__stat__item__inner
                         width: 93px
@@ -276,6 +329,8 @@
                     flex-direction: column
                     align-items: center
                     justify-content: flex-end
+                    +max-screen($breakpoint-sm)
+                        margin: auto
                 &__body
                     order: 2
                     width: 100%
