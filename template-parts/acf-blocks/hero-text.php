@@ -1,8 +1,9 @@
 <?php 
 
-$title = "The International Map of";
-$titleAccent = "Axial Spondyloarthritis";
-$label = "1. About Imas";
+$title = get_sub_field('hero_title');
+$titleAccent = get_sub_field('hero_title_accent');
+$text = get_sub_field('hero_content');
+$label = get_sub_field('section_label');
 ?>
 
 
@@ -23,14 +24,16 @@ $label = "1. About Imas";
 							
 						<?php endif;?>
 	    		<div class="col-12 col-lg-9">
-	    			<div class="text-block">
-		    			<p><b>The International Map of Axial Sponyloarthritis (IMAS) is a survey of 2,846 people diagnosed with axial spondyloarthritis (as SpA) from 13 countries across Europe, assessing the impact and burden of axSpA from the patient’s perspective.</b></p>
-                        <p>IMAS brings together patients, patient organisations, clinicians and researchers from around the world to address the questions that matter the most to patients.</p>
-                        <p>By generating and disseminating evidence about how people with axial spondyloarthritis (axSpA) experience their disease physically, psychologically and socially. IMAS aims to raise the voice of axSpA community, ensuring patients around the world are empowered to live happy and well. </p>
-		    		</div>
-                    <div class="section__scroll">
-		    			<a href="#imas_vision"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-arrow-down.svg" alt="#"></a>
-		    		</div>
+					<?php if($text): ?>
+						<div class="text-block">
+							<?php echo $text; ?>
+						</div>
+					<?php endif; ?>
+					<?php if(get_sub_field('hero_show_arrow')): ?>
+						<div class="section__scroll">
+							<a href="#imas_vision"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-arrow-down.svg" alt="#"></a>
+						</div>
+					<?php endif; ?>
 	    		</div>
 	    		<!-- <div class="col-12 col-lg-3">
 	    			<h3 class="section__title">1. About Imas</h3>

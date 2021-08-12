@@ -58,16 +58,7 @@
 
 
 
-            <?php
-            // get_template_part('template-parts/acf-blocks/hero-text');
-            // get_template_part('template-parts/acf-blocks/icon-lists');
-            // get_template_part('template-parts/acf-blocks/involved');
-            // get_template_part('template-parts/acf-blocks/axspa-numbers');
-            // get_template_part('template-parts/acf-blocks/treatment-goals');
-            // get_template_part('template-parts/acf-blocks/downloads-accordeon');
-            // get_template_part('template-parts/acf-blocks/stay-connected');
-            // get_template_part('template-parts/acf-blocks/partners');
-            ?>
+           
             </div>
             <?php
         else :
