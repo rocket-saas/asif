@@ -5,7 +5,8 @@ $charts_title = get_sub_field('charts_title');
 $charts = get_sub_field('charts');
 
 ?>
-<section class="section treatment">
+
+<section id="treatment" class="section treatment">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 offset-lg-3">

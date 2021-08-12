@@ -9,10 +9,21 @@ $bar_charts = get_sub_field('bar_charts');
 $notice_text = get_sub_field('notice_text');
 ?>
 
-<section class="section pre-diagnosis bg--grey">
+<section id="pre-diagnosis" class="section pre-diagnosis bg--grey">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 offset-lg-3">
+            <div class="col-lg-3">
+                <div id="axspa-nav" class="list-group axspa-nav">
+                    <a class="list-group-item axspa-nav__item" href="#pre-diagnosis">Pre-diagnosis</a>
+                    <a class="list-group-item axspa-nav__item" href="#diagnosis">Diagnosis</a>
+                    <a class="list-group-item axspa-nav__item" href="#treatment">Treatment</a>
+                    <a class="list-group-item axspa-nav__item" href="#comorbidities">Comorbidities</a>
+                    <a class="list-group-item axspa-nav__item" href="#livingAxspa">Living with axSpA</a>
+                    <a class="list-group-item axspa-nav__item" href="#emplymentImpact">Impact on employment / occupation</a>
+                    <a class="list-group-item axspa-nav__item" href="#switchStats">Patients’ fears and hopes</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
                 <div class="pre-diagnosis__timeline">
                     <div class="pre-diagnosis__timeline__inner">
                         <div class="pre-diagnosis__timeline__top">

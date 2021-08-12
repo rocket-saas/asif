@@ -6,7 +6,7 @@ $data_table = get_sub_field('data_table');
 
 ?>
 
-<section class="section bg--grey comorbidities">
+<section id="comorbidities" class="section bg--grey comorbidities">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 offset-lg-3">
