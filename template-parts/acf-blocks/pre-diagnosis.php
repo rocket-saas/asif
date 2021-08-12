@@ -1,3 +1,14 @@
+<?php 
+
+$timeline_box_text = get_sub_field('timeline_box_text');
+$timeline_notice = get_sub_field('timeline_notice');
+$timeline_selected_period_text = get_sub_field('timeline_selected_period_text');
+
+$bar_charts_title = get_sub_field('bar_charts_title');
+$bar_charts = get_sub_field('bar_charts');
+$notice_text = get_sub_field('notice_text');
+?>
+
 <section class="section pre-diagnosis bg--grey">
     <div class="container">
         <div class="row">
@@ -5,92 +16,63 @@
                 <div class="pre-diagnosis__timeline">
                     <div class="pre-diagnosis__timeline__inner">
                         <div class="pre-diagnosis__timeline__top">
-                            <p class="pre-diagnosis__timeline__top__text text--16"><b>Standard deviation:</b> <br/>11.2 years*</p>
-                            <p class="pre-diagnosis__timeline__top__notice text--12">*This means that for the majority of patients symptom onset occurs between 15.4 and 37.8 years</p>
+
+                            <?php if($timeline_selected_period_text): ?>
+                                <p class="pre-diagnosis__timeline__top__text text--16"><?php echo $timeline_selected_period_text;  ?></p>
+                            <?php endif; ?>
+
+                            <?php if($timeline_notice): ?>
+                                <p class="pre-diagnosis__timeline__top__notice text--12"><?php echo $timeline_notice; ?></p>
+                            <?php endif; ?>
+
                         </div>
                         <img class="pre-diagnosis__timeline__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/pre-diagnosis.svg" alt="#">
                         <div class="pre-diagnosis__timeline__bottom">
                             <span class="pre-diagnosis__timeline__bottom__start subtitle subtitle--lg">0 Years</span>
-                            <p class="pre-diagnosis__timeline__bottom__content text--center text--16 text--color--white">Mean age at symptom onset <span class="font--weight--bold text--32">26.6 years</span></p>
+
+                            <p class="pre-diagnosis__timeline__bottom__content text--center text--16 text--color--white"><?php echo $timeline_box_text; ?></p>
+
                             <span class="pre-diagnosis__timeline__bottom__end subtitle subtitle--lg">70 Years</span>
                         </div>
                     </div>
                 </div>
                 <div class="pre-diagnosis__stat">
-                    <h3 class="subtitle subtitle--lg text--color--secondary pre-diagnosis__stat__title">Healthcare professionals visited before diagnosis:</h3>
-                    <ul class="pre-diagnosis__stat__list">
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">GP</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 83.4%">83.4%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 83.4%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pre-diagnosis__stat__item">
-                            <div class="pre-diagnosis__stat__item__inner">
-                                <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title">Rheumatologist</h4>
-                                <div class="pre-diagnosis__stat__item__bar">
-                                    <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: 66.1%">66.1%</span>
-                                    <div class="pre-diagnosis__stat__item__bar__inner" style="height: 66.1%"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
 
-                    <div class="pre-diagnosis__stat__alert">
-                        <img class="pre-diagnosis__stat__alert__top" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/pre-diagnosis-alert-top.svg" alt="#">
-                        <div class="pre-diagnosis__stat__alert__inner bg--blue">
-                            <img class="pre-diagnosis__stat__alert__arrow" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/pre-diagnosis-alert-arrow.svg" alt="#">
-                            <p class="text--16 text--color--white">There is a <b>high frequency</b> of non-specialist referrals pre-diagnosis</p>
+                    <?php if($bar_charts_title): ?>
+                        <h3 class="subtitle subtitle--lg text--color--secondary pre-diagnosis__stat__title">Healthcare professionals visited before diagnosis:</h3>
+                    <?php endif; ?>
+
+                    <?php if($bar_charts): ?>
+                        <ul class="pre-diagnosis__stat__list">
+                            <?php foreach($bar_charts as $item): 
+                                $title = $item['title'];
+                                $percent = $item['percents'];
+                                if($percent):
+                                ?>
+                                    <li class="pre-diagnosis__stat__item">
+                                        <div class="pre-diagnosis__stat__item__inner">
+                                            <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title"><?php echo $title; ?></h4>
+                                            <div class="pre-diagnosis__stat__item__bar">
+                                                <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: <?php echo $percent; ?>%"><?php echo $percent; ?>%</span>
+                                                <div class="pre-diagnosis__stat__item__bar__inner" style="height: <?php echo $percent; ?>%"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                    
+                    <?php if($notice_text): ?>
+                        <div class="pre-diagnosis__stat__alert">
+                            <img class="pre-diagnosis__stat__alert__top" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/pre-diagnosis-alert-top.svg" alt="#">
+                            <div class="pre-diagnosis__stat__alert__inner bg--blue">
+                                <img class="pre-diagnosis__stat__alert__arrow" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/pre-diagnosis-alert-arrow.svg" alt="#">
+                                <p class="text--16 text--color--white"><?php echo $notice_text; ?></p>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
+                    
                 </div>
             </div>
         </div>
