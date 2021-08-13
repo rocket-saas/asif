@@ -9,7 +9,7 @@
             <div class="col-lg-9 static">
                 <div class="row livingAxspa--row">
                     <div class="livingAxspa__riskStats col-auto">
-                        <span class="livingAxspa__riskNumber">62</span><span class="livingAxspa__riskSign">%</span>
+                        <span class="livingAxspa__riskNumber counter" data-counter="62" data-integer="true">62</span><span class="livingAxspa__riskSign">%</span>
                         <p class="livingAxspa__riskSubtitle">of patients were at risk of psychological distress</p>
                         <div class="livingAxspa__riskContent">
                             <p>A General Health Questionnaire (GHQ-12) score higher than 3 signifies risk of psychological distress.</p>
@@ -79,33 +79,33 @@
                             <ul class="livingAxspa__activitiesList">
                                 <li class="livingAxspa__activity">
                                     <span class="livingAxspa__activityName">Physical exercise - <span class="livingAxspa__activityValue">76</span>%</span>
-                                    <div class="livingAxspa__activityBar">
+                                    <div class="livingAxspa__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled"></div>
                                     </div>
                                     
                                 </li>
                                 <li class="livingAxspa__activity">
                                     <span class="livingAxspa__activityName">Physical exercise - <span class="livingAxspa__activityValue">76</span>%</span>
-                                    <div class="livingAxspa__activityBar">
+                                    <div class="livingAxspa__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width:76%"></div>
                                     </div>
                                     
                                 </li>
                                 <li class="livingAxspa__activity">
                                     <span class="livingAxspa__activityName">Physical exercise - <span class="livingAxspa__activityValue">71</span>%</span>
-                                    <div class="livingAxspa__activityBar">
+                                    <div class="livingAxspa__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width:71%"></div>
                                     </div>
                                 </li>
                                 <li class="livingAxspa__activity">
                                     <span class="livingAxspa__activityName">Physical exercise - <span class="livingAxspa__activityValue">76</span>%</span>
-                                    <div class="livingAxspa__activityBar">
+                                    <div class="livingAxspa__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled"></div>
                                     </div>
                                 </li>
                                 <li class="livingAxspa__activity">
                                     <span class="livingAxspa__activityName">Physical exercise - <span class="livingAxspa__activityValue">76</span>%</span>
-                                    <div class="livingAxspa__activityBar">
+                                    <div class="livingAxspa__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled"></div>
                                     </div>
                                 </li>

@@ -108,13 +108,38 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
 
                         <div class="diagnosis__map__block">
                             <div class="diagnosis__map__wrapper">
-                                <img class="diagnosis__map__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-map.svg" alt="#">
+                                <?php echo get_inline_svg('images/axspa-numbers/diagnosis-map.svg'); ?>
+                                <?php if($countries): ?>
+                                    <ul class="diagnosis__map__points">
+                                        <?php if($countries['sweden_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--sweden" data-country="sweden"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['norway_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--norway" data-country="norway"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['germany_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--germany" data-country="germany"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['netherlands_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--netherlands" data-country="belgium"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['switzerland_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--switzerland" data-country="switzerland"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['slovenia_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--slovenia" data-country="slovenia"></li>
+                                        <?php endif; ?>
+                                        <?php if($countries['spain_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--spain" data-country="spain"></li>
+                                        <?php endif; ?>
+                                    </ul>
+                                <?php endif; ?>
                             </div>
                             <?php if($countries): ?>
                                 <ul class="diagnosis__map__list">
 
                                     <?php if($countries['sweden_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="sweden">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['sweden_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['sweden_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['sweden_subtext']; ?></span>
@@ -122,7 +147,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['norway_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="norway">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['norway_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['norway_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['norway_subtext']; ?></span>
@@ -130,7 +155,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['germany_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="germany">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['germany_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['germany_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['germany_subtext']; ?></span>
@@ -138,7 +163,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['netherlands_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="belgium">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['netherlands_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['netherlands_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['netherlands_subtext']; ?></span>
@@ -146,7 +171,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['switzerland_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="switzerland">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['switzerland_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['switzerland_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['switzerland_subtext']; ?></span>
@@ -154,7 +179,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['slovenia_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="slovenia">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['slovenia_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['slovenia_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['slovenia_subtext']; ?></span>
@@ -162,7 +187,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         </li>
                                     <?php endif; ?>
                                     <?php if($countries['spain_title']): ?>
-                                        <li class="diagnosis__map__item">
+                                        <li class="diagnosis__map__item" data-country="spain">
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['spain_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['spain_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['spain_subtext']; ?></span>
@@ -191,10 +216,10 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                     $percent = $item['percents'];
                                     $title = $item['title'];
                                     ?>
-                                    <li class="stat-bar__item">
+                                    <li class="stat-bar__item" data-percent="<?php echo $percent; ?>">
                                         <span class="stat-bar__item__title"><?php echo $title; ?> - <?php echo $percent; ?>%</span>
                                         <div class="stat-bar__item__bar">
-                                            <div class="stat-bar__item__bar__inner" style="width: <?php echo $percent; ?>%; "></div>
+                                            <div class="stat-bar__item__bar__inner"></div>
                                         </div>
                                     </li>
                                 <?php endforeach; ?>

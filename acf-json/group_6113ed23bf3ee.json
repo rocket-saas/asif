@@ -3482,9 +3482,16 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_template",
                 "operator": "==",
-                "value": "post"
+                "value": "templates\/tmp-blocks.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/tmp-axspa.php"
             }
         ]
     ],
@@ -3496,5 +3503,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1628771848
+    "modified": 1628772089
 }

@@ -31,7 +31,7 @@ $label = get_sub_field('section_label');
 					<?php endif; ?>
 					<?php if(get_sub_field('hero_show_arrow')): ?>
 						<div class="section__scroll">
-							<a href="#imas_vision"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-arrow-down.svg" alt="#"></a>
+							<a href="#imas-vision"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-arrow-down.svg" alt="#"></a>
 						</div>
 					<?php endif; ?>
 	    		</div>

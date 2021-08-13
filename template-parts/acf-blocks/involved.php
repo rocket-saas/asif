@@ -30,10 +30,44 @@ $bottom_box_text = get_sub_field('bottom_box_text');
 
         <div class="involved__map">
             <img class="involved__map__bg" src="<?php echo get_template_directory_uri();?>/images/maps/map-involved.png" alt="#">
-            <img class="involved__map__points" src="<?php echo get_template_directory_uri();?>/images/maps/map-involved.svg" alt="#">
+            <ul class="involved__map__points">
+                <?php if($countries['united_states_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--us" data-country="us"></li>
+                <?php endif; ?>
+                <?php if($countries['brazil_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--brazil" data-country="brazil"></li>
+                <?php endif; ?>
+                <?php if($countries['canada_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--canada" data-country="canada"></li>
+                <?php endif; ?>
+                <?php if($countries['spain_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--spain" data-country="spain"></li>
+                <?php endif; ?>
+                <?php if($countries['united_kingdom_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--uk" data-country="uk"></li>
+                <?php endif; ?>
+                <?php if($countries['turkey_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--turkey" data-country="turkey"></li>
+                <?php endif; ?>
+                <?php if($countries['sweden_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--sweden" data-country="sweden"></li>
+                <?php endif; ?>
+                <?php if($countries['russia_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--russia" data-country="russia"></li>
+                <?php endif; ?>
+                <?php if($countries['china_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--china" data-country="china"></li>
+                <?php endif; ?>
+                <?php if($countries['south_africa_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--africa" data-country="africa"></li>
+                <?php endif; ?>
+                <?php if($countries['taiwan_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--taiwan" data-country="taiwan"></li>
+                <?php endif; ?>
+            </ul>
             <ul class="involved__list">
                 <?php if($countries['united_states_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="us">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -43,7 +77,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['brazil_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="brazil">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -53,7 +87,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['canada_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="canada">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -63,7 +97,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['spain_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="spain">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -73,7 +107,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['united_kingdom_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="uk">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -83,7 +117,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['turkey_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="turkey">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -93,7 +127,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['sweden_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="sweden">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -103,7 +137,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['russia_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="russia">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -113,7 +147,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['china_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="china">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -123,7 +157,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['south_africa_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="africa">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
@@ -133,7 +167,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                     </li>
                 <?php endif; ?>
                 <?php if($countries['taiwan_content']): ?>
-                    <li class="involved__item">
+                    <li class="involved__item" data-country="taiwan">
                         <div class="involved__item__inner">
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">

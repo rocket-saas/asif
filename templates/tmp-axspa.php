@@ -1,34 +1,6 @@
 <?php /*Template Name: axSpa Page */ ?>
 
 <?php get_header(); ?>
-<script>
-	jQuery(document).ready(function(){
-    const navOffset = jQuery('#axspa-nav').offset().top; // I don`t know what is "30"
-    const navHeight = jQuery('#axspa-nav').height();
-    const navHeightAdmin = navHeight + 32;
-    jQuery(window).scroll(function(){
-        //console.log(navOffset);
-        const scrolled = jQuery(this).scrollTop();
-        console.log(scrolled);
-        const headerHeight = jQuery('#header').height() + 'px';
-        console.log(navHeight);
-        // console.log(navOffset);
-        // console.log(scrolled);
-        if(scrolled > navOffset) {
-			jQuery('.axspa-nav').css("position","fixed");
-			jQuery('.axspa-nav + section').css("margin-top",navHeight);
-			jQuery('.admin-bar .axspa-nav + section').css("margin-top",navHeight);
-            // $('.content-area').css('margin-top',navHeight);
-            // $(' .content-area').css('margin-top',navHeightAdmin);
-            
-        } else if (scrolled <= navOffset){
-			jQuery('.axspa-nav').css("position","static");
-			jQuery('.axspa-nav + section').css("margin-top",0);
-            // $('.content-area').css('margin-top',0);
-        }
-    });
-});
-</script>
 
 
 

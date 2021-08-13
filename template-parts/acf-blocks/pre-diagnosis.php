@@ -63,8 +63,8 @@ $notice_text = get_sub_field('notice_text');
                                     <li class="pre-diagnosis__stat__item">
                                         <div class="pre-diagnosis__stat__item__inner">
                                             <h4 class="text--16 font-w-700 pre-diagnosis__stat__item__title"><?php echo $title; ?></h4>
-                                            <div class="pre-diagnosis__stat__item__bar">
-                                                <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: <?php echo $percent; ?>%"><?php echo $percent; ?>%</span>
+                                            <div class="pre-diagnosis__stat__item__bar" data-percent="<?php echo $percent; ?>">
+                                                <span class="pre-diagnosis__stat__item__bar__txt" style="bottom: <?php echo $percent; ?>%"><span class="counter" data-counter="<?php echo $percent; ?>"><?php echo $percent; ?></span>%</span>
                                                 <div class="pre-diagnosis__stat__item__bar__inner" style="height: <?php echo $percent; ?>%"></div>
                                             </div>
                                         </div>

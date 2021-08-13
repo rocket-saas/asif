@@ -38,9 +38,9 @@ $charts = get_sub_field('charts');
                                         <div class="circle-chart">
                                             <svg class="circle-chart__round" viewbox="0 0 184 184" width="184" height="184" xmlns="http://www.w3.org/2000/svg">
                                                 <circle class="circle-chart__round__bg" stroke="#F0F1F1" stroke-width="18" fill="none" cx="92" cy="92" r="82" />
-                                                <circle class="circle-chart__round__circle" stroke="#80C3BF" stroke-width="18" stroke-dasharray="<?php echo $percent*(2*82*pi())/100;?>,<?php echo 2*82*pi();?>"  fill="none" cx="92" cy="92" r="82" />
+                                                <circle class="circle-chart__round__circle" stroke="#80C3BF" stroke-width="18" data-total="<?php echo 2*82*pi();?>" data-length="<?php echo $percent*(2*82*pi())/100;?>" stroke-dasharray="0,<?php echo 2*82*pi();?>"  fill="none" cx="92" cy="92" r="82" />
                                             </svg>
-                                            <h3 class="circle-chart__title text--color--primary"><?php echo $percent; ?>%</h3>
+                                            <h3 class="circle-chart__title text--color--primary"><span class="counter"  data-counter="<?php echo $percent; ?>"></span>%</h3>
                                         </div>
                                         <div class="treatment__stat__text text--center">
 

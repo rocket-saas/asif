@@ -37,7 +37,7 @@ $button = get_sub_field('button');
         <div class="row axspa-numbers__result">
 	    	<div class="col-12 col-lg-6 axspa-numbers__result__col">
                 <?php if($total_number): ?>
-                    <h5 class="axspa-numbers__result__num"><?php echo $total_number; ?></h5>
+                    <h5 class="counter axspa-numbers__result__num" data-counter="<?php echo $total_number; ?>" data-integer="true">0</h5>
                 <?php endif; ?>
                 <?php if($total_number_title): ?>
                     <h4 class="subtitle axspa-numbers__result__title"><?php echo $total_number_title; ?></h4>

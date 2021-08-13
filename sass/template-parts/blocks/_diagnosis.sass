@@ -183,8 +183,63 @@
             max-width: 60%
             +max-screen($breakpoint-md)
                 max-width: 100%
+        &__img
+            width: 100%
+            height: auto
+            .country
+                fill: #253654!important
+                &.active
+                    fill: $color-primary!important
         &__block
             position: relative
+        &__wrapper
+            position: relative
+        &__points
+        &__point
+            width: 20px
+            height: 20px
+            background: #FFFFFF
+            border-radius: 50%
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 50%
+            position: absolute
+            transform: translate3d(-50%,-50%,0)
+            cursor: pointer
+            transition: 0.3s
+            &:before
+                content: ''
+                position: absolute
+                width: 20px
+                height: 20px
+                background: transparentize(#FFFFFF, 0.8)
+                border-radius: 50%
+                top: 0
+                left: 0
+                //transform: translate3d(-50%,-50%,0)
+                animation: pulse-white 2s infinite
+            &:hover
+                transform: translate3d(-50%,-50%,0) scale(1.1)
+            &--sweden
+                top: 19%
+                left: 52%
+            &--norway
+                left: 36%
+                top: 33%
+            &--germany
+                left: 37%
+                top: 61%
+            &--netherlands
+                left: 28%
+                top: 62%
+            &--switzerland
+                left: 34%
+                top: 71%
+            &--slovenia
+                left: 45.5%
+                top: 73.5%
+            &--spain
+                left: 13%
+                top: 87%
         &__item
             position: absolute
             top: 25px
@@ -195,6 +250,13 @@
             border-radius: 8px
 
             background: #fff
+            opacity: 0
+            left: 200%
+            transition: left 0s linear 0.3s, opacity 0.3s ease-out 0s
+            &.active
+                opacity: 1
+                left: 0
+                transition: left 0s linear 0s, opacity 0.3s ease-out 0s
             p
                 padding: 25px
                 padding-bottom: 16px

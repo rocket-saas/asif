@@ -24,7 +24,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -33,7 +33,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Suffering pain</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="40">
                                         <div class="livingAxspa__activityBar--filled" style="width: 40%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">40</span>%
@@ -42,7 +42,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Loss of mobility</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="35">
                                         <div class="livingAxspa__activityBar--filled" style="width: 35%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">35</span>%
@@ -51,7 +51,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Loss of independence</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="29">
                                         <div class="livingAxspa__activityBar--filled" style="width: 29%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">29.2</span>%
@@ -60,7 +60,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -69,7 +69,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -78,7 +78,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -87,7 +87,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -98,7 +98,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="44">
                                         <div class="livingAxspa__activityBar--filled" style="width: 44%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">44</span>%
@@ -107,7 +107,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -116,7 +116,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -125,7 +125,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -134,7 +134,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -143,7 +143,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -152,7 +152,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%
@@ -161,7 +161,7 @@
                             <li class="switchStats__item row">
                                 <span class="switchStats__label col-auto">Disease progression</span>
                                 <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar">
+                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
                                         <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
                                     </div>
                                     <span class="livingAxspa__activityValue">76</span>%

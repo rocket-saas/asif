@@ -581,6 +581,12 @@ function custom_content($limit, $field ,$post_id=-1) {
 }
 
 
+function get_inline_svg($name){
+	if($name):
+	  return file_get_contents(esc_url(get_template_directory().'/'.$name));
+	endif;
+	return '';
+}
 
 /**
  * Incude custom acf-functions

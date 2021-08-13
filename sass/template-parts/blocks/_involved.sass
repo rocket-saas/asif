@@ -1,4 +1,5 @@
 .involved
+    overflow: hidden
     &__header
         padding-bottom: 100px
         +max-screen($breakpoint-md)
@@ -37,7 +38,64 @@
             top: 0
             left: 0
             width: 100%
-            height: auto
+            height: 100%
+            &__item
+                width: 20px
+                height: 20px
+                background: #FFFFFF
+                border-radius: 50%
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                border-radius: 50%
+                position: absolute
+                transform: translate3d(-50%,-50%,0)
+                cursor: pointer
+                transition: 0.3s
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: transparentize(#FFFFFF, 0.8)
+                    border-radius: 50%
+                    top: 0
+                    left: 0
+                    //transform: translate3d(-50%,-50%,0)
+                    animation: pulse-white 2s infinite
+                &:hover
+                    transform: translate3d(-50%,-50%,0) scale(1.1)
+                &--us
+                    left: 18%
+                    top: 41%
+                &--brazil
+                    left: 33%
+                    top: 71%
+                &--canada
+                    left: 15%
+                    top: 25%
+                &--spain
+                    left: 46%
+                    top: 41%
+                &--uk
+                    left: 46%
+                    top: 29%
+                &--turkey
+                    left: 56.5%
+                    top: 41.7%
+                &--sweden
+                    left: 53%
+                    top: 27%
+                &--russia
+                    left: 71%
+                    top: 24%
+                &--china
+                    left: 72%
+                    top: 44%
+                &--africa
+                    left: 53.5%
+                    top: 79%
+                &--taiwan
+                    left: 80%
+                    top: 51%
     &__item
         position: absolute
         top: 50%
@@ -50,6 +108,13 @@
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25)
         border-radius: 8px
         padding: 45px 55px
+        opacity: 0
+        left: 200%
+        transition: left 0s linear 0.3s, opacity 0.3s ease-out 0s
+        &.active
+            opacity: 1
+            left: 50%
+            transition: left 0s linear 0s, opacity 0.3s ease-out 0s
         +max-screen($breakpoint-sm)
             padding: 40px
         &__inner
@@ -80,3 +145,14 @@
                 width: 100%
                 height: auto
 
+
+@keyframes pulse-white
+	0%
+		transform: scale(0.95)
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+	70%
+		transform: scale(1)
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0)
+	100% 
+		transform: scale(0.95)
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)

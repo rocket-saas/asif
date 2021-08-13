@@ -8,21 +8,21 @@
                         <ul class="remplymentImpact__numbersList">
                             <li class="emplymentImpact__numbersItem">
                                 <div class="emplymentImpact__number">
-                                    <strong class="emplymentImpact__numberValue">45.8</strong>
+                                    <strong class="emplymentImpact__numberValue counter" data-counter="45.8"></strong>
                                     <span>%</span>
                                 </div>
                                 <p class="emplymentImpact__label">reported that their disease influenced their job choice</p>
                             </li>
                             <li class="emplymentImpact__numbersItem">
                                 <div class="emplymentImpact__number">
-                                    <strong class="emplymentImpact__numberValue">28.2</strong>
+                                    <strong class="emplymentImpact__numberValue counter" data-counter="28.2"></strong>
                                     <span>%</span>
                                 </div>
                                 <p class="emplymentImpact__label">moved to another job</p>
                             </li>
                             <li class="emplymentImpact__numbersItem">
                                 <div class="emplymentImpact__number">
-                                    <strong class="emplymentImpact__numberValue">71.4</strong>
+                                    <strong class="emplymentImpact__numberValue counter" data-counter="71.4"></strong>
                                     <span>%</span>
                                 </div>
                                 <p class="emplymentImpact__label">had difficulties finding a job due to the disease</p>
