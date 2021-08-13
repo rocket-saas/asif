@@ -11,6 +11,8 @@ function diagnosisMap() {
         let block = $(this);
         let svg = $(this).find('.diagnosis__map__img');
         block.find('.diagnosis__map__point').click(function(){
+            block.find('.diagnosis__map__point').removeClass('active');
+            $(this).addClass('active');
             let country = $(this).data('country');
             block.find('.diagnosis__map__item').removeClass('active');
             svg.find('.country').removeClass('active');

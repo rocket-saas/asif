@@ -218,31 +218,82 @@
                 //transform: translate3d(-50%,-50%,0)
                 animation: pulse-white 2s infinite
             &:hover
-                transform: translate3d(-50%,-50%,0) scale(1.1)
+                //transform: translate3d(-50%,-50%,0) scale(1.1)
+            svg
+                position: absolute
+                bottom: 50%
+                right: 50%
+                pointer-events: none
             &--sweden
                 top: 19%
                 left: 52%
+                svg
+                    top: 50%
+                    right: 8px
+                    bottom: auto
+                path
+                    stroke-dasharray: 490,490
+                    stroke-dashoffset: -490
+                    transition: 0.7s
+                &.active path
+                        stroke-dashoffset: 0
             &--norway
                 left: 36%
                 top: 33%
+                path
+                    stroke-dasharray: 180,180
+                    stroke-dashoffset: 180
+                    transition: 0.7s
+                &.active path
+                        stroke-dashoffset: 0
             &--germany
                 left: 37%
                 top: 61%
-            &--netherlands
+                path
+                    stroke-dasharray: 350,350
+                    stroke-dashoffset: -350
+                    transition: 0.7s
+                &.active path
+                        stroke-dashoffset: 0
+            &--belgium
                 left: 28%
                 top: 62%
+                path
+                    stroke-dasharray: 490,490
+                    stroke-dashoffset: -490
+                    transition: 0.7s
+                &.active path
+                        stroke-dashoffset: 0
             &--switzerland
                 left: 34%
                 top: 71%
+                path
+                    stroke-dasharray: 490,490
+                    stroke-dashoffset: -490
+                    transition: 0.7s
+                &.active path
+                        stroke-dashoffset: 0
             &--slovenia
                 left: 45.5%
                 top: 73.5%
+                path
+                    stroke-dasharray: 480,480
+                    stroke-dashoffset: -480
+                    transition: 0.7s
+                &.active path
+                    stroke-dashoffset: 0
             &--spain
                 left: 13%
                 top: 87%
+                path
+                    stroke-dasharray: 490,490
+                    stroke-dashoffset: -490
+                    transition: 0.7s
+                &.active path
+                    stroke-dashoffset: 0
         &__item
             position: absolute
-            top: 25px
+            top: 40px
             left: 0
             width: 240px
             height: auto

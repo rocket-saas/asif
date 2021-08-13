@@ -88,7 +88,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             <div class="diagnosis__stat__bubble__inner">
                                                 <span class="diagnosis__stat__bubble__text"><?php echo $percent; ?>%</span>
                                             </div>
-                                            <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-1.svg" alt="#">
+                                            <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-<?php echo $loopCounter; ?>.svg" alt="#">
                                         </li>
                                         <?php 
                                         $loopCounter++;
@@ -112,25 +112,53 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                 <?php if($countries): ?>
                                     <ul class="diagnosis__map__points">
                                         <?php if($countries['sweden_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--sweden" data-country="sweden"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--sweden" data-country="sweden">
+                                                <svg width="257" height="146" viewBox="0 0 257 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 49.9994L2 136.5C2.00001 140.918 5.58173 144.5 10 144.5L247 144.5C251.418 144.5 255 140.918 255 136.5L255 4.19981e-06" stroke="white" stroke-width="3"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['norway_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--norway" data-country="norway"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--norway" data-country="norway">
+                                                <svg width="147" height="45" viewBox="0 0 147 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M146.5 43.5H9C4.58173 43.5 1 39.9183 1 35.5V0.5" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['germany_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--germany" data-country="germany"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--germany" data-country="germany">
+                                                <svg width="152" height="207" viewBox="0 0 152 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0V198C1 202.418 4.58172 206 9 206H152" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['netherlands_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--netherlands" data-country="belgium"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--belgium" data-country="belgium">
+                                                <svg width="95" height="215" viewBox="0 0 95 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0V206C1 210.418 4.58172 214 9 214H95" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['switzerland_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--switzerland" data-country="switzerland"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--switzerland" data-country="switzerland">
+                                                <svg width="133" height="272" viewBox="0 0 133 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0V263C1 267.418 4.58172 271 9 271H133" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['slovenia_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--slovenia" data-country="slovenia"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--slovenia" data-country="slovenia">
+                                                <svg width="207" height="285" viewBox="0 0 207 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0V276C1 280.418 4.58172 284 9 284H207" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                         <?php if($countries['spain_title']): ?>
-                                            <li class="diagnosis__map__point diagnosis__map__point--spain" data-country="spain"></li>
+                                            <li class="diagnosis__map__point diagnosis__map__point--spain" data-country="spain">
+                                                <svg width="11" height="366" viewBox="0 0 11 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.5 0V315C9.5 317.209 7.70914 319 5.5 319V319C3.29086 319 1.5 320.791 1.5 323V366" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
                                         <?php endif; ?>
                                     </ul>
                                 <?php endif; ?>
