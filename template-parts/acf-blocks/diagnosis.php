@@ -52,7 +52,9 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                         <span class="diagnosis__stat__bubbles__main__notice text--color--white text--12"><?php echo $main_circle_total_num; ?></span>
                                     <?php endif; ?>
 
-                                    <?php if($circles): ?>
+                        
+                                </div>
+                                <?php if($circles): ?>
                                         <ul class="diagnosis__stat__bubbles__main__list">
                                             <?php 
                                             $loopCounter = 1;
@@ -63,9 +65,11 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                                 ?>
                                                 <li class="diagnosis__stat__bubble__content diagnosis__stat__bubble-<?php echo $loopCounter; ?>__content" data-index="<?php echo $loopCounter; ?>">
                                                     <div class="diagnosis__stat__bubble__content__inner">
-                                                        <?php echo $percent; ?>%
-                                                        <?php echo $subtext; ?>
-                                                        <?php echo $text; ?>
+                                                        <p class="text--center diagnosis__stat__bubble__item__txt">
+                                                            <span class="diagnosis__stat__bubble__item__title text--color--primary font-w-700 text--24"><?php echo $percent; ?><span class="diagnosis__stat__bubble__item__title__percent">%</span></span>
+                                                            <span class="diagnosis__stat__bubble__item__subtext text--14"><?php echo $subtext; ?></span>
+                                                            <span class="diagnosis__stat__bubble__item__text text--16"><?php echo $text; ?></span>
+                                                        </p>
                                                     </div>
                                                 </li>
                                             <?php 
@@ -73,7 +77,6 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             endforeach; ?>
                                         </ul>
                                     <?php endif; ?>
-                                </div>
                             </div>
                             <?php if($circles): ?>
                                 <ul class="diagnosis__stat__bubbles__list">
@@ -88,7 +91,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             <div class="diagnosis__stat__bubble__inner">
                                                 <span class="diagnosis__stat__bubble__text"><?php echo $percent; ?>%</span>
                                             </div>
-                                            <img class="diagnosis__stat__bubble__line" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-bubble-<?php echo $loopCounter; ?>.svg" alt="#">
+                                            <div class="diagnosis__stat__bubble__line"><?php echo get_inline_svg('images/axspa-numbers/diagnosis-bubble-'.$loopCounter.'.svg'); ?></div>
                                         </li>
                                         <?php 
                                         $loopCounter++;
