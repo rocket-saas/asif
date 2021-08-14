@@ -1,5 +1,7 @@
 <?php 
 
+$customBgColor = 'background-color:' . get_sub_field('custom_background_color') . ";";
+
 $title = get_sub_field('title');
 $titleAccent = get_sub_field('title_accent');
 $label = get_sub_field('section_label');
@@ -19,7 +21,7 @@ $age_range_subtext = get_sub_field('age_range_subtext');
 $button = get_sub_field('button');
 ?>
 
-<section id="axspa-numbers" class="section bg--grey axspa-numbers">
+<section id="axspa-numbers" class="section bg--grey axspa-numbers" <?php if ($customBgColor) : echo 'style="' . $customBgColor . '"'; endif;?>>
 	<div class="container">
         <div class="row">
                 <?php if ($title || $titleAccent) : ?>

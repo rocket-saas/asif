@@ -1,11 +1,24 @@
+<?php
+
+$title = get_sub_field('accordion_title');
+$titleAccent = get_sub_field('accordion_title_accent');
+$label = get_sub_field('accordion_label');
+
+?>
+
 <section id="accordion--downloads" class="accordion accordion--downloads">
     <div class="container">
         <div class="row">
-            <div class="axspa__title accordion__title axspa__title col-12">
-                <h2>Download IMAS <?php the_field('section_publications_title'); ?>
-                    <span>publications<?php the_field('section_publications_subheading'); ?></span></h2>
-                <div class="accordion__label">5. IMAS publications<?php the_field('small_publications_text'); ?></div>
-            </div>
+            <?php if ($title || $titleAccent) : ?>
+                <div class="axspa__title accordion__title col-12">
+                    <h2><?php echo $title; ?>
+                        <?php if ($titleAccent) : ?>
+                            <span><?php echo $titleAccent; ?>
+                        <?php endif;?>
+                    </h2>
+                    <div class="axspa__label"><?php echo $label;?></div>
+                </div>
+            <?php endif;?>
             <div class="col-12 accordion__mainContent">
                 <div class="imas_accordion">
                     <div id="accordion">

@@ -17,7 +17,7 @@ $condition_3_percents = get_sub_field('condition_3_percents');
 $condition_3_text = get_sub_field('condition_3_text');
 
 ?>
-
+<?php if($icon_blocks || $data_table): ?>
 <section id="comorbidities" class="section bg--grey comorbidities">
     <div class="container">
         <div class="row">
@@ -92,7 +92,7 @@ $condition_3_text = get_sub_field('condition_3_text');
                     </svg>
 
                     
-                    <h3 class="subtitle subtitle--md comorbidities__chart__title">Conditions commonly occurring  with axSpA</h3>
+                    <h3 class="subtitle subtitle--md comorbidities__chart__title">Conditions commonly occurring with axSpA</h3>
 
                     <ul class="comorbidities__chart__list text--color--white">
                         <li class="comorbidities__chart__item">
@@ -122,3 +122,4 @@ $condition_3_text = get_sub_field('condition_3_text');
         </div>
     </div>
 </section>
+<?php endif; ?>

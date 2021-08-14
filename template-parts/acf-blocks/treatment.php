@@ -5,7 +5,7 @@ $charts_title = get_sub_field('charts_title');
 $charts = get_sub_field('charts');
 
 ?>
-
+<?php if($charts ): ?>
 <section id="treatment" class="section treatment">
     <div class="container">
         <div class="row">
@@ -63,3 +63,4 @@ $charts = get_sub_field('charts');
         </div>
     </div>
 </section>
+<?php endif; ?>

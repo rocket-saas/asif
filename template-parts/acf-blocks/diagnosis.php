@@ -23,7 +23,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
 
 
 ?>
-
+<?php if($main_circle_total_num): ?>
 <section id="diagnosis" class="section diagnosis bg--blue">
     <div class="container">
         <div class="row">
@@ -302,3 +302,4 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
         </div>
     </div>
 </section>
+<?php endif; ?>
