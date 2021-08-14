@@ -1,7 +1,8 @@
 import jQuery from 'jquery';
 
 function darkLightStats() {
-    jQuery(".switchStats__switcherGroup a").each(function() {
+
+    $(".switchStats__switcherGroup a").each(function() {
         $(this).on("click", function(e){
             e.preventDefault();
             jQuery(".switchStats").toggleClass('light');

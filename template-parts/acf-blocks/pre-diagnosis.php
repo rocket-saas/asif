@@ -9,7 +9,7 @@ $bar_charts = get_sub_field('bar_charts');
 $notice_text = get_sub_field('notice_text');
 ?>
 
-<section id="pre-diagnosis" class="section pre-diagnosis bg--grey">
+<section id="pre-diagnosis" class="section pre-diagnosis bg--grey axspa-nav--vertical">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">

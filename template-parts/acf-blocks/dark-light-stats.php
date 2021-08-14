@@ -33,11 +33,11 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                     <div class="col-md-5">
                         <?php if ($dark_stats_list && $light_stats_list) : ?>
                             <div class="switchStats__switcherGroup">
-                                <a href="#" class="two">
+                                <a href="#1" class="two">
                                     <span><?php echo $light_label;?></span>
                                     <div class="bg"></div>
                                 </button>
-                                <a href="#" class="one"><?php echo $dark_label;?></a>
+                                <a href="#2" class="one"><?php echo $dark_label;?></a>
                             </div>
                         <?php endif; ?>
                     </div>
