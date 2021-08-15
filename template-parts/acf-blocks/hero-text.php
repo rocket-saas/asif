@@ -12,7 +12,7 @@ $label = get_sub_field('section_label');
 	    	<div class="row">
 			<?php if ($title || $titleAccent) : ?>
 							
-								<div class="axspa__title axspa__title--light accordion__title col-12">
+								<div class="axspa__title axspa__title--light col-12">
 									<h2><?php echo $title; ?>
 										<?php if ($titleAccent) : ?>
 											</br>
