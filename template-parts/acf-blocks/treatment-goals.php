@@ -13,7 +13,7 @@ $contentAccent = get_sub_field('content_accent');
     <div class="container">
         <div class="row followCta--row">
             <?php if ($title || $titleAccent) : ?>
-                <div class="axspa__title axspa__title--dark accordion__title col-12">
+                <div class="axspa__title axspa__title--dark col-12">
                     <h2>
                         <?php if ($titleAccent) : ?>
                             <span><?php echo $titleAccent; ?></span>

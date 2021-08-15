@@ -13,7 +13,7 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
     <div class="container">
         <div class="row followCta--row">
             <?php if ($title || $titleAccent) : ?>
-                <div class="axspa__title axspa__title--light accordion__title col-12">
+                <div class="axspa__title axspa__title--light col-12">
                     <h2><?php echo $title; ?>
                         <?php if ($titleAccent) : ?>
                             <span><?php echo $titleAccent; ?>

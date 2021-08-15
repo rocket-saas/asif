@@ -12,12 +12,13 @@ $bottom_box_text = get_sub_field('bottom_box_text');
 
 ?>
 
+
 <section id="involved" class="section section--bg bg--blue involved">
     <div class="container">
 
         <div class="row involved__header">
             <?php if ($title || $titleAccent) : ?>
-                    <div class="axspa__title axspa__title--light accordion__title col-12">
+                    <div class="axspa__title axspa__title--light col-12">
                         <h2><?php echo $title; ?>
                             <?php if ($titleAccent) : ?>
                                 <span><?php echo $titleAccent; ?>

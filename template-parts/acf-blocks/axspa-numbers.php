@@ -25,7 +25,7 @@ $button = get_sub_field('button');
 	<div class="container">
         <div class="row">
                 <?php if ($title || $titleAccent) : ?>
-                    <div class="axspa__title accordion__title col-12">
+                    <div class="axspa__title col-12">
                         <h2><?php echo $title; ?>
                             <?php if ($titleAccent) : ?>
                                 <span><?php echo $titleAccent; ?>
