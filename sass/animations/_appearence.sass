@@ -23,6 +23,17 @@
 	&.d2
 		transition: opacity 0.7s ease-out 1.5s
 
+.from-bottom
+	overflow: hidden
+	&__inner
+		transition: transform 0.3s ease-out 0s
+		transform: translateY(100%)
+	&.visible
+		.from-bottom__inner
+			transform: translateY(0%)
+
+
+
 .d
 	&-1
 		transition-delay: 0.2s

@@ -102,8 +102,8 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                     </div>
                 </div>
 
-                <div class="diagnosis__content appear fade-up d-1">
-                    <div class="diagnosis__map">
+                <div class="diagnosis__content">
+                    <div class="diagnosis__map appear fade-up">
 
                         <?php if($map_title): ?>
                             <h3 class="subtitle subtitle--md text--color--white"><?php echo $map_title; ?></h3>
@@ -230,7 +230,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="diagnosis__prof">
+                    <div class="diagnosis__prof appear fade-up">
                         <?php if($statistics_title): ?>
                             <h3 class="subtitle subtitle--md text--color--white"><?php echo $statistics_title; ?></h3>
                         <?php endif; ?>
@@ -260,10 +260,10 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                     </div>
                     <div class="diagnosis__delay text--color--white">
                         <?php if($diagnostic_delay_title): ?>
-                            <h3 class="diagnosis__delay__title subtitle subtitle--md text--color--white"><?php echo $diagnostic_delay_title; ?></h3>
+                            <h3 class="diagnosis__delay__title subtitle subtitle--md text--color--white appear fade-up"><?php echo $diagnostic_delay_title; ?></h3>
                         <?php endif; ?>
-                        <div class="diagnosis__delay__content">
-                            <div class="diagnosis__delay__women text--center">
+                        <div class="diagnosis__delay__content ">
+                            <div class="diagnosis__delay__women text--center appear fade-up">
                                 <img class="diagnosis__delay__women__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-women.svg" alt="#">
                                 <div>
                                     <h4 class="text--16 diagnosis__delay__women__title"><span class="text--32 font-w-700"><?php echo $women_delay_title; ?></span> <?php echo $women_delay_subtitle; ?></h4>
@@ -275,12 +275,14 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
 
                             <?php if($diagnostic_delay_items): ?>
                             <ul class="diagnosis__delay__stat">
-                                <?php foreach($diagnostic_delay_items as $item): 
+                                <?php 
+                                $loopCounter = 0;
+                                foreach($diagnostic_delay_items as $item): 
                                     $age = $item['age'];
                                     $data = $item['data'];
                                     ?>
-                                    <li class="diagnosis__delay__stat__item">
-                                        <div class="diagnosis__delay__stat__item__inner">
+                                    <li class="diagnosis__delay__stat__item appear from-bottom">
+                                        <div class="diagnosis__delay__stat__item__inner from-bottom__inner d-<?php echo $loopCounter; ?>">
                                             <div class="diagnosis__delay__stat__item__body">
                                                 <img src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/diagnosis-delay-body.svg" alt="#">
                                             </div>
@@ -291,7 +293,9 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             </div>
                                         </div>
                                     </li>
-                                <?php endforeach; ?>
+                                <?php 
+                                    $loopCounter++;
+                                endforeach; ?>
                                
                             </ul>
                             <?php endif; ?>
