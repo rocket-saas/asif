@@ -28,7 +28,7 @@ $relationList = get_sub_field('relationList');
 ?>
 
 <?php if ($riskNumber || $riskGroups_list || $activities_list || $relationList) : ?>
-<section id="livingAxspa" class="livingAxspa">
+<section id="livingAxspa" class="livingAxspa appear">
     <div class="container">
         <div class="row">
             <div class="col-lg-3"></div>
@@ -47,7 +47,7 @@ $relationList = get_sub_field('relationList');
                             </div>
                         <?php endif;?>
                     </div>
-                    <div class="livingAxspa__riskGroupsWrapper col-md-6">
+                    <div class="livingAxspa__riskGroupsWrapper col">
                         <?php if ($risksTitle) : ?>
                             <strong><?php echo $risksTitle;?> </strong>
                         <?php endif;?>
