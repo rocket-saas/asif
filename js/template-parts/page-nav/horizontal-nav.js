@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 function horizontalNav() {
-    if ($('.axspa-nav--horizontal').length) {
+    if ($('.axspa-nav').length) {
         $('.axspa-nav--horizontal').each(function(){
             const navOffset = $('#axspa-nav').offset().top;
             const navHeight = $('#axspa-nav').height();
