@@ -6,7 +6,7 @@ function darkLightStats() {
         $(this).on("click", function(e){
             e.preventDefault();
             jQuery(".switchStats").toggleClass('light');
-            $(this).addClass('active');
+            $(this).toggleClass('active');
             jQuery(".switchStats__listCarousel").toggleClass('light');
             
         });

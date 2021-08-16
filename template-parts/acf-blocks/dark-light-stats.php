@@ -138,80 +138,26 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                                 <?php endwhile; ?>
                             </ul>
                         <?php endif; ?>
-                        <ul class="switchStats__list switchStats__list--light">
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="44">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 44%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">44</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                            <li class="switchStats__item row">
-                                <span class="switchStats__label col-auto">Disease progression</span>
-                                <div class="switchStats__activityBarWrapper col">
-                                    <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="76">
-                                        <div class="livingAxspa__activityBar--filled" style="width: 76%;"></div>
-                                    </div>
-                                    <span class="livingAxspa__activityValue">76</span>%
-                                </div>
-                            </li>
-                        </ul>
+                        <?php if( have_rows('light_stats_list') ): ?>
+                            <ul class="switchStats__list switchStats__list--light">
+                                <?php while( have_rows('light_stats_list') ): the_row(); 
+                                    $lightStats_label = get_sub_field('lightStats_label');
+                                    $lightStats_number = get_sub_field('lightStats_number');
+                                    ?>
+                                    <?php if ($lightStats_label || $lightStats_number) : ?>
+                                        <li class="switchStats__item row">
+                                            <span class="switchStats__label col-auto"><?php echo $lightStats_label;?></span>
+                                            <div class="switchStats__activityBarWrapper col">
+                                                <div class="livingAxspa__activityBar switchStats__activityBar" data-percent="<?php echo $lightStats_number;?>">
+                                                    <div class="livingAxspa__activityBar--filled"></div>
+                                                </div>
+                                                <span class="livingAxspa__activityValue"><?php echo $lightStats_number;?></span>%
+                                            </div>
+                                        </li>
+                                    <?php endif;?>
+                                <?php endwhile; ?>
+                            </ul>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="switchStats__disclaimer appear fade-up d-1">
