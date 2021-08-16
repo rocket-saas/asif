@@ -135,7 +135,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                                 </svg>
                                             </li>
                                         <?php endif; ?>
-                                        <?php if($countries['netherlands_title']): ?>
+                                        <?php if($countries['belgium_title']): ?>
                                             <li class="diagnosis__map__point diagnosis__map__point--belgium" data-country="belgium">
                                                 <svg width="95" height="215" viewBox="0 0 95 215" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 0V206C1 210.418 4.58172 214 9 214H95" stroke="white" stroke-width="2"/>
@@ -193,11 +193,11 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             </div>
                                         </li>
                                     <?php endif; ?>
-                                    <?php if($countries['netherlands_title']): ?>
+                                    <?php if($countries['belgium_title']): ?>
                                         <li class="diagnosis__map__item" data-country="belgium">
                                             <div class="text--center diagnosis__map__item__inner">
-                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['netherlands_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['netherlands_text']; ?></span></p>
-                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['netherlands_subtext']; ?></span>
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['belgium_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['belgium_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['belgium_subtext']; ?></span>
                                             </div>
                                         </li>
                                     <?php endif; ?>

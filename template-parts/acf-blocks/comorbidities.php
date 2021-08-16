@@ -42,7 +42,7 @@ $condition_3_text = get_sub_field('condition_3_text');
                                         <span class="text--18 text-h-24 font-w-700"><?php echo $percent; ?>%</span>
                                     </p>
                                     <?php if($icon): ?>
-                                        <img class="comorbidities__icon-blocks__item__img" src="<?php echo $icon['url'];?>/images/axspa-numbers/comorbidities-icon-1.svg" alt="#">
+                                        <img class="comorbidities__icon-blocks__item__img" src="<?php echo $icon['url'];?>" alt="#">
                                     <?php endif; ?>
                                 </div>
                             </li>
