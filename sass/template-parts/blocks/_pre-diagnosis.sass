@@ -86,6 +86,9 @@
                     top: 28%
                     left: 60px
                     transform: translateX(0%)
+                    width: auto
+                p
+                    display: none
     &__stat
         padding-top: 65px
         +max-screen($breakpoint-md)
@@ -104,6 +107,8 @@
             position: relative
             +max-screen($breakpoint-md)
                 width: (100%/4)
+            +max-screen($breakpoint-sm)
+                width: (100%/3)
             &__inner
                 position: relative
                 padding-left: 18px
@@ -164,3 +169,5 @@
                 max-width: 100px
                 opacity: 0.3
                 transform: translateY(10%)
+                +max-screen($breakpoint-sm)
+                    max-width: 25%

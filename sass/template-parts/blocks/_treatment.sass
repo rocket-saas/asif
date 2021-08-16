@@ -33,6 +33,11 @@
             width: 25%
             +max-screen($breakpoint-md)
                 width: 50%
+            +max-screen(500px)
+                width: 100%
+                .circle-chart
+                    max-width: 300px
+                    margin: auto
         &__text
             padding-top: 22px
             &__notice

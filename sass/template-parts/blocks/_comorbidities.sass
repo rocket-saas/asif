@@ -49,12 +49,28 @@
         margin-top: 65px
         position: relative
         line-height: 0
+        +max-screen($breakpoint-md)
+            margin-top: 30px
+            padding-bottom: 157%
         img
             width: 100%
             height: auto
+        svg
+            width: 100%
+            height: auto
+            +max-screen($breakpoint-md)
+                transform: rotate(90deg)
+                transform-origin: bottom left
+                position: absolute
+                top: -62%
+                left: 0
+                width: 165%
         &__svg
             width: 100%
             height: auto
+            +max-screen($breakpoint-md)
+                transform: rotate(90deg)
+                transform-origin: bottom left
             &__line
                 &--1
                     stroke-dasharray: 705,2050
@@ -76,6 +92,13 @@
             transform: translateY(-50%) translateX(-50%)
             left: 30%
             text-align: center
+            +max-screen($breakpoint-xl)
+                width: 160px
+            +max-screen($breakpoint-md)
+                width: 47%
+                top: 34%
+                left: 50%
+
         &__list
             position: absolute
             bottom: 0
@@ -85,19 +108,46 @@
             transition: 0.3s
             .loaded &
                 opacity: 1
+            +max-screen(1620px)
+            +max-screen($breakpoint-md)
+                position: initial
+            
         &__item
             width: 100%
             height: 35px
             margin-top: 12px
             display: flex
+            +max-screen(1620px)
+                height: 29px
+            +max-screen($breakpoint-xl)
+                height: 22px
+                margin-top: 9px
+                margin-bottom: 2px
+            +max-screen($breakpoint-md)
+                position: absolute
+                bottom: 0
+                left: 10%
+                &:nth-child(1)
+                    bottom: 19%
+                    left: 26%
+                &:nth-child(2)
+                    bottom: 11%
+                    left: 18%
+                &:nth-child(3)
+                    left: 10%
+                    bottom: 2%
             p
                 font-size: 16px
                 line-height: 18px
                 letter-spacing: 0.2px
+                +max-screen($breakpoint-md)
+                    color: $color-secondary
             &__title
                 width: 135px
                 margin-right: 20px
                 display: inline-block
+                +max-screen($breakpoint-sm)
+                    margin-right: 10px
             &__percent
                 font-weight: 700
                 width: 50px
