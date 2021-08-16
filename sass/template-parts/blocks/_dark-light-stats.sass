@@ -17,17 +17,23 @@
                 background-color: #ffffff99
                 color: $font-color
                 .two.active
+                    color: white
                     .bg
                         width: 190px
                         margin-left: -50px
+                .two:hover~.one
+                    color: #a6afbf
             &__hr
                 background-color: #DDE0E5
-        .two:hover + .one
-            color: #a6afbf
         .one
             color: #a6afbf
-        .two:not(.active)
-            color: white
+            &.active
+                color: white
+        .two
+            color: #a6afbf
+            &.active
+                color: white
+
     &__title
         font-weight: 700
         margin-bottom: 35px

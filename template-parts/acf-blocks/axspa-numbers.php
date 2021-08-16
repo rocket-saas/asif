@@ -6,6 +6,7 @@ $title = get_sub_field('title');
 $titleAccent = get_sub_field('title_accent');
 $label = get_sub_field('section_label');
 
+$total_content = get_sub_field('total_content');
 $total_number = get_sub_field('total_number');
 $total_number_title = get_sub_field('total_number_title');
 $total_number_text = get_sub_field('total_number_text');
@@ -36,9 +37,15 @@ $button = get_sub_field('button');
                         <div class="axspa__label"><?php echo $label;?></div>
                     </div>
                 <?php endif;?>
-	    </div>
-
+        </div>
         <div class="row axspa-numbers__result">
+            <div class="col-xl-9">
+            <?php if( $total_content) : ?>
+                <div class="axspa-numbers__totalContent text-block">
+                    <?php echo $total_content;?>
+                </div>
+            <?php endif;?>
+            </div>
 	    	<div class="col-12 col-lg-6 axspa-numbers__result__col">
                 
                 <h5 class="counter axspa-numbers__result__num" data-counter="<?php echo $total_number; ?>" data-integer="true">0</h5>
