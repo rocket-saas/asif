@@ -5,6 +5,11 @@
     background: $color-secondary
     color: white
     font-family: $font-family-1
+    &.appear.visible
+        path
+            stroke-dasharray: 500
+            stroke-dashoffset: 500
+            animation: dash 5s linear alternate forwards
     .container
         position: relative
         .row
@@ -30,7 +35,6 @@
         font-size: 12px
         color: #ffffff99
     &__riskGroupsWrapper
-        max-width: 384px
         margin-bottom: 65px
         +max-screen($breakpoint-lg)
             max-width: 100%
@@ -38,6 +42,10 @@
             display: block
             text-align: center
             margin-bottom: 24px
+    &__riskGroups
+        max-width: 384px
+        margin-left: auto
+        margin-right: 185px
     &__riskGroupsItem
         padding: 16px 40px
         background-color: #253654
@@ -56,7 +64,7 @@
             border-radius: 50%
         &:nth-child(1)
             &::after
-                right: -159px
+                right: -167px
                 bottom: -7px
                 // +min-screen(1620px)
                 //     right: -284px
@@ -65,9 +73,9 @@
                     display: none
             svg
                 &:nth-child(2)
-                    right: -155px
-                    width: 155px            
-                    top: 30px
+                    right: -162px
+                    width: 162px
+                    top: 28px
                     +max-screen($breakpoint-lg)
                         display: none
                     // +min-screen(1620px)
@@ -262,11 +270,6 @@
         position: absolute
         right: -151px
         top: 0
-
-    path
-        //stroke-dasharray: 500
-        //stroke-dashoffset: 500
-        //animation: dash 5s linear alternate forwards
 
 @keyframes dash
     from
