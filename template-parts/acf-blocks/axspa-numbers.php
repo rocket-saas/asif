@@ -21,6 +21,8 @@ $age_range_subtext = get_sub_field('age_range_subtext');
 $button = get_sub_field('button');
 ?>
 
+
+<?php if($total_number): ?>
 <section id="axspa-numbers" class="section bg--grey axspa-numbers" <?php if ($customBgColor) : echo 'style="' . $customBgColor . '"'; endif;?>>
 	<div class="container appear fade-up d-1">
         <div class="row">
@@ -38,9 +40,9 @@ $button = get_sub_field('button');
 
         <div class="row axspa-numbers__result">
 	    	<div class="col-12 col-lg-6 axspa-numbers__result__col">
-                <?php if($total_number): ?>
-                    <h5 class="counter axspa-numbers__result__num" data-counter="<?php echo $total_number; ?>" data-integer="true">0</h5>
-                <?php endif; ?>
+                
+                <h5 class="counter axspa-numbers__result__num" data-counter="<?php echo $total_number; ?>" data-integer="true">0</h5>
+                
                 <?php if($total_number_title): ?>
                     <h4 class="subtitle axspa-numbers__result__title"><?php echo $total_number_title; ?></h4>
                 <?php endif; ?>
@@ -96,3 +98,4 @@ $button = get_sub_field('button');
         <?php endif; ?>
 	</div>
 </section>
+<?php endif; ?>
