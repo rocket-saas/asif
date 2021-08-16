@@ -13,15 +13,7 @@ $notice_text = get_sub_field('notice_text');
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <div id="axspa-nav" class="list-group axspa-nav">
-                    <a class="list-group-item axspa-nav__item" href="#pre-diagnosis">Pre-diagnosis</a>
-                    <a class="list-group-item axspa-nav__item" href="#diagnosis">Diagnosis</a>
-                    <a class="list-group-item axspa-nav__item" href="#treatment">Treatment</a>
-                    <a class="list-group-item axspa-nav__item" href="#comorbidities">Comorbidities</a>
-                    <a class="list-group-item axspa-nav__item" href="#livingAxspa">Living with axSpA</a>
-                    <a class="list-group-item axspa-nav__item" href="#emplymentImpact">Impact on employment / occupation</a>
-                    <a class="list-group-item axspa-nav__item" href="#switchStats">Patients’ fears and hopes</a>
-                </div>
+                <?php get_template_part( 'template-parts/page-nav/vertical-nav');?>
             </div>
             <div class="col-lg-9">
                 <div class="pre-diagnosis__timeline appear fade-up d-1">
