@@ -31,7 +31,6 @@ $(document).ready(function(){
     circleChart();
     barChart();
     barChartHorizontal();
-
     comorbidities();
 });
 
