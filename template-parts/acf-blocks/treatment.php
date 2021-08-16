@@ -12,7 +12,7 @@ $charts = get_sub_field('charts');
             <div class="col-lg-9 offset-lg-3">
 
                 <?php if($top_block_text ): ?>
-                    <div class="treatment__notice text--color--white bg--blue">
+                    <div class="treatment__notice text--color--white bg--blue appear fade-up d-1">
                         <img class="treatment__notice__img" src="<?php echo get_template_directory_uri();?>/images/axspa-numbers/treatment-bg.svg" alt="#">
                         <div class="content-block treatment__notice__text">
                             <?php echo $top_block_text ; ?>
@@ -23,11 +23,11 @@ $charts = get_sub_field('charts');
                 <div class="treatment__stat">
 
                     <?php if($charts_title): ?>
-                        <h2 class="subtitle subtitle--md text--center treatment__stat__title"><?php echo $charts_title; ?></h2>
+                        <h2 class="subtitle subtitle--md text--center treatment__stat__title appear fade-up d-1"><?php echo $charts_title; ?></h2>
                     <?php endif; ?>
 
                     <?php if($charts ): ?>
-                        <ul class="treatment__stat__list">
+                        <ul class="treatment__stat__list appear fade-up d-1">
                             <?php foreach($charts as $chart): 
                                 $percent = $chart['percents'];
                                 $title = $chart['title'];

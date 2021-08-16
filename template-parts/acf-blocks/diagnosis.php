@@ -31,7 +31,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                 <div class="diagnosis__stat text--color--white">
 
                     <?php if($top_text): ?>
-                        <div class="diagnosis__stat__content">
+                        <div class="diagnosis__stat__content appear fade-up d-1">
                             <div class="dot_bg" style="background-image: url(<?php echo get_template_directory_uri();?>/images/dot-pattern-blue.svg);"></div>
                             <p class="content-block diagnosis__stat__text text--18">
                                 <?php echo $top_text; ?>
@@ -39,7 +39,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                         </div>
                     <?php endif; ?>
 
-                    <div class="diagnosis__stat__bubbles__wrapper">
+                    <div class="diagnosis__stat__bubbles__wrapper appear fade-up d-1">
                         <div class="diagnosis__stat__bubbles">
                             <div class="diagnosis__stat__bubbles__main">
                                 <div class="diagnosis__stat__bubbles__main__inner">
@@ -102,7 +102,7 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                     </div>
                 </div>
 
-                <div class="diagnosis__content">
+                <div class="diagnosis__content appear fade-up d-1">
                     <div class="diagnosis__map">
 
                         <?php if($map_title): ?>

@@ -11,7 +11,7 @@
 						<div class="text-block">
 							<ul class="icon-lists__list">
 								<li>Educating, supporting and empowering people living with axSpA by showing them, through the data generated, that they are not alone in their disease.</li>
-                                <li>Ensure that the axSpA patient perspective is integrated into health policy and clinical  decision-making to improve the quality of life and wellbeing of people with axSpA around the world.</li>
+                                <li>Ensure that the axSpA patient perspective is integrated into health policy and clinical decision-making to improve the quality of life and wellbeing of people with axSpA around the world.</li>
 							</ul>
 						</div>
 				</div>
@@ -25,7 +25,7 @@
 						<div class="text-block">
 							<ul class="icon-lists__list">
 								<li>Educating, supporting and empowering people living with axSpA by showing them, through the data generated, that they are not alone in their disease.</li>
-                                <li>Ensure that the axSpA patient perspective is integrated into health policy and clinical  decision-making to improve the quality of life and wellbeing of people with axSpA around the world.</li>
+                                <li>Ensure that the axSpA patient perspective is integrated into health policy and clinical decision-making to improve the quality of life and wellbeing of people with axSpA around the world.</li>
 							</ul>
 						</div>
 				</div>

@@ -4,7 +4,7 @@ $title = get_sub_field('partners_title');
 ?>
 
 <section id="partnersList" class="partnersList">
-    <div class="container">
+    <div class="container appear fade-up d-1">
         <div class="row">
             <div class="axspa__title partnersList__title axspa__title col-12">
                 <h2><?php echo $title; ?></h2>

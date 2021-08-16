@@ -22,7 +22,7 @@ $button = get_sub_field('button');
 ?>
 
 <section id="axspa-numbers" class="section bg--grey axspa-numbers" <?php if ($customBgColor) : echo 'style="' . $customBgColor . '"'; endif;?>>
-	<div class="container">
+	<div class="container appear fade-up d-1">
         <div class="row">
                 <?php if ($title || $titleAccent) : ?>
                     <div class="axspa__title col-12">

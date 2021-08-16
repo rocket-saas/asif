@@ -24,11 +24,11 @@ $condition_3_text = get_sub_field('condition_3_text');
             <div class="col-lg-9 offset-lg-3">
                 
                 <?php if($title): ?>
-                    <h2 class="subtitle subtitle--md comorbidities__title"><?php echo $title; ?></h2>
+                    <h2 class="subtitle subtitle--md comorbidities__title appear fade-up d-1"><?php echo $title; ?></h2>
                 <?php endif; ?>
 
                 <?php if($icon_blocks): ?>
-                    <ul class="comorbidities__icon-blocks">
+                    <ul class="comorbidities__icon-blocks appear fade-up d-1">
                         <?php 
                         foreach($icon_blocks as $item): 
                             $title = $item['title'];
@@ -51,7 +51,7 @@ $condition_3_text = get_sub_field('condition_3_text');
                 <?php endif; ?>
 
                 <?php if($data_table): ?>
-                    <div class="comorbidities__stat-table">
+                    <div class="comorbidities__stat-table appear fade-up d-1">
                         <div class="comorbidities__stat-table__col">
                             <ul class="comorbidities__stat-table__list">
                                 <?php for($i = 0; $i<sizeof($data_table)/2; $i++): 

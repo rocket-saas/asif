@@ -24,7 +24,7 @@ $light_disclaimer = get_sub_field('light_disclaimer');
             <div class="col-lg-3"></div>
             <div class="col-lg-9">
                 <?php if ($switchStats_title) : ?>
-                    <strong class="switchStats__title">For patients, the most frequent fears and hopes related to axSpA were:</strong>
+                    <strong class="switchStats__title appear fade-up d-1">For patients, the most frequent fears and hopes related to axSpA were:</strong>
                 <?php endif;?>
                 <div class="row">
                     <div class="col-md-7">
@@ -32,7 +32,7 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                     </div>
                     <div class="col-md-5">
                         <?php if ($dark_stats_list && $light_stats_list) : ?>
-                            <div class="switchStats__switcherGroup">
+                            <div class="switchStats__switcherGroup appear fade-up d-1">
                                 <a href="#1" class="two">
                                     <span><?php echo $light_label;?></span>
                                     <div class="bg"></div>
@@ -42,7 +42,7 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="switchStats__listWrapper">
+                <div class="switchStats__listWrapper appear fade-up d-1">
                     <div class="switchStats__listCarousel">
                         <!-- <ul class="switchStats__list switchStats__list--dark">
                             <li class="switchStats__item row">
@@ -214,7 +214,7 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                         </ul>
                     </div>
                 </div>
-                <div class="switchStats__disclaimer">
+                <div class="switchStats__disclaimer appear fade-up d-1">
                     <strong>Additional fears include:</strong></br>
                     Financial concerns 1.8%, medication doesn’t work / stops working 1.6%, take care of family / children 1.5%, premature death 1%, paralysis 1%, pass the disease to children 0.9%, anxiety / sadness 0.9%, inability to live with condition / give up 0.6%, sleep interruptions 0.2%.
                 </div>

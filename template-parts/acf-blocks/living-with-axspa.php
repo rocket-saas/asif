@@ -33,7 +33,7 @@ $relationList = get_sub_field('relationList');
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-9 static">
-                <div class="row livingAxspa--row">
+                <div class="row livingAxspa--row appear fade-up d-1">
                     <div class="livingAxspa__riskStats col-auto">
                         <?php if ($riskNumber) : ?>
                             <span class="livingAxspa__riskNumber counter" data-counter="<?php echo $riskNumber;?>" data-integer="true"><?php echo $riskNumber;?></span><span class="livingAxspa__riskSign">%</span>
@@ -98,7 +98,7 @@ $relationList = get_sub_field('relationList');
                     </div>
                     <img src="<?php echo get_template_directory_uri() . '/images/imas/live-with-circle.svg';?>" alt="circle icon" class="livingAxspa__circle">
                 </div>
-                <div class="row">
+                <div class="row appear fade-up d-1">
                     <div class="livingAxspa__activitiesWrapper col-md-7">
                         <div class="livingAxspa__activitiesInner">
                             <?php if ($riskNumber) : ?>
@@ -149,7 +149,7 @@ $relationList = get_sub_field('relationList');
                             <h3 class="livingAxspa__relationTitle"><?php echo $relationTitle;?></h3>
                         <?php endif;?>
                         <?php if( have_rows('relationList') ): ?>
-                            <ul class="livingAxspa__relationList row">
+                            <ul class="livingAxspa__relationList row appear fade-up d-1">
                             <?php while( have_rows('relationList') ): the_row(); 
                                 $relationIcon = get_sub_field('relationIcon');
                                 $relationNumber = get_sub_field('relationNumber');

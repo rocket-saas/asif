@@ -12,7 +12,7 @@ $label = get_sub_field('section_label');
 	    	<div class="row">
 			<?php if ($title || $titleAccent) : ?>
 							
-								<div class="axspa__title axspa__title--light col-12">
+								<div class="axspa__title axspa__title--light col-12 appear fade-up d-1">
 									<h2><?php echo $title; ?>
 										<?php if ($titleAccent) : ?>
 											</br>
@@ -25,12 +25,12 @@ $label = get_sub_field('section_label');
 						<?php endif;?>
 	    		<div class="col-12 col-lg-9">
 					<?php if($text): ?>
-						<div class="text-block">
+						<div class="text-block appear fade-up d-1">
 							<?php echo $text; ?>
 						</div>
 					<?php endif; ?>
 					<?php if(get_sub_field('hero_show_arrow')): ?>
-						<div class="section__scroll">
+						<div class="section__scroll appear fade-up d-1">
 							<a href="#imas-vision"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-arrow-down.svg" alt="#"></a>
 						</div>
 					<?php endif; ?>

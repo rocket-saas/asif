@@ -13,7 +13,7 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
     <div class="container">
         <div class="row followCta--row">
             <?php if ($title || $titleAccent) : ?>
-                <div class="axspa__title axspa__title--light col-12">
+                <div class="axspa__title axspa__title--light col-12 appear fade-up d-1">
                     <h2><?php echo $title; ?>
                         <?php if ($titleAccent) : ?>
                             <span><?php echo $titleAccent; ?>
@@ -23,7 +23,7 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
                 </div>
             <?php endif;?>
             <?php if ($content) : ?>
-                <div class="followCta__contentWrapper col-12 col-lg-7">
+                <div class="followCta__contentWrapper col-12 col-lg-7 appear fade-up d-1">
                     <div class="followCta__content">
                         <?php echo $content; ?>
                     </div>
@@ -45,7 +45,7 @@ $quoteAuthor = get_sub_field('follow_blockquote_author');
                 </div>
             <?php endif;?>
             <?php if ($quote) : ?>
-                <div class="followCta__quoteWrapper col-12 col-lg-5">
+                <div class="followCta__quoteWrapper col-12 col-lg-5 appear fade-up d-1">
                     <img src="<?php echo get_template_directory_uri() . '/images/imas/dot-pattern.svg';?>" alt="dotted-pattern" class="followCta__quoteBg">
                     <div class="followCta__quote">
                         <?php echo $quote; ?>

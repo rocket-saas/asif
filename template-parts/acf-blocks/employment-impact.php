@@ -25,7 +25,7 @@ $impactDisclaimer = get_sub_field('impactDisclaimer');
             <div class="col-lg-9">
                 <div class="row emplymentImpact--row">
                     <?php if( have_rows('columnList') ): ?>
-                        <div class="col-lg-4 emplymentImpact__numbersWrapper">
+                        <div class="col-lg-4 emplymentImpact__numbersWrapper appear fade-up d-1">
                             <ul class="remplymentImpact__numbersList">
                             <?php while( have_rows('columnList') ): the_row(); 
                                 $impactNumber = get_sub_field('impactNumber');
@@ -46,7 +46,7 @@ $impactDisclaimer = get_sub_field('impactDisclaimer');
                     <?php endif; ?>
                     <div class="col-lg-8">
                         <?php if ($facttIcon || $factNumber || $factContent) : ?>
-                            <div class="emplymentImpact__fact">
+                            <div class="emplymentImpact__fact appear fade-up d-1">
                                 <?php if( !empty( $facttIcon ) ): ?>
                                     <div class="emplymentImpact__factIcon">
                                         <?php echo file_get_contents(esc_url(wp_get_original_image_path($facttIcon['id']))); ?>
@@ -68,7 +68,7 @@ $impactDisclaimer = get_sub_field('impactDisclaimer');
                             </div>
                         <?php endif;?>
                         <?php if( have_rows('issuesList') ): ?>
-                            <div class="emplymentImpact__issuesWrapper">
+                            <div class="emplymentImpact__issuesWrapper appear fade-up d-1">
                                 <div class="triangle">
                                     <div class="arrow-top"></div>
                                 </div>
@@ -93,7 +93,7 @@ $impactDisclaimer = get_sub_field('impactDisclaimer');
                         <?php endif; ?>
                     </div>
                     <?php if($impactDisclaimer) : ?>
-                        <div class="col-12 emplymentImpact__disclaimer">
+                        <div class="col-12 emplymentImpact__disclaimer appear fade-up d-1">
                             <?php echo $impactDisclaimer;?>
                         </div>
                     <?php endif;?>

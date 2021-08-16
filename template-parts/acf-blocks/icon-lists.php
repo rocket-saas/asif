@@ -1,5 +1,5 @@
 <section id="imas-vision" class="section bg--grey icon-lists">
-	<div class="container">
+	<div class="container appear fade-up d-1">
 			<div class="row">
                 <div class="dot_bg" style="background-image: url(<?php echo get_template_directory_uri();?>/images/dot-pattern.svg);"></div>
 				<div class="col-12 col-lg-6 icon-lists__col">

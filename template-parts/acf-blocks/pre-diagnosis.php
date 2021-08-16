@@ -24,7 +24,7 @@ $notice_text = get_sub_field('notice_text');
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="pre-diagnosis__timeline">
+                <div class="pre-diagnosis__timeline appear fade-up d-1">
                     <div class="pre-diagnosis__timeline__inner">
                         <div class="pre-diagnosis__timeline__top">
 
@@ -47,7 +47,7 @@ $notice_text = get_sub_field('notice_text');
                         </div>
                     </div>
                 </div>
-                <div class="pre-diagnosis__stat">
+                <div class="pre-diagnosis__stat appear fade-up d-1">
 
                     <?php if($bar_charts_title): ?>
                         <h3 class="subtitle subtitle--lg text--color--secondary pre-diagnosis__stat__title">Healthcare professionals visited before diagnosis:</h3>

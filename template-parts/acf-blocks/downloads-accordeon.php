@@ -7,7 +7,7 @@ $label = get_sub_field('accordion_label');
 ?>
 
 <section id="accordion--downloads" class="accordion accordion--downloads">
-    <div class="container">
+    <div class="container appear fade-up d-1">
         <div class="row">
             <?php if ($title || $titleAccent) : ?>
                 <div class="axspa__title accordion__title col-12">

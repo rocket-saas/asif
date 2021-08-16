@@ -18,7 +18,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
 
         <div class="row involved__header">
             <?php if ($title || $titleAccent) : ?>
-                    <div class="axspa__title axspa__title--light col-12">
+                    <div class="axspa__title axspa__title--light col-12 appear fade-up d-1">
                         <h2><?php echo $title; ?>
                             <?php if ($titleAccent) : ?>
                                 <span><?php echo $titleAccent; ?>
@@ -29,7 +29,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                 <?php endif;?>
         </div>
 
-        <div class="involved__map">
+        <div class="involved__map appear fade-up d-1">
             <img class="involved__map__bg" src="<?php echo get_template_directory_uri();?>/images/maps/map-involved.png" alt="#">
             <ul class="involved__map__points">
                 <?php if($countries['united_states_content']): ?>
@@ -180,7 +180,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
             </ul>
         </div>
 
-        <div class="row involved__footer">
+        <div class="row involved__footer appear fade-up d-1">
             <?php if($bottom_logo): ?>
                 <div class="col-12 col-lg-4 offset-lg-4">
                     <img class="involved__footer__logo" src="<?php echo $bottom_logo['url']; ?>" alt="#">
@@ -188,7 +188,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
             <?php endif; ?>
 
             <?php if($bottom_box_big_text || $bottom_box_text): ?>
-                <div class="col-12 col-lg-10 offset-lg-1">
+                <div class="col-12 col-lg-10 offset-lg-1 appear fade-up d-1">
                     <div class="involved__footer__results text--center">
                         <h4 class="h1"> <?php echo $bottom_box_big_text; ?> <span class="h4"><?php echo $bottom_box_text; ?></span></h4>
                     </div>
