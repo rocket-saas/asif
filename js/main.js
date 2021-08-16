@@ -4,6 +4,7 @@ import { anchorScroll , scrollDown } from './animations/anchorScroll';
 import { counter  } from './animations/counter';
 import { circleChart  } from './animations/circleChart';
 import { barChart,barChartHorizontal } from './animations/barChart';
+import { appearence } from './animations/appearence';
 
 import { horizontalNav } from './template-parts/page-nav/horizontal-nav';
 import { verticalNav } from './template-parts/page-nav/vertical-nav';
@@ -23,6 +24,7 @@ $(document).ready(function(){
     scrollDown();
     horizontalNav();
     verticalNav();
+    appearence();
 
     diagnosisBubbles();
     diagnosisMap();
