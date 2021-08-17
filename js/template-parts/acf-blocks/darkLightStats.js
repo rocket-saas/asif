@@ -18,11 +18,13 @@ function darkLightStats() {
         $(this).addClass('active');
         $(".switchStats__switcherGroup a.one").removeClass('active');
         jQuery(".switchStats").toggleClass('light');
+        jQuery(".switchStats__listCarousel").toggleClass('light');
     });
     $(".switchStats__switcherGroup a.one").on("click", function(e){
         $(this).addClass('active');
         $(".switchStats__switcherGroup a.two").removeClass('active');
         jQuery(".switchStats").toggleClass('light');
+        jQuery(".switchStats__listCarousel").toggleClass('light');
     });
     $(".switchStats__switcherGroup a.one").hover(function(e){
         $(".switchStats__switcherGroup a.two").removeClass('active');

@@ -87,10 +87,25 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                     </div>
                     
                 </div>
-                <div class="switchStats__disclaimer appear fade-up d-1">
-                    <strong>Additional fears include:</strong></br>
-                    Financial concerns 1.8%, medication doesn’t work / stops working 1.6%, take care of family / children 1.5%, premature death 1%, paralysis 1%, pass the disease to children 0.9%, anxiety / sadness 0.9%, inability to live with condition / give up 0.6%, sleep interruptions 0.2%.
-                </div>
+                <?php if ($dark_disclaimer || $light_disclaimer) : ?>
+                    <div class="switchStats__disclaimerWrapper">
+                        <div class="switchStats__listCarousel">
+                            <?php if ($dark_disclaimer) : ?>
+                                <div class="switchStats__disclaimer appear fade-up d-1" style="width: 50%">
+                                    <?php echo $dark_disclaimer;?>
+                                </div>
+                            <?php endif;?>
+
+                            <?php if ($light_disclaimer) : ?>
+                                <div class="switchStats__disclaimer appear fade-up d-1" style="width: 50%">
+                                    <?php echo $light_disclaimer;?>
+                                </div>
+                            <?php endif;?>
+                        </div>
+                    </div>
+                <?php endif;?>
+                
+
                 
             </div>
         </div>
