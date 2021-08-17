@@ -12,7 +12,7 @@ function scrollDown() {
     $('.section__scroll a[href^="#"]').click(function(e){
         e.preventDefault();
         let href2 = $(this).attr('href');
-        $('html, body').animate({ scrollTop: $(href2).offset().top}, 1000);
+        $('html, body').animate({ scrollTop: $(href2).offset().top - 100}, 1000);
     });
 }
 
