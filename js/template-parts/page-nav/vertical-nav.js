@@ -2,8 +2,9 @@ import $ from 'jquery';
 
 function verticalNav() {
     if ($('.axspa-nav').length) {
+        console.log('no-admin-bar');
         $('.axspa-nav--vertical').each(function(){
-            const navOffset = $('#axspa-nav').offset().top;
+            const navOffset = $('#axspa-nav').offset().top - 85;
             const navHeight = $('#axspa-nav').height();
             const navHeightAdmin = navHeight + 32;
             $(window).scroll(function(){
