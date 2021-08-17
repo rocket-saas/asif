@@ -42,10 +42,16 @@
             display: block
             text-align: center
             margin-bottom: 24px
+            max-width: 354px
+            padding-left: 15px
+            padding-right: 15px
     &__riskGroups
         max-width: 384px
         margin-left: auto
         margin-right: 185px
+        +max-screen($breakpoint-md)
+            max-width: 100%
+            width: 100%
     &__riskGroupsItem
         padding: 16px 40px
         background-color: #253654
@@ -54,6 +60,8 @@
         display: flex
         align-items: center
         position: relative
+        +max-screen($breakpoint-md)
+            width: 100%
         &::after
             content: ""
             display: block
@@ -156,6 +164,8 @@
         margin-bottom: 32px
         font-size: 16px
         line-height: 1.6
+        font-weight: 700
+        text-align: center
     &__activity
         margin-bottom: 24px
         &:last-child
@@ -211,8 +221,9 @@
         text-transform: uppercase
         line-height: 1.6
         margin-bottom: 43px
+        font-weight: 600
+        letter-spacing: 3px
     &__risksDisclaimer
-        max-width: 482px
         font-size: 12px
         color: #ffffff99
     &__relationWrapper

@@ -19,6 +19,6 @@
 
 <?php /* page content end */ ?>
 <div class="published__date">
-	xx/xxxx/xx/xx   <span>August 2021</span>
+	<?php the_time('j/m/Y');?>   <span><?php the_time('F Y');?></span>
 </div>
 <?php get_footer();?>

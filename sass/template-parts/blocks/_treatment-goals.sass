@@ -21,6 +21,8 @@
     &__content
         margin-top: 35px
         margin-bottom: 35px
+        +min-screen($breakpoint-xl)
+            max-width: 800px
     &__content--accent
         position: relative
         padding-left: 70px
@@ -53,5 +55,14 @@
                 background: white 
                 line-height: 1.6  
         strong
+            display: inline-block
+            margin-bottom: 10px
             font-size: 18px
+    p, li
+        font-size: 18px
+        color: #f8f9fa
+        strong
+            color: white
+            display: inline-block
+            margin-bottom: 10px
         

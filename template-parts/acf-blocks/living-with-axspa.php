@@ -48,8 +48,8 @@ $relationList = get_sub_field('relationList');
                         <?php endif;?>
                     </div>
                     <div class="livingAxspa__riskGroupsWrapper col">
-                        <?php if ($risksTitle) : ?>
-                            <strong><?php echo $risksTitle;?> </strong>
+                        <?php if ($riskGroups_title) : ?>
+                            <strong><?php echo $riskGroups_title;?> </strong>
                         <?php endif;?>
 
                         <?php if( have_rows('riskGroups_list') ):
@@ -129,7 +129,7 @@ $relationList = get_sub_field('relationList');
                         <div class="livingAxspa__risksWrapper col-md-5">
                             <div class="livingAxspa__risksInner">
                                 <?php if ($risksTitle) : ?>
-                                    <h5 class="livingAxspa__risksTitle">participants at risk of psychological distress reported:</h5>
+                                    <h5 class="livingAxspa__risksTitle"><?php echo $risksTitle;?></h5>
                                 <?php endif;?>
                                 <?php if ($risksContent) : ?>
                                     <?php echo $risksContent;?>
@@ -138,7 +138,7 @@ $relationList = get_sub_field('relationList');
                         </div>
                     <?php endif;?>
                     <?php if ($risksDisclaimer) : ?>
-                        <div class="livingAxspa__risksDisclaimer col-md-7">
+                        <div class="livingAxspa__risksDisclaimer col-lg-9 col-xl-8">
                             <?php echo $risksDisclaimer;?>
                         </div>
                     <?php endif;?>      

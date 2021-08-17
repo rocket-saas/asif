@@ -7,6 +7,8 @@
     z-index: 201
     +max-screen($breakpoint-lg)
         display: none
+    +min-screen(1620px)
+        left: calc((100vw - 1290px) / 2) 
     & + section
         +max-screen($breakpoint-lg)
             margin-top: 0 !important
