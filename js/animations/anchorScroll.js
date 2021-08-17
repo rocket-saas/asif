@@ -9,8 +9,10 @@ function anchorScroll() {
 }
 
 function scrollDown() {
-    $('').each(function(){
-       
+    $('.section__scroll a[href^="#"]').click(function(e){
+        e.preventDefault();
+        let href2 = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(href2).offset().top}, 1000);
     });
 }
 

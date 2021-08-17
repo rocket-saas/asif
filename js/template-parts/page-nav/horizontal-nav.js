@@ -2,7 +2,6 @@ import $ from 'jquery';
 
 function horizontalNav() {
     if ($('.admin-bar .axspa-nav').length) {
-        console.log('admin-bar-exist');
         $('.axspa-nav--horizontal').each(function(){
             const navOffset = $('#axspa-nav').offset().top - 32;
             const navHeight = $('#axspa-nav').height();
