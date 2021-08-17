@@ -156,6 +156,8 @@
     &__activitiesWrapper
         max-width: 482px
         margin-bottom: 24px
+        +max-screen($breakpoint-md)
+            max-width: 100%
     &__activitiesInner
         padding: 47px 43px
         background-color: #253654
@@ -194,6 +196,8 @@
         max-width: 384px
         font-size: 16px
         margin-bottom: 24px
+        +max-screen($breakpoint-md)
+            max-width: 100%
         ul
             position: relative
             padding-left: 60px
@@ -241,7 +245,7 @@
             justify-content: center
     &__relationItem
         width: 20%
-        min-width: 178px
+        min-width: 160px
         margin-bottom: 20px
         +max-screen($breakpoint-md)
             max-width: 33%
@@ -262,6 +266,9 @@
         justify-content: center
         align-items: center
         margin-bottom: 20px
+        +max-screen($breakpoint-xl)
+            width: 60px
+            height: 60px
         svg
             width: 45px
             height: 45px

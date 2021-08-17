@@ -21,6 +21,9 @@
                     .bg
                         width: 190px
                         margin-left: -50px
+                        +max-screen($breakpoint-md)
+                            width: 130px
+                            margin-left: -15px
                 .two:hover~.one
                     color: #a6afbf
             &__hr
@@ -38,6 +41,8 @@
         font-weight: 700
         margin-bottom: 35px
         display: block
+        +max-screen($breakpoint-lg)
+        text-align: center
     &__listCarousel
         display: flex
         width: 200%
@@ -60,6 +65,11 @@
         width: 382px
         max-width: 100%
         font-size: 14px
+        +max-screen($breakpoint-md)
+            width: 100%
+            display: inline-block
+            margin-bottom: 15px
+            font-size: 16px
     &__activityBar
         background: #1F2F4C
         margin-top: 0
@@ -74,6 +84,12 @@
         align-items: center
         width: 100%
         margin-bottom: 20px
+        +max-screen($breakpoint-md)
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            margin-bottom: 25px
+            margin-left: 0
         &:last-child
             margin-bottom: 0
     &__switcherGroup
@@ -86,6 +102,12 @@
         border-radius: 100px
         margin-left: auto
         text-transform: uppercase
+        +max-screen($breakpoint-lg)
+            margin-right: auto
+        +max-screen($breakpoint-md)
+            width: 260px
+            height: 50px
+            padding: 5px 20px
         .one
             float: left
             line-height: 40px
@@ -111,12 +133,18 @@
             z-index: -1
             transition: 1.0s
             border-radius: 100px
+            +max-screen($breakpoint-md)
+                height: 50px
+                margin-left: -146px
+                width: 130px
         span:hover + .bg
             width: 190px
             margin-left: -50px
         span
             padding: 10px 0
             transition: 1.0s
+            +max-screen($breakpoint-md)
+                padding: 5px 0
     &__hr
         position: absolute
         left: 15px
@@ -126,6 +154,8 @@
         height: 1px
         background-color: #2B3D5F
         margin: 0
+        +max-screen($breakpoint-md)
+            display: none
     &__disclaimer
         font-size: 14px
         margin-top: 48px

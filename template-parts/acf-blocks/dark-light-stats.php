@@ -27,10 +27,10 @@ $light_disclaimer = get_sub_field('light_disclaimer');
                     <strong class="switchStats__title appear fade-up d-1">For patients, the most frequent fears and hopes related to axSpA were:</strong>
                 <?php endif;?>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-lg-7">
                         <hr class="switchStats__hr">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <?php if ($dark_stats_list && $light_stats_list) : ?>
                             <div class="switchStats__switcherGroup appear fade-up d-1">
                                 <a href="#1" class="two">

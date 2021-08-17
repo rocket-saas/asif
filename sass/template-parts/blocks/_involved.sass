@@ -50,6 +50,12 @@
                 transform: translate3d(-50%,-50%,0)
                 cursor: pointer
                 transition: 0.3s
+                +max-screen($breakpoint-sm)
+                    width: 15px
+                    height: 15px
+                +max-screen(425px)
+                    width: 10px
+                    height: 10px
                 &:before
                     content: ''
                     position: absolute
@@ -61,6 +67,12 @@
                     left: 0
                     //transform: translate3d(-50%,-50%,0)
                     animation: pulse-white 2s infinite
+                    +max-screen($breakpoint-sm)
+                        width: 15px
+                        height: 15px
+                    +max-screen(425px)
+                        width: 10px
+                        height: 10px
                 &:hover
                     transform: translate3d(-50%,-50%,0) scale(1.1)
                 &--us
