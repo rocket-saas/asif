@@ -5,6 +5,9 @@
     background: $color-secondary
     color: white
     font-family: $font-family-1
+    +max-screen($breakpoint-md)
+        padding-top: 50px
+        padding-bottom: 50px
     &.appear.visible
         path
             stroke-dasharray: 500
@@ -15,11 +18,15 @@
         .row
             p
                 margin-bottom: 15px
+                +max-screen($breakpoint-sm)
+                    font-size: 12px
     &--row
         align-items: center
     &__riskStats
         max-width: 286px
         margin-bottom: 65px
+        +max-screen($breakpoint-md)
+            max-width: calc(100% - 60px)
     &__riskNumber
         font-weight: 700
         font-size: 100px
@@ -62,6 +69,12 @@
         position: relative
         +max-screen($breakpoint-md)
             width: 100%
+            justify-content: center
+            svg:first-child
+                position: absolute
+                left: 40px
+                top: 50%
+                transform: translateY(-50%)
         &::after
             content: ""
             display: block
@@ -72,14 +85,14 @@
             border-radius: 50%
         &:nth-child(1)
             &::after
-                right: -167px
-                bottom: -7px
+                right: -159px
+                bottom: -6px
                 +max-screen($breakpoint-lg)
                     display: none
             svg
                 &:nth-child(2)
-                    right: -162px
-                    width: 162px
+                    right: -155px
+                    width: 155px
                     top: 28px
                     +max-screen($breakpoint-lg)
                         display: none
@@ -154,7 +167,7 @@
                 margin-right: 0
                 height: auto
     &__activitiesWrapper
-        max-width: 482px
+        // max-width: 482px
         margin-bottom: 24px
         +max-screen($breakpoint-md)
             max-width: 100%
@@ -193,7 +206,7 @@
             background-color: $color-primary
             border-radius: 16px
     &__risksWrapper
-        max-width: 384px
+        // max-width: 384px
         font-size: 16px
         margin-bottom: 24px
         +max-screen($breakpoint-md)
@@ -249,13 +262,19 @@
         margin-bottom: 20px
         +max-screen($breakpoint-md)
             max-width: 33%
+            min-width: 0
         +max-screen($breakpoint-sm)
             width: 50%
+        +max-screen(375px)
+            width: 50%
+            max-width: 50%
 
     &__relationItem__inner
         padding: 21px 26px
         background-color: #253654
         border-radius: 8px
+        +max-screen($breakpoint-md)
+            padding: 15px
     &__relationIcon
         width: 90px
         height: 90px
@@ -269,9 +288,16 @@
         +max-screen($breakpoint-xl)
             width: 60px
             height: 60px
+        +max-screen($breakpoint-md)
+            width: 100%
+        +max-screen(375px)
+            width: 60px
         svg
             width: 45px
             height: 45px
+            +max-screen($breakpoint-md)
+                width: 25px
+                height: 25px
     &__relationContent
         margin-top: 20px
         text-align: center

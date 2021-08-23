@@ -42,7 +42,7 @@ $label = get_sub_field('accordion_label');
                                 <a class="card-header__inner" role="button" data-toggle="collapse" href="#collapse_<?php echo $count; ?>"
                                     aria-expanded="false" aria-controls="collapse_<?php echo $count; ?>">
                                     <?php echo file_get_contents(wp_get_original_image_path($icon['id'])); ?>
-                                    <div class="accordion__tabTitle"><?php the_sub_field('tab_titel'); ?>Diagnostic delay</div>
+                                    <div class="accordion__tabTitle"><?php the_sub_field('tab_title'); ?></div>
                                 </a>
                             </div>
                             <div id="collapse_<?php echo $count; ?>" class="collapse " data-parent="#accordion"

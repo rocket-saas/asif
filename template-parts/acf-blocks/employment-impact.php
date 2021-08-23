@@ -73,6 +73,9 @@ $impactDisclaimer = get_sub_field('impactDisclaimer');
                                     <div class="arrow-top"></div>
                                 </div>
                                 <ul class="emplymentImpact__issuesList">
+                                    <?php if ($issuestitle) : ?>
+                                        <h4><?php echo $issuestitle;?></h4>
+                                    <?php endif;?>
                                     <?php while( have_rows('issuesList') ): the_row(); 
                                         $impactNumber = get_sub_field('issuesNumber');
                                         $impactLabel = get_sub_field('issuesLabel');

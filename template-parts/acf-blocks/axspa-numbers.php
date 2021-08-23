@@ -28,7 +28,7 @@ $button = get_sub_field('button');
 	<div class="container appear fade-up d-1">
         <div class="row">
                 <?php if ($title || $titleAccent) : ?>
-                    <div class="axspa__title col-12">
+                    <div class="axspa__title col-12 <?php if($label) : echo 'have-label' ; else : echo 'no-label';endif;?>">
                         <h2><?php echo $title; ?>
                             <?php if ($titleAccent) : ?>
                                 <span><?php echo $titleAccent; ?>
@@ -46,7 +46,7 @@ $button = get_sub_field('button');
                 </div>
             <?php endif;?>
             </div>
-	    	<div class="col-12 col-lg-6 axspa-numbers__result__col">
+	    	<div class="col-12 col-lg-auto axspa-numbers__result__col">
                 
                 <h5 class="counter axspa-numbers__result__num" data-counter="<?php echo $total_number; ?>" data-integer="true">0</h5>
                 
@@ -57,7 +57,7 @@ $button = get_sub_field('button');
                     <span class="text--14 axspa-numbers__result__notice"><?php echo $total_number_text; ?></span>
                 <?php endif; ?>
 			</div>
-    		<div class="col-12 col-lg-3">
+    		<div class="col-12 col-lg-auto ml-lg-auto">
                 <?php if($females_text): ?>
                     <div class="axspa-numbers__result__gender">
                         <div class="axspa-numbers__result__gender__icon">

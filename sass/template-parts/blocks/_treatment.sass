@@ -6,14 +6,16 @@
         padding-left: 150px
         +max-screen($breakpoint-md)
             padding-left: 100px
-        +max-screen($breakpoint-sm)
-            padding-left: 70px
         &__img
             position: absolute
             left: 25px
             bottom: 0
             width: 20%
             height: auto
+            +max-screen($breakpoint-md)
+                height: 75%
+                width: auto
+                max-width: 265px
         &__text
             position: relative
             z-index: 2
@@ -34,7 +36,6 @@
             +max-screen($breakpoint-md)
                 width: 50%
             +max-screen(500px)
-                width: 100%
                 .circle-chart
                     max-width: 300px
                     margin: auto
