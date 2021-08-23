@@ -5,6 +5,8 @@
     top: 85px
     left: calc((100vw - 1110px) / 2) 
     z-index: 201
+    max-width: 230px
+    transition: 0.2s all
     +max-screen($breakpoint-lg)
         display: none
     +min-screen(1620px)
@@ -20,6 +22,7 @@
         left: 0
         background-color: #E6E8ED
         padding: 0 15px
+        max-width: 100%
         & > .row
             flex-direction: row
             align-items: center
@@ -37,6 +40,7 @@
                     &::before
                         background: transparent
                         background-color: $color-grey
+                        height: 5px 
                 &:last-child
                     &::before
                         display: block
@@ -48,7 +52,21 @@
                     background-color: transparent
                 &::after
                     display: none
-                    
+    &:not(.axspa-nav--horizontal)
+        &::before
+            content: ""
+            height: calc(100% - 70px)
+            display: block
+            width: 1px
+            position: absolute
+            left: 3px
+            background: $color-grey
+            top: 9px
+        .axspa-nav
+            &__item
+                &.active
+                    font-size: 16px
+                    font-weight: 700        
     &__item
         position: relative
         color: $color-grey
@@ -60,6 +78,9 @@
         padding-left: 21px
         border: 0
         transition: .2s all
+        &:first-child
+            &::before
+               height: 45px 
         &:last-child
             &::before
                 display: none
@@ -68,7 +89,7 @@
             display: block
             position: absolute
             left: 3px
-            bottom: -48px
+            bottom: -56px
             transform: translateY(-50%)
             height: 40px
             width: 1px
@@ -87,12 +108,15 @@
             background-color: $color-grey
             transition: .2s all
             z-index: 10
+        &:hover
+            color: $color-primary
         &.active
             background-color: transparent
             color: $color-primary
             &::after
                 background-color: $color-primary
             &::before
+                height: 55px
                 background-color: transparent
                 background: repeating-linear-gradient( to bottom, $color-primary, $color-primary 1px, transparent 2px, transparent 2px, transparent 3px)
 
