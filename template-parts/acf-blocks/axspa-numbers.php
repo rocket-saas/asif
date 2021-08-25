@@ -57,7 +57,7 @@ $button = get_sub_field('button');
                     <span class="text--14 axspa-numbers__result__notice"><?php echo $total_number_text; ?></span>
                 <?php endif; ?>
 			</div>
-    		<div class="col-12 col-lg-auto ml-lg-auto">
+    		<div class="col-12 col-lg-auto ml-lg-auto axspa-numbers__result__gender__wrapper">
                 <?php if($females_text): ?>
                     <div class="axspa-numbers__result__gender">
                         <div class="axspa-numbers__result__gender__icon">

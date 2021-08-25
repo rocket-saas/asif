@@ -23,17 +23,30 @@
             align-items: center
             margin-bottom: 15px
             color: $font-color
+            &__wrapper
+                +max-screen($breakpoint-lg)
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
             &__icon
                 width: 55px
                 min-width: 55px
                 height: 55px
                 position: relative
                 margin-right: 12px
+                +max-screen($breakpoint-sm)
+                    width: 30px
+                    height: 30px
+                    min-width: 30px
                 img
                     position: absolute
                     width: 100%
                     height: 100%
                     object-fit: contain
+            &__text
+                margin-bottom: 0
+                +max-screen($breakpoint-sm)
+                    font-size: 18px
         &__col
             +max-screen($breakpoint-lg)
                 margin-bottom: 35px
@@ -46,9 +59,23 @@
             padding: 37px 20px
             text-align: center
             height: 144px
+            +max-screen($breakpoint-xl)
+                margin-top: 30px
+            +max-screen($breakpoint-lg)
+                height: auto
+                padding: 20px
+                background-size: contain
+                background-position: left
+                background-repeat: no-repeat
+                background-color: $color-blue-grey
             &__notice
                 opacity: 0.6
                 padding-top: 17px
+            &__text
+                margin-bottom: 0
+            br
+                +max-screen($breakpoint-lg)
+                    display: none
     &__btn
         padding-top: 55px
         +max-screen($breakpoint-sm)

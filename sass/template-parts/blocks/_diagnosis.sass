@@ -22,7 +22,7 @@
             margin-left: 20px
         &__bubbles
             width: 770px
-            padding-bottom: 51%
+            padding-bottom: 47%
             position: relative
             max-width: 100%
             +max-screen($breakpoint-sm)
@@ -37,7 +37,7 @@
                 left: 29%
 
                 border-radius: 50%
-                border: 1px solid #DDE0E5
+                border: 1px solid transparentize(#DDE0E5, 0.5)
                 +max-screen($breakpoint-sm)
                     width: 60%
                     padding-bottom: 60%
@@ -129,7 +129,7 @@
                 .diagnosis__stat__bubble__line
                     top: 0%
                     left: 108%
-                    width: 81%
+                    width: 76%
             &-3
                 left: 20%
                 top: 66%
@@ -139,14 +139,14 @@
                     bottom: 103%
                     top: auto
                     left: 50%
-                    width: 59%
+                    width: 56%
             &-4
                 left: 69%
                 top: 0%
                 width: 19%
                 padding-bottom: 19%
                 .diagnosis__stat__bubble__line
-                    top: 45%
+                    top: 42%
                     left: -86%
                     width: 80%
             &-5
@@ -156,8 +156,8 @@
                 padding-bottom: 8.5%
                 .diagnosis__stat__bubble__line
                     top: 50%
-                    left: -259%
-                    width: 245%
+                    left: -250%
+                    width: 237%
             &-6
                 left: 73%
                 top: 41%
@@ -471,6 +471,9 @@
                 align-items: center
                 padding-top: 20px
                 text-align: left
+            +max-screen($breakpoint-md)
+                width: 100%
+                align-items: flex-start
             &__img
                 width: 55px
                 height: auto
@@ -490,6 +493,8 @@
                 margin: auto
                 +max-screen($breakpoint-xl)
                     margin-left: 0
+                +max-screen($breakpoint-md)
+                    max-width: 100%
         &__stat
             width: 100%
             display: flex
@@ -497,7 +502,6 @@
             justify-content: center
             margin: 0 -25px
             +max-screen($breakpoint-sm)
-                flex-wrap: wrap
             +max-screen($breakpoint-md)
                 margin: 0 -5px
             &__item
@@ -513,30 +517,46 @@
                     padding: 15px 5px
                     padding-bottom: 0
                 &:nth-child(1)
+                    +max-screen($breakpoint-md)
+                        max-width: 23%
+                        width: 23%
                     .diagnosis__delay__stat__item__inner
                         width: 93px
                         +max-screen($breakpoint-md)
                             max-width: 100%
+                            width: 100%
                     
                 &:nth-child(2)
+                    +max-screen($breakpoint-md)
+                        max-width: 24%
+                        width: 24%
                     .diagnosis__delay__stat__item__inner
                         width: 100px
                         +max-screen($breakpoint-md)
                             max-width: 100%
+                            width: 100%
                     .diagnosis__delay__stat__item__body img
                         opacity: 0.8
                 &:nth-child(3)
+                    +max-screen($breakpoint-md)
+                        max-width: 26%
+                        width: 26%
                     .diagnosis__delay__stat__item__inner
                         width: 112px
                         +max-screen($breakpoint-md)
                             max-width: 100%
+                            width: 100%
                     .diagnosis__delay__stat__item__body img
                         opacity: 0.6
                 &:nth-child(4)
+                    +max-screen($breakpoint-md)
+                        max-width: 27%
+                        width: 27%
                     .diagnosis__delay__stat__item__inner
                         width: 125px
                         +max-screen($breakpoint-md)
                             max-width: 100%
+                            width: 100%
                     .diagnosis__delay__stat__item__body img
                         opacity: 0.4
                 &__inner
@@ -556,6 +576,8 @@
                     position: relative
                     width: 90px
                     margin-bottom: 17px
+                    +max-screen($breakpoint-md)
+                        width: 100%
                     img
                         width: 100%
                         height: auto

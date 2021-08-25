@@ -34,5 +34,9 @@ $(document).ready(function(){
     barChart();
     barChartHorizontal();
     comorbidities();
+    
+    $("body").find('p').each(function() {
+        $(this).html($(this).html().replace(/&#8232;/g," "));
+    });
 });
 

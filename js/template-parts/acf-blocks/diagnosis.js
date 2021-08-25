@@ -4,12 +4,18 @@ function diagnosisBubbles() {
     $('.diagnosis__stat__bubbles').each(function(){
         let block = $(this);
         block.find('.diagnosis__stat__bubble').click(function(){
-            block.addClass('diagnosis__stat__bubbles--active');
-            block.find('.diagnosis__stat__bubble').removeClass('active');
-            $(this).addClass('active');
-            let index = $(this).data('index');
-            block.find('.diagnosis__stat__bubble__content').removeClass('active');
-            block.find('.diagnosis__stat__bubble__content[data-index='+index+']').addClass('active');
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+                block.find('.diagnosis__stat__bubble__content').removeClass('active');
+                block.removeClass('diagnosis__stat__bubbles--active');
+            } else{
+                block.addClass('diagnosis__stat__bubbles--active');
+                block.find('.diagnosis__stat__bubble').removeClass('active');
+                $(this).addClass('active');
+                let index = $(this).data('index');
+                block.find('.diagnosis__stat__bubble__content').removeClass('active');
+                block.find('.diagnosis__stat__bubble__content[data-index='+index+']').addClass('active');
+            }
         });
     });
 }

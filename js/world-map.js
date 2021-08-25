@@ -1,5 +1,4 @@
 jQuery(function($){
-    console.log('works');
     let mapBlock = $('.world-map');
     let map = $('#worldMap');
     let mapContainer = $('.world-map__container__inner');
