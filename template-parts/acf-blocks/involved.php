@@ -65,6 +65,33 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                 <?php if($countries['taiwan_content']): ?>
                     <li class="involved__map__points__item involved__map__points__item--taiwan" data-country="taiwan"></li>
                 <?php endif; ?>
+                <?php if($countries['belgium_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--belgium" data-country="belgium"></li>
+                <?php endif; ?>
+                <?php if($countries['colombia_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--colombia" data-country="colombia"></li>
+                <?php endif; ?>
+                <?php if($countries['france_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--france" data-country="france"></li>
+                <?php endif; ?>
+                <?php if($countries['india_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--india" data-country="india"></li>
+                <?php endif; ?>
+                <?php if($countries['italy_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--italy" data-country="italy"></li>
+                <?php endif; ?>
+                <?php if($countries['lithuania_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--lithuania" data-country="lithuania"></li>
+                <?php endif; ?>
+                <?php if($countries['norway_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--norway" data-country="norway"></li>
+                <?php endif; ?>
+                <?php if($countries['philippines_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--philippines" data-country="philippines"></li>
+                <?php endif; ?>
+                <?php if($countries['slovenia_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--slovenia" data-country="slovenia"></li>
+                <?php endif; ?>
             </ul>
             <ul class="involved__list">
                 <?php if($countries['united_states_content']): ?>
@@ -173,6 +200,96 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
                                 <?php echo $countries['taiwan_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['belgium_content']): ?>
+                    <li class="involved__item" data-country="belgium">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['belgium_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['colombia_content']): ?>
+                    <li class="involved__item" data-country="colombia">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['colombia_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['france_content']): ?>
+                    <li class="involved__item" data-country="france">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['france_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['india_content']): ?>
+                    <li class="involved__item" data-country="india">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['india_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['italy_content']): ?>
+                    <li class="involved__item" data-country="italy">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['italy_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['lithuania_content']): ?>
+                    <li class="involved__item" data-country="lithuania">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['lithuania_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['norway_content']): ?>
+                    <li class="involved__item" data-country="norway">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['norway_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['philippines_content']): ?>
+                    <li class="involved__item" data-country="philippines">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['philippines_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['slovenia_content']): ?>
+                    <li class="involved__item" data-country="slovenia">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['slovenia_content'];?>
                             </div>
                         </div>
                     </li>
