@@ -21,11 +21,7 @@ function comorbidities(){
                     el.addClass('loaded');
                 }});
             } else{
-                TweenMax.to(line1, 2, {strokeDashoffset: -75 , delay: 0.2});
-                TweenMax.to(line2, 2, {strokeDashoffset: -145, delay: 0.4});
-                TweenMax.to(line3, 2, {strokeDashoffset: -540, delay: 0.6, onComplete: function(){
-                    el.addClass('loaded');
-                }});
+                el.addClass('loaded');
             }
             
 

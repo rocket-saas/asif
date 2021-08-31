@@ -45,6 +45,8 @@
             letter-spacing: 0.2px
             &:nth-last-child(1)
                 border-bottom: 0
+                +max-screen($breakpoint-md)
+                    border-bottom: 1px solid #DDE0E5
     &__chart
         margin-top: 65px
         position: relative
@@ -71,6 +73,7 @@
             +max-screen($breakpoint-md)
                 transform: rotate(90deg)
                 transform-origin: bottom left
+                display: none
             &__line
                 &--1
                     stroke-dasharray: 705,2050
@@ -98,7 +101,14 @@
                 // width: 47%
                 // top: 34%
                 // left: 50%
-                display: none
+                position: relative
+                left: 0
+                top: 0
+                transform: none
+                width: auto
+                text-align: left
+                padding-bottom: 15px
+                padding-top: 30px
 
         &__list
             position: absolute
