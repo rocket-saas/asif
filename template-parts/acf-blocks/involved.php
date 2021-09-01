@@ -31,6 +31,7 @@ $bottom_box_text = get_sub_field('bottom_box_text');
 
         <div class="involved__map appear fade-up d-1">
             <img class="involved__map__bg" src="<?php echo get_template_directory_uri();?>/images/maps/map-involved.png" alt="#">
+            <div class="involved__map__svg"><?php echo get_inline_svg('images/maps/map-involved.svg');?></div>
             <ul class="involved__map__points">
                 <?php if($countries['united_states_content']): ?>
                     <li class="involved__map__points__item involved__map__points__item--us" data-country="us"></li>
