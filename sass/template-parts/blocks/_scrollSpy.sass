@@ -54,21 +54,21 @@
                     display: none
     &:not(.axspa-nav--horizontal)
         &::before
-            content: ""
-            height: calc(100% - 20px)
-            display: block
-            width: 1px
-            position: absolute
-            left: 3px
-            background: $color-grey
-            top: 9px
+            // content: ""
+            // height: calc(100% - 20px)
+            // display: block
+            // width: 1px
+            // position: absolute
+            // left: 3px
+            // background: $color-grey
+            // top: 9px
         .axspa-nav
             &__item
                 &.active
                     font-size: 16px
                     font-weight: 700  
                 &::before
-                    display: none      
+                    content: "" 
     &__item
         position: relative
         color: $color-grey
@@ -81,19 +81,29 @@
         border: 0
         transition: .2s all
         &:first-child
+            &.active
+                &::before
+                    height: 50px
             &::before
                height: 45px 
         &:last-child
+            &::after
+                bottom: -3px
+                transform: translate(0, 0)
+                top: unset
             &::before
                 display: none
+        // &:nth-last-child(2)
+        //     &::before
+        //         height: 40px
         &::before
             content: ""
             display: block
             position: absolute
             left: 3px
-            bottom: -56px
+            bottom: -60px
             transform: translateY(-50%)
-            height: 40px
+            height: 43px
             width: 1px
             background-color: $color-grey
             transition: .2s all
