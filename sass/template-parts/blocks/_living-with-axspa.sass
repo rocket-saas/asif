@@ -142,30 +142,52 @@
             &::after
                 right: -146px
                 top: -73px
-                // +min-screen(1620px)
-                //     right: -281px
-                //     top: -83px
-                +max-screen($breakpoint-lg)
-                    display: none
-            svg
-                &:nth-child(2)
-                    width: 144px
-                    top: -71px
-                    right: -144px
-                    // +min-screen(1620px)
-                    //     width: 280px
-                    //     top: -166px
-                    //     right: -280px
-                    +max-screen($breakpoint-lg)
-                        display: none
-        svg
+                
+        & svg:not(.livingAxspa__connector)
             width: 32px
             height: 32px
             margin-right: 16px
-            &:nth-child(2)
-                position: absolute
-                margin-right: 0
-                height: auto
+        .livingAxspa__connector
+            position: absolute
+            margin-right: 0
+            height: auto
+    &__connector
+        &::after
+            content: ""
+            display: block
+            width: 8px
+            height: 8px
+            background-color: #fff
+            position: absolute
+            border-radius: 50%
+        &--1
+            right: -155px
+            width: 155px
+            top: 28px
+            +max-screen($breakpoint-lg)
+                display: none
+        &--2
+            right: -140px
+            width: 140px
+            height: auto
+            top: 30px
+            +max-screen($breakpoint-lg)
+                display: none
+        &--3
+            top: 0
+            right: -141px
+            width: 140px
+            +max-screen($breakpoint-lg)
+                display: none
+        &--4
+            width: 144px
+            top: -71px
+            right: -144px
+            +max-screen($breakpoint-lg)
+                display: none
+            &::after
+                right: -146px
+                top: -73px
     &__activitiesWrapper
         // max-width: 482px
         margin-bottom: 24px
@@ -233,6 +255,22 @@
         padding: 47px 43px
         background-color: #253654
         border-radius: 8px
+        &--connector
+            position: absolute
+            top: -117px
+            left: 177px
+            width: 191px
+            height: 118px
+        &::after
+            content: ""
+            position: absolute
+            top: -120px
+            width: 8px
+            height: 8px
+            display: block
+            background-color: #fff
+            border-radius: 50%
+            right: -6px
     &__risksTitle
         font-size: 16px
         text-transform: uppercase

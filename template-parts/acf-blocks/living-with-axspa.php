@@ -72,22 +72,22 @@ $relationList = get_sub_field('relationList');
                                         <?php $i++; ?>
 
                                         <?php if ($i == 1) : ?>
-                                            <svg width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="livingAxspa__connector livingAxspa__connector--1" width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M132 32H77.9286C69.3682 32 62.4286 25.0604 62.4286 16.5V16.5C62.4286 7.93959 55.489 1 46.9286 1H0" stroke="white" stroke-width="2"/>
                                             </svg>
                                         <?php endif;?>
                                         <?php if ($i ===2) : ?>
-                                            <svg width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="livingAxspa__connector livingAxspa__connector--2" width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M132 32H77.9286C69.3682 32 62.4286 25.0604 62.4286 16.5V16.5C62.4286 7.93959 55.489 1 46.9286 1H0" stroke="white" stroke-width="2"/>
                                             </svg>
                                         <?php endif;?>
                                         <?php if ($i == 3) : ?>
-                                            <svg width="132" height="35" viewBox="0 0 132 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="livingAxspa__connector livingAxspa__connector--3" width="132" height="35" viewBox="0 0 132 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M132 1H78.4286C69.592 1 62.4286 8.16344 62.4286 17V18C62.4286 26.8366 55.2651 34 46.4286 34H0" stroke="white" stroke-width="2"/>
                                             </svg>
                                         <?php endif;?>
                                         <?php if ($i == 4) : ?>
-                                            <svg width="139" height="101" viewBox="0 0 139 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="livingAxspa__connector livingAxspa__connector--4" width="139" height="101" viewBox="0 0 139 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M139 1H107.012C98.1754 1 91.0119 8.16344 91.0119 17V84C91.0119 92.8366 83.8485 100 75.0119 100H0" stroke="white" stroke-width="2"/>
                                             </svg>
                                         <?php endif;?>
@@ -128,6 +128,10 @@ $relationList = get_sub_field('relationList');
                     <?php if ($risksContent) : ?>
                         <div class="livingAxspa__risksWrapper col-md-5">
                             <div class="livingAxspa__risksInner">
+                                <svg class="livingAxspa__risksInner--connector" width="156" height="108" viewBox="0 0 156 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M155.5 1H125.5C116.663 1 109.5 8.16344 109.5 17V63C109.5 71.8366 102.337 79 93.5 79H17.5C8.66344 79 1.5 86.1634 1.5 95V107.5" stroke="white" stroke-width="2"/>
+                                </svg>
+
                                 <?php if ($risksTitle) : ?>
                                     <h5 class="livingAxspa__risksTitle"><?php echo $risksTitle;?></h5>
                                 <?php endif;?>
