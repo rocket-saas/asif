@@ -140,8 +140,8 @@
                         display: none
         &:nth-child(4)
             &::after
-                right: -146px
-                top: -73px
+                right: -171px
+                top: -11px
                 
         & svg:not(.livingAxspa__connector)
             width: 32px
@@ -152,6 +152,8 @@
             margin-right: 0
             height: auto
     &__connector
+        +max-screen(1200px)
+            display: none
         &::after
             content: ""
             display: block
@@ -180,9 +182,12 @@
             +max-screen($breakpoint-lg)
                 display: none
         &--4
-            width: 144px
-            top: -71px
-            right: -144px
+            transform: rotateY(45deg)
+            -webkit-transform: scaleX(-1)
+            transform: scaleX(-1)
+            top: -8px
+            right: -165px
+            width: 165px
             +max-screen($breakpoint-lg)
                 display: none
             &::after
@@ -261,6 +266,8 @@
             left: 177px
             width: 191px
             height: 118px
+            +min-screen(1620px)
+                width: 300px
         &::after
             content: ""
             position: absolute

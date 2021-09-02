@@ -1477,330 +1477,6 @@
                                     "toolbar": "full",
                                     "media_upload": 1,
                                     "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f218b8e6",
-                                    "label": "Belgium",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f838b8ef",
-                                    "label": "Belgium Content",
-                                    "name": "belgium_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f308b8e7",
-                                    "label": "Colombia",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f988b8f0",
-                                    "label": "Colombia Content",
-                                    "name": "colombia_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f3d8b8e8",
-                                    "label": "France",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f9a8b8f1",
-                                    "label": "France Content",
-                                    "name": "france_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f468b8e9",
-                                    "label": "India",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f9b8b8f2",
-                                    "label": "India Content",
-                                    "name": "india_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f498b8ea",
-                                    "label": "Italy",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f9d8b8f3",
-                                    "label": "Italy Content",
-                                    "name": "italy_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f518b8eb",
-                                    "label": "Lithuania",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260f9f8b8f4",
-                                    "label": "Lithuania Content",
-                                    "name": "lithuania_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f5c8b8ec",
-                                    "label": "Norway",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260fb88b8f7",
-                                    "label": "Norway Content",
-                                    "name": "norway_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f648b8ed",
-                                    "label": "Philippines",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260fae8b8f5",
-                                    "label": "Philippines Content",
-                                    "name": "philippines_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61260f728b8ee",
-                                    "label": "Slovenia",
-                                    "name": "",
-                                    "type": "accordion",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "open": 0,
-                                    "multi_expand": 0,
-                                    "endpoint": 0
-                                },
-                                {
-                                    "key": "field_61260fb08b8f6",
-                                    "label": "Slovenia Content",
-                                    "name": "slovenia_content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
                                 }
                             ]
                         },
@@ -4853,6 +4529,35 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6130b605ea2db": {
+                    "key": "layout_6130b605ea2db",
+                    "name": "references",
+                    "label": "References",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6130b62cea2dc",
+                            "label": "Content",
+                            "name": "references_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -4884,5 +4589,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629884440
+    "modified": 1630583103
 }
