@@ -87,7 +87,7 @@ $relationList = get_sub_field('relationList');
                                             </svg>
                                         <?php endif;?>
                                         <?php if ($i == 4) : ?>
-                                            <svg class="livingAxspa__connector livingAxspa__connector--1" width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="livingAxspa__connector livingAxspa__connector--4" width="132" height="33" viewBox="0 0 132 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M132 32H77.9286C69.3682 32 62.4286 25.0604 62.4286 16.5V16.5C62.4286 7.93959 55.489 1 46.9286 1H0" stroke="white" stroke-width="2"/>
                                             </svg>
                                         <?php endif;?>
