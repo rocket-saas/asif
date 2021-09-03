@@ -20,7 +20,7 @@ function involvedMap() {
             });
         });
         $('body').on('click', function (e) {
-            if ($(e.target).closest('.involved__item').length === 0 && $(e.target).closest('.involved__map__points').length === 0) {
+            if ($(e.target).closest('.involved__item').length === 0 && $(e.target).closest('.involved__map__points__item').length === 0) {
                 block.find('.involved__item.active').removeClass('active');
                 svg.find('.countries>g.active').removeClass('active');
             }

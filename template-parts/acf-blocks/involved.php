@@ -93,6 +93,30 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                 <?php if($countries['slovenia_content']): ?>
                     <li class="involved__map__points__item involved__map__points__item--slovenia" data-country="slovenia"></li>
                 <?php endif; ?>
+                <?php if($countries['germany_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--germany" data-country="germany"></li>
+                <?php endif; ?>
+                <?php if($countries['switzerland_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--switzerland" data-country="switzerland"></li>
+                <?php endif; ?>
+                <?php if($countries['austria_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--austria" data-country="austria"></li>
+                <?php endif; ?>
+                <?php if($countries['netherlands_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--netherlands" data-country="netherlands"></li>
+                <?php endif; ?>
+                <?php if($countries['south_korea_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--south-korea" data-country="south-korea"></li>
+                <?php endif; ?>
+                <?php if($countries['mexico_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--mexico" data-country="mexico"></li>
+                <?php endif; ?>
+                <?php if($countries['argentina_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--argentina" data-country="argentina"></li>
+                <?php endif; ?>
+                <?php if($countries['costa_rica_content']): ?>
+                    <li class="involved__map__points__item involved__map__points__item--costa-rica" data-country="costa-rica"></li>
+                <?php endif; ?>
             </ul>
             <ul class="involved__list">
                 <?php if($countries['united_states_content']): ?>
@@ -291,6 +315,86 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                             <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
                             <div class="text-block">
                                 <?php echo $countries['slovenia_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['germany_content']): ?>
+                    <li class="involved__item" data-country="germany">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['germany_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['switzerland_content']): ?>
+                    <li class="involved__item" data-country="switzerland">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['switzerland_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['austria_content']): ?>
+                    <li class="involved__item" data-country="austria">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['austria_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['netherlands_content']): ?>
+                    <li class="involved__item" data-country="netherlands">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['netherlands_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['south_korea_content']): ?>
+                    <li class="involved__item" data-country="south-korea">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['south_korea_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['mexico_content']): ?>
+                    <li class="involved__item" data-country="mexico">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['mexico_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['argentina_content']): ?>
+                    <li class="involved__item" data-country="argentina">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['argentina_content'];?>
+                            </div>
+                        </div>
+                    </li>
+                <?php endif; ?>
+                <?php if($countries['costa_rica_content']): ?>
+                    <li class="involved__item" data-country="costa-rica">
+                        <div class="involved__item__inner">
+                            <div class="involved__item__close"><img src="<?php echo get_template_directory_uri();?>/images/icons/icon-cross.svg" alt="#"></div>
+                            <div class="text-block">
+                                <?php echo $countries['costa_rica_content'];?>
                             </div>
                         </div>
                     </li>
