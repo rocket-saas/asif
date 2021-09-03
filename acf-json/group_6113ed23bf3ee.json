@@ -5141,6 +5141,35 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6130b605ea2db": {
+                    "key": "layout_6130b605ea2db",
+                    "name": "references",
+                    "label": "References",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6130b62cea2dc",
+                            "label": "Content",
+                            "name": "references_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -5172,5 +5201,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630673701
+    "modified": 1630583103
 }

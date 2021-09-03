@@ -26,14 +26,14 @@ function darkLightStats() {
         jQuery(".switchStats").toggleClass('light');
         jQuery(".switchStats__listCarousel").toggleClass('light');
     });
-    $(".switchStats__switcherGroup a.one").hover(function(e){
-        $(".switchStats__switcherGroup a.two").removeClass('active');
-        $(this).addClass('active');
-    });
-    $(".switchStats__switcherGroup a.two").hover(function(e){
-        $(".switchStats__switcherGroup a.one").removeClass('active');
-        $(this).addClass('active');
-    });
+    // $(".switchStats__switcherGroup a.one").hover(function(e){
+    //     $(".switchStats__switcherGroup a.two").removeClass('active');
+    //     $(this).addClass('active');
+    // });
+    // $(".switchStats__switcherGroup a.two").hover(function(e){
+    //     $(".switchStats__switcherGroup a.one").removeClass('active');
+    //     $(this).addClass('active');
+    // });
     $(".light .switchStats__switcherGroup").mouseleave(function(e){
         $(".switchStats__switcherGroup a.two").addClass('active');
     });
