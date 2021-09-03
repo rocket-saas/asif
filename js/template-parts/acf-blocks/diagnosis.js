@@ -17,6 +17,13 @@ function diagnosisBubbles() {
                 block.find('.diagnosis__stat__bubble__content[data-index='+index+']').addClass('active');
             }
         });
+        $('body').on('click', function (e) {
+            if ($(e.target).closest('.diagnosis__stat__bubble__content').length === 0 && $(e.target).closest('.diagnosis__stat__bubble').length === 0) {
+                block.find('.diagnosis__stat__bubble__content').removeClass('active');
+                block.find('.diagnosis__stat__bubble').removeClass('active');
+                block.removeClass('diagnosis__stat__bubbles--active');
+            }
+        });
     });
 }
 
