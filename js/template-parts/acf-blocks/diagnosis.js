@@ -40,6 +40,13 @@ function diagnosisMap() {
                 item.removeClass('active');
             });
         });
+        $('body').on('click', function (e) {
+            if ($(e.target).closest('.diagnosis__map__item').length === 0 && $(e.target).closest('.diagnosis__map__point').length === 0) {
+                block.find('.diagnosis__map__item.active').removeClass('active');
+                svg.find('.country').removeClass('active');
+                block.find('.diagnosis__map__point.active').removeClass('active');
+            }
+        });
     });
 }
 

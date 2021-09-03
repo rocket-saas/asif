@@ -163,6 +163,48 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                                 </svg>
                                             </li>
                                         <?php endif; ?>
+                                        <?php if($countries['united_kingdom_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--uk" data-country="uk">
+                                                <svg width="3" height="175" viewBox="0 0 3 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.5 175V0" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
+                                        <?php if($countries['netherlands_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--netherlands" data-country="netherlands">
+                                                <svg width="99" height="181" viewBox="0 0 99 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M99 180H11C5.47715 180 1 175.523 1 170V0" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
+                                        <?php if($countries['austria_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--austria" data-country="austria">
+                                                <svg width="210" height="256" viewBox="0 0 210 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M210 255H11C5.47716 255 1 250.523 1 245V0" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
+                                        <?php if($countries['italy_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--italy" data-country="italy">
+                                                <svg width="174" height="346" viewBox="0 0 174 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M174 345H11C5.47715 345 1 340.523 1 335V0" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
+                                        <?php if($countries['france_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--france" data-country="france">
+                                                <svg width="59" height="285" viewBox="0 0 59 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M59 283.5H11.5C5.97715 283.5 1.5 279.023 1.5 273.5V0.5" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
+                                        <?php if($countries['russia_title']): ?>
+                                            <li class="diagnosis__map__point diagnosis__map__point--russia" data-country="russia">
+                                                <svg width="477" height="181" viewBox="0 0 477 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M477 180H11C5.47717 180 1 175.523 1 170V0" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </li>
+                                        <?php endif; ?>
                                     </ul>
                                 <?php endif; ?>
                             </div>
@@ -222,6 +264,54 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                             <div class="text--center diagnosis__map__item__inner">
                                                 <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['spain_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['spain_text']; ?></span></p>
                                                 <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['spain_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['united_kingdom_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="uk">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['united_kingdom_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['united_kingdom_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['united_kingdom_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['netherlands_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="netherlands">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['netherlands_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['netherlands_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['netherlands_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['austria_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="austria">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['austria_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['austria_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['austria_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['italy_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="italy">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['italy_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['italy_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['italy_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['france_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="france">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['france_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['france_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['france_subtext']; ?></span>
+                                            </div>
+                                        </li>
+                                    <?php endif; ?>
+                                    <?php if($countries['russia_title']): ?>
+                                        <li class="diagnosis__map__item" data-country="russia">
+                                            <div class="text--center diagnosis__map__item__inner">
+                                                <p class="text--18 text--color--secondary diagnosis__map__item__text"><?php echo $countries['russia_title']; ?> <br/><span class="text--32 font-w-700"><?php echo $countries['russia_text']; ?></span></p>
+                                                <span class="text--12 diagnosis__map__item__notice"><?php echo $countries['russia_subtext']; ?></span>
                                             </div>
                                         </li>
                                     <?php endif; ?>
