@@ -6,6 +6,7 @@ $main_circle_total_num = get_sub_field('main_circle_total_num');
 $circles = get_sub_field('circles');
 
 $map_title = get_sub_field('map_title');
+$map_notice = get_sub_field('map_notice');
 $countries = get_sub_field('countries');
 
 $statistics_title = get_sub_field('statistics_title');
@@ -319,6 +320,9 @@ $diagnostic_delay_items = get_sub_field('diagnostic_delay_items');
                                 </ul>
                             <?php endif; ?>
                         </div>
+                        <?php if($map_notice): ?>
+                            <p class="diagnosis__map__notice text--center text--color--white"><?php echo $map_notice; ?></p>
+                        <?php endif; ?>
                     </div>
                     <div class="diagnosis__prof appear fade-up">
                         <?php if($statistics_title): ?>

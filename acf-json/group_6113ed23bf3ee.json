@@ -2717,6 +2717,25 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_613248c181258",
+                            "label": "Map notice",
+                            "name": "map_notice",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_6113efb0586a1",
                             "label": "Countries",
                             "name": "countries",
@@ -5616,5 +5635,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630682290
+    "modified": 1630685392
 }
