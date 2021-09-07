@@ -419,8 +419,8 @@
                 &.active path
                         stroke-dashoffset: 0
             &--russia
-                left: 85%
-                top: 55%
+                left: 72%
+                top: 40%
                 path
                     stroke-dasharray: 700,700
                     stroke-dashoffset: 700
@@ -476,11 +476,14 @@
         top: 0
         width: 300px
         max-width: 35%
+        +max-screen($breakpoint-xl)
+            right: -65px
         +max-screen($breakpoint-md)
             position: relative
             width: 100%
             max-width: 100%
             padding-top: 30px
+            right: 0
         &__stat
             margin-top: 15px
             border-radius: 8px
