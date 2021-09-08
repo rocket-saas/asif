@@ -40,5 +40,5 @@
     ?>
 
 <?php /* page content end */ ?>
-
+<?php get_template_part('template-parts/preparationDate');?>
 <?php get_footer();?>

@@ -18,7 +18,5 @@
 
 
 <?php /* page content end */ ?>
-<div class="published__date">
-	<?php the_time('j/m/Y');?>   <span><?php the_time('F Y');?></span>
-</div>
+<?php get_template_part('template-parts/preparationDate');?>
 <?php get_footer();?>

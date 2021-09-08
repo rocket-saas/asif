@@ -64,6 +64,10 @@
             // top: 9px
         .axspa-nav
             &__item
+                &:first-child
+                    &.active
+                        &::before
+                            height: 50px
                 &.active
                     font-size: 16px
                     font-weight: 700  
@@ -80,12 +84,8 @@
         padding-left: 21px
         border: 0
         transition: .2s all
-        &:first-child
-            &.active
-                &::before
-                    height: 50px
-            &::before
-               height: 45px 
+        &::before
+            height: 45px 
         &:last-child
             &::after
                 bottom: -3px
