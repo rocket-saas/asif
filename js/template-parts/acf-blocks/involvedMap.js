@@ -25,6 +25,13 @@ function involvedMap() {
                 svg.find('.countries>g.active').removeClass('active');
             }
         });
+        $('.js-involved-dropdown').on('change',function(){
+            let country = $(this).val();
+            block.find('.involved__item').removeClass('active');
+            svg.find('.countries>g').removeClass('active');
+            block.find('.involved__item[data-country='+country+']').addClass('active');
+            svg.find('#'+country).addClass('active');
+        });
     });
 }
 
