@@ -31,57 +31,50 @@ $bottom_box_text = get_sub_field('bottom_box_text');
         <div class="involved__map__dropdown appear fade-up d-1">
             <select name="" id="js-involved-dropdown" class="involved__map__dropdown__select js-involved-dropdown">
                 <option value="">Select country</option>
-                <?php if($countries['united_states_content']): ?>
-                    <option value="us">United States</option>
+                <?php if($countries['argentina_content']): ?>
+                    <option value="argentina">Argentina</option>
                 <?php endif; ?>
-                <?php if($countries['brazil_content']): ?>
-                    <option value="brazil">Brazil</option>
-                    <li class="involved__map__points__item involved__map__points__item--brazil" data-country="brazil"></li>
-                <?php endif; ?>
-                <?php if($countries['canada_content']): ?>
-                    <option value="canada">Canada</option>
-                <?php endif; ?>
-                <?php if($countries['spain_content']): ?>
-                    <option value="spain">Spain</option>
-                <?php endif; ?>
-                <?php if($countries['united_kingdom_content']): ?>
-                    <option value="uk">United Kingdom</option>
-                <?php endif; ?>
-                <?php if($countries['turkey_content']): ?>
-                    <option value="turkey">Turkey</option>
-                <?php endif; ?>
-                <?php if($countries['sweden_content']): ?>
-                    <option value="sweden">Sweden</option>
-                <?php endif; ?>
-                <?php if($countries['russia_content']): ?>
-                    <option value="russia">Russia</option>
-                <?php endif; ?>
-                <?php if($countries['china_content']): ?>
-                    <option value="china">China</option>
-                <?php endif; ?>
-                <?php if($countries['south_africa_content']): ?>
-                    <option value="africa">Africa</option>
-                <?php endif; ?>
-                <?php if($countries['taiwan_content']): ?>
-                    <option value="taiwan">Taiwan</option>
+                <?php if($countries['austria_content']): ?>
+                    <option value="austria">Austria</option>
                 <?php endif; ?>
                 <?php if($countries['belgium_content']): ?>
                     <option value="belgium">Belgium</option>
                 <?php endif; ?>
+                <?php if($countries['brazil_content']): ?>
+                    <option value="brazil">Brazil</option>
+                <?php endif; ?>
+                <?php if($countries['canada_content']): ?>
+                    <option value="canada">Canada</option>
+                <?php endif; ?>
                 <?php if($countries['colombia_content']): ?>
                     <option value="colombia">Colombia</option>
                 <?php endif; ?>
+                <?php if($countries['costa_rica_content']): ?>
+                    <option value="costa-rica">Costa Rica</option>
+                <?php endif; ?>
+                <?php if($countries['china_content']): ?>
+                    <option value="china">China</option>
+                <?php endif; ?>
                 <?php if($countries['france_content']): ?>
                     <option value="france">France</option>
+                <?php endif; ?>
+                <?php if($countries['germany_content']): ?>
+                    <option value="germany">Germany</option>
                 <?php endif; ?>
                 <?php if($countries['india_content']): ?>
                     <option value="india">India</option>
                 <?php endif; ?>
                 <?php if($countries['italy_content']): ?>
-                    <option value="lithuania">Lithuania</option>
+                    <option value="lithuania">Italy</option>
                 <?php endif; ?>
                 <?php if($countries['lithuania_content']): ?>
                     <option value="lithuania">Lithuania</option>
+                <?php endif; ?>
+                <?php if($countries['mexico_content']): ?>
+                    <option value="mexico">Mexico</option>
+                <?php endif; ?>
+                <?php if($countries['netherlands_content']): ?>
+                    <option value="netherlands">Netherlands</option>
                 <?php endif; ?>
                 <?php if($countries['norway_content']): ?>
                     <option value="norway">Norway</option>
@@ -89,33 +82,40 @@ $bottom_box_text = get_sub_field('bottom_box_text');
                 <?php if($countries['philippines_content']): ?>
                     <option value="philippines">Philippines</option>
                 <?php endif; ?>
+                <?php if($countries['russia_content']): ?>
+                    <option value="russia">Russia</option>
+                <?php endif; ?>
                 <?php if($countries['slovenia_content']): ?>
                     <option value="slovenia">Slovenia</option>
-                <?php endif; ?>
-                <?php if($countries['germany_content']): ?>
-                    <option value="germany">Germany</option>
                 <?php endif; ?>
                 <?php if($countries['switzerland_content']): ?>
                     <option value="switzerland">Switzerland</option>
                 <?php endif; ?>
-                <?php if($countries['austria_content']): ?>
-                    <option value="austria">Austria</option>
-                <?php endif; ?>
-                <?php if($countries['netherlands_content']): ?>
-                    <option value="netherlands">Netherlands</option>
-                <?php endif; ?>
                 <?php if($countries['south_korea_content']): ?>
                     <option value="south-korea">South Korea</option>
                 <?php endif; ?>
-                <?php if($countries['mexico_content']): ?>
-                    <option value="mexico">Mexico</option>
+                <?php if($countries['spain_content']): ?>
+                    <option value="spain">Spain</option>
                 <?php endif; ?>
-                <?php if($countries['argentina_content']): ?>
-                    <option value="argentina">Argentina</option>
+                <?php if($countries['sweden_content']): ?>
+                    <option value="sweden">Sweden</option>
                 <?php endif; ?>
-                <?php if($countries['costa_rica_content']): ?>
-                    <option value="costa-rica">Costa Rica</option>
+                <?php if($countries['south_africa_content']): ?>
+                    <option value="africa">South Africa</option>
                 <?php endif; ?>
+                <?php if($countries['turkey_content']): ?>
+                    <option value="turkey">Turkey</option>
+                <?php endif; ?>
+                <?php if($countries['taiwan_content']): ?>
+                    <option value="taiwan">Taiwan</option>
+                <?php endif; ?>
+                <?php if($countries['united_states_content']): ?>
+                    <option value="us">United States</option>
+                <?php endif; ?>
+                <?php if($countries['united_kingdom_content']): ?>
+                    <option value="uk">United Kingdom</option>
+                <?php endif; ?>
+
             </select>
         </div>
 

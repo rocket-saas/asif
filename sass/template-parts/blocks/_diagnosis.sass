@@ -269,6 +269,12 @@
                     fill: $color-primary!important
         &__block
             position: relative
+            +max-screen(1610px)
+                margin-left: -120px
+            +max-screen(1200px)
+                margin-left: -200px
+            +max-screen($breakpoint-lg)
+                margin-left: 0
         &__wrapper
             position: relative
         &__points
@@ -472,12 +478,14 @@
             
     &__prof
         position: absolute
-        right: 0
+        right: -30px
         top: 0
         width: 300px
         max-width: 35%
         +max-screen($breakpoint-xl)
             right: -65px
+        +max-screen($breakpoint-lg)
+            right: -55px
         +max-screen($breakpoint-md)
             position: relative
             width: 100%
