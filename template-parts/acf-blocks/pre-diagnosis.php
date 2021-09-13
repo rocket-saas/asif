@@ -42,7 +42,7 @@ $notice_text = get_sub_field('notice_text');
                 <div class="pre-diagnosis__stat appear fade-up d-1">
 
                     <?php if($bar_charts_title): ?>
-                        <h3 class="subtitle subtitle--lg text--color--secondary pre-diagnosis__stat__title">Healthcare professionals visited before diagnosis:</h3>
+                        <h3 class="subtitle subtitle--lg text--color--secondary pre-diagnosis__stat__title"><?php echo $bar_charts_title; ?></h3>
                     <?php endif; ?>
 
                     <?php if($bar_charts): ?>

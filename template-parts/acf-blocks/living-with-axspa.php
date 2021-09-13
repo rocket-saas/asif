@@ -101,8 +101,8 @@ $relationList = get_sub_field('relationList');
                 <div class="row appear fade-up d-1">
                     <div class="livingAxspa__activitiesWrapper col-md-7">
                         <div class="livingAxspa__activitiesInner">
-                            <?php if ($riskNumber) : ?>
-                                <h5 class="livingAxspa__activitiesTitle">axSpA flares limited patients’ ability to carry out / engage in everyday activities including;</h5>
+                            <?php if ($activities_title) : ?>
+                                <h5 class="livingAxspa__activitiesTitle"><?php echo $activities_title;?></h5>
                             <?php endif;?>
                             <?php if( have_rows('activities_list') ): ?>
                                 <ul class="slides">
