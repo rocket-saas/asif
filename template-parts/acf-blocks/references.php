@@ -11,4 +11,10 @@ if(get_sub_field('references_content')) : ?>
         </div>
     </div>
 </section>
+
+<style>
+.page-id-3727 .imasReferences .col-lg-9{
+    margin-left: auto;
+}
+</style>
 <?php endif;?>
