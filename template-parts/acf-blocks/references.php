@@ -17,7 +17,6 @@ if(get_sub_field('references_content')) : ?>
 <style>
 .page-id-3727 .imasReferences .col-lg-9{
     margin-left: auto;
-    padding-left: 7px;
 }
 </style>
 <?php endif;?>
