@@ -4,6 +4,7 @@ $title = get_sub_field('hero_title');
 $titleAccent = get_sub_field('hero_title_accent');
 $text = get_sub_field('hero_content');
 $label = get_sub_field('section_label');
+$image = get_sub_field('image');
 ?>
 
 
@@ -23,7 +24,7 @@ $label = get_sub_field('section_label');
 								</div>
 							
 						<?php endif;?>
-	    		<div class="col-12 col-lg-9">
+	    		<div class="col-12 col-lg-6 col-md-7">
 					<?php if($text): ?>
 						<div class="text-block appear fade-up d-1">
 							<?php echo $text; ?>
@@ -35,6 +36,11 @@ $label = get_sub_field('section_label');
 						</div>
 					<?php endif; ?>
 	    		</div>
+				<?php if($image): ?>
+				<div class="col-md-4 offset-lg-2 offset-md-1">
+					<div class="hero-text__image appear fade-up d-1"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></div>
+				</div>
+				<?php endif; ?>
 	    		<!-- <div class="col-12 col-lg-3">
 	    			<h3 class="section__title">1. About Imas</h3>
 	    		</div> -->
