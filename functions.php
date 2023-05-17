@@ -588,8 +588,447 @@ function get_inline_svg($name){
 	return '';
 }
 
+function asif_post_type_language() {
+	$supports = array(
+	'title',
+	'editor',
+	'author',
+	'thumbnail',
+	'custom-fields',
+	'excerpt',
+	);
+	$labels = array(
+	'name' => _x('Languages', 'plural'),
+	'singular_name' => _x('Language', 'singular'),
+	'menu_name' => _x('Languages', 'admin menu'),
+	'name_admin_bar' => _x('Languages', 'admin bar'),
+	'add_new' => _x('Add New', 'add new'),
+	'add_new_item' => __('Add New Language'),
+	'new_item' => __('New Language'),
+	'edit_item' => __('Edit Language'),
+	'view_item' => __('View Language'),
+	'all_items' => __('All Languages'),
+	'search_items' => __('Search Language'),
+	'not_found' => __('No Language found.'),
+	);
+	$args = array(
+	'supports' => $supports,
+	'labels' => $labels,
+	'public' => true,
+	'query_var' => true,
+	'rewrite' => array('slug' => 'languages'),
+	'has_archive' => true,
+	'hierarchical' => false,
+	);
+	register_post_type('languages', $args);
+}
+add_action('init', 'asif_post_type_language');
+
+function header_vid()
+{
+	$postid = $_POST['postid'];
+	if(get_field('header_video',$postid) != '')
+	{
+	?>
+	 
+                                    
+                                        <div class="header-group" id="process-video">
+                                            <div id="poster-image">
+                                                <img src="<?php echo get_field('header_video_poster_image',$postid); ?>"/>
+                                            </div>
+                                            <iframe id="vimeoheader" src="<?php echo get_field('header_video',$postid); ?>" width="670" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+                                            <div id="play-btn-header"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92"><g id="Group_378" data-name="Group 378" transform="translate(-924 -391)"><circle id="Ellipse_2" data-name="Ellipse 2" cx="46" cy="46" r="46" transform="translate(924 391)" fill="#de4208" opacity="0.87"/><path id="Polygon_1" data-name="Polygon 1" d="M9,0l9,14H0Z" transform="translate(977 428) rotate(90)" fill="#fff"/></g></svg></div>
+                                        </div>
+                                        <div class="language-sec">
+                                            <div class="lang-icnam">
+                                                <img src="<?php echo get_field('language_flag',$postid) ?>">
+                                                <?php echo get_the_title($postid); ?>
+                                            </div>
+                                            <div class="lang-dropa">
+                                                <button type="button" class="dropdown-toggle category-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                            <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="23" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+                                                            <path id="Path_3" data-name="Path 3" d="M11.383,0A11.383,11.383,0,1,0,22.766,11.383,11.4,11.4,0,0,0,11.383,0m9.708,11.383A9.671,9.671,0,0,1,19.08,17.29a1.551,1.551,0,0,1-.378-1.807,8.647,8.647,0,0,0,.371-3.3c-.079-.7-.445-2.4-1.44-2.419a2.3,2.3,0,0,1-2.265-1.522c-1.225-2.452,2.3-2.922,1.074-4.281-.343-.381-2.114,1.57-2.374-1.03a1.356,1.356,0,0,1,.4-.751,9.722,9.722,0,0,1,6.625,9.2M10.049,1.771c-.232.452-.845.636-1.218.976-.81.734-1.158.632-1.6,1.336S5.378,5.8,5.378,6.312s.716,1.11,1.075.993a3.828,3.828,0,0,1,1.858.084c.556.2,4.641.393,3.34,3.846-.412,1.1-2.221.913-2.7,2.732a14.84,14.84,0,0,0-.339,1.779c-.03.576.408,2.748-.148,2.748S6.4,16.551,6.4,16.2a22.275,22.275,0,0,1-.39-2.644c0-1.057-1.8-1.04-1.8-2.446,0-1.269.976-1.9.756-2.506s-1.929-.627-2.643-.7a9.732,9.732,0,0,1,7.724-6.132M8.33,20.6c.583-.308.642-.705,1.171-.727a10.755,10.755,0,0,0,1.779-.385,16.375,16.375,0,0,1,2.641-.825c.8-.065,2.389.042,2.816.818A9.668,9.668,0,0,1,8.33,20.6" transform="translate(0 -0.051)" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul id="header-lang">
+                                                        <?php $args = array(
+                                                            'post_type' => 'languages',
+                                                            'posts_per_page' => -1
+                                                        );
+                                                        $query = new WP_Query($args);
+                                                        if ($query->have_posts() ) : 
+                                                            
+                                                            while ( $query->have_posts() ) : $query->the_post(); 
+                                                        		if(get_field('header_video',get_the_ID()) != '') { ?>
+
+                                                                <li data-target="<?php echo get_the_ID(); ?>" class="dropdown-item"><?php echo get_the_title(); ?></li>
+                                                                <?php } ?>
+                                                        <?php endwhile;
+                                                            
+                                                            wp_reset_postdata();
+                                                        endif; ?>
+                                                        
+                                                    </ul>                                            
+                                                    <div></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                   
+    
+<?php
+	} 
+	else
+	{
+		echo "Sorry don't have videos";
+	}
+	exit;
+
+}
+add_action('wp_ajax_header_vid','header_vid');
+add_action('wp_ajax_nopriv_header_vid','header_vid');
+
+function bottom_vid1()
+{
+	$postid = $_POST['postid'];
+
+	if(get_field('bottom_video1',$postid) != '')
+	{
+	?>
+	<div class="vid-group" id="process-video1">
+                                    <div id="poster-image1" class="posterimg">
+                                        <img src="<?php echo get_field('bottom_video1_poster_image',$postid); ?>"/>
+                                    </div>
+                                    <iframe id="vimeoheader1" src="<?php echo get_field('bottom_video1',$postid); ?>" width="100%" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+                                    <div id="play-btn-header1"  class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"><g id="Group_380" data-name="Group 380" transform="translate(-924 -391)"><circle id="Ellipse_2" data-name="Ellipse 2" cx="31" cy="31" r="31" transform="translate(924 391)" fill="#de4208" opacity="0.87"/><path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(960 416) rotate(90)" fill="#fff"/></g></svg>
+                                    </div>
+                                </div>
+                                <?php if(get_field('bottom_video1_title',$postid) != '') { ?>
+                                <h4 class="vdtl"><?php echo get_field('bottom_video1_title',$postid); ?></h4>
+                                <?php } ?>
+                                <div class="language-sec-vid1">      
+                                    <div class="lang-icnam">                                        
+                                        <img src="<?php echo get_field('language_flag',$postid) ?>">
+                                        <?php echo get_the_title($postid); ?>
+                                    </div>    
+                                    <div class="lang-dropa">
+                                        <button type="button" class="dropdown-toggle category-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                            <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="23" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+                                                            <path id="Path_3" data-name="Path 3" d="M11.383,0A11.383,11.383,0,1,0,22.766,11.383,11.4,11.4,0,0,0,11.383,0m9.708,11.383A9.671,9.671,0,0,1,19.08,17.29a1.551,1.551,0,0,1-.378-1.807,8.647,8.647,0,0,0,.371-3.3c-.079-.7-.445-2.4-1.44-2.419a2.3,2.3,0,0,1-2.265-1.522c-1.225-2.452,2.3-2.922,1.074-4.281-.343-.381-2.114,1.57-2.374-1.03a1.356,1.356,0,0,1,.4-.751,9.722,9.722,0,0,1,6.625,9.2M10.049,1.771c-.232.452-.845.636-1.218.976-.81.734-1.158.632-1.6,1.336S5.378,5.8,5.378,6.312s.716,1.11,1.075.993a3.828,3.828,0,0,1,1.858.084c.556.2,4.641.393,3.34,3.846-.412,1.1-2.221.913-2.7,2.732a14.84,14.84,0,0,0-.339,1.779c-.03.576.408,2.748-.148,2.748S6.4,16.551,6.4,16.2a22.275,22.275,0,0,1-.39-2.644c0-1.057-1.8-1.04-1.8-2.446,0-1.269.976-1.9.756-2.506s-1.929-.627-2.643-.7a9.732,9.732,0,0,1,7.724-6.132M8.33,20.6c.583-.308.642-.705,1.171-.727a10.755,10.755,0,0,0,1.779-.385,16.375,16.375,0,0,1,2.641-.825c.8-.065,2.389.042,2.816.818A9.668,9.668,0,0,1,8.33,20.6" transform="translate(0 -0.051)" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <ul id="bottom-vid-lang" class="btm-vid1">
+                                                <?php $args = array(
+                                                    'post_type' => 'languages',
+                                                    'posts_per_page' => -1
+                                                );
+                                            $query = new WP_Query($args);
+                                            if ($query->have_posts() ) : 
+                                                
+                                                while ( $query->have_posts() ) : $query->the_post();
+                                                if(get_field('bottom_video1',get_the_ID()) != '') {  ?>
+                                                    <li data-target="<?php echo get_the_ID(); ?>" class="dropdown-item"><?php echo get_the_title(); ?></li>
+                                                <?php } ?>
+                                            <?php endwhile;
+                                                
+                                                wp_reset_postdata();
+                                            endif; ?>
+                                                
+                                            </ul>
+                                        
+                                            <div>
+
+                                            </div>                                        
+                                        </div>
+                                    </div>    
+                                </div>
+<?php
+	} 
+	else
+	{
+		echo "Sorry don't have videos";
+	}
+	exit;
+
+}
+add_action('wp_ajax_bottom_vid1','bottom_vid1');
+add_action('wp_ajax_nopriv_bottom_vid1','bottom_vid1');
+
+
+function bottom_vid2()
+{
+	$postid = $_POST['postid'];
+
+	if(get_field('bottom_video2',$postid) != '')
+	{
+	?>
+	<div class="vid-group" id="process-video2">
+                                            <div id="poster-image2" class="posterimg">
+                                                <img src="<?php echo get_field('bottom_video2_poster_image',$postid); ?>"/>
+                                            </div>
+                                            <iframe id="vimeoheader2" src="<?php echo get_field('bottom_video2',$postid); ?>" width="100%" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+                                            <div id="play-btn-header2"  class="play-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"><g id="Group_380" data-name="Group 380" transform="translate(-924 -391)"><circle id="Ellipse_2" data-name="Ellipse 2" cx="31" cy="31" r="31" transform="translate(924 391)" fill="#de4208" opacity="0.87"/><path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(960 416) rotate(90)" fill="#fff"/></g></svg>
+                                            </div>
+                                        </div>
+                                         <?php if(get_field('bottom_video2_title',$postid) != '') { ?>
+                                                <h4 class="vdtl"><?php echo get_field('bottom_video2_title',$postid); ?></h4>
+                                         <?php } ?>
+                                        <div class="language-sec-vid1">
+                                            <div class="lang-icnam">                                        
+                                                <img src="<?php echo get_field('language_flag',$postid) ?>">
+                                                <?php echo get_the_title($postid); ?>
+                                            </div>    
+                                            <div class="lang-dropa">
+                                            <button type="button" class="dropdown-toggle category-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                            <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="23" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+                                                            <path id="Path_3" data-name="Path 3" d="M11.383,0A11.383,11.383,0,1,0,22.766,11.383,11.4,11.4,0,0,0,11.383,0m9.708,11.383A9.671,9.671,0,0,1,19.08,17.29a1.551,1.551,0,0,1-.378-1.807,8.647,8.647,0,0,0,.371-3.3c-.079-.7-.445-2.4-1.44-2.419a2.3,2.3,0,0,1-2.265-1.522c-1.225-2.452,2.3-2.922,1.074-4.281-.343-.381-2.114,1.57-2.374-1.03a1.356,1.356,0,0,1,.4-.751,9.722,9.722,0,0,1,6.625,9.2M10.049,1.771c-.232.452-.845.636-1.218.976-.81.734-1.158.632-1.6,1.336S5.378,5.8,5.378,6.312s.716,1.11,1.075.993a3.828,3.828,0,0,1,1.858.084c.556.2,4.641.393,3.34,3.846-.412,1.1-2.221.913-2.7,2.732a14.84,14.84,0,0,0-.339,1.779c-.03.576.408,2.748-.148,2.748S6.4,16.551,6.4,16.2a22.275,22.275,0,0,1-.39-2.644c0-1.057-1.8-1.04-1.8-2.446,0-1.269.976-1.9.756-2.506s-1.929-.627-2.643-.7a9.732,9.732,0,0,1,7.724-6.132M8.33,20.6c.583-.308.642-.705,1.171-.727a10.755,10.755,0,0,0,1.779-.385,16.375,16.375,0,0,1,2.641-.825c.8-.065,2.389.042,2.816.818A9.668,9.668,0,0,1,8.33,20.6" transform="translate(0 -0.051)" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <ul id="bottom-vid-lang" class="btm-vid2">
+                                                    <?php $args = array(
+                                                        'post_type' => 'languages',
+                                                        'posts_per_page' => -1
+                                                    );
+                                                $query = new WP_Query($args);
+                                                if ($query->have_posts() ) : 
+                                                    
+                                                    while ( $query->have_posts() ) : $query->the_post(); 
+                                                		if(get_field('bottom_video2',get_the_ID()) != '') { ?>
+                                                        <li data-target="<?php echo get_the_ID(); ?>" class="dropdown-item"><?php echo get_the_title(); ?></li>
+                                                        <?php } ?>
+                                                <?php endwhile;
+                                                    
+                                                    wp_reset_postdata();
+                                                endif; ?>
+                                                    
+                                                </ul>
+                                            
+                                                <div></div>
+                                            </div>
+                                            </div>
+                                        </div>
+<?php
+	} 
+	else
+	{
+		echo "Sorry don't have videos";
+	}
+	exit;
+
+}
+add_action('wp_ajax_bottom_vid2','bottom_vid2');
+add_action('wp_ajax_nopriv_bottom_vid2','bottom_vid2');
+
+
+function bottom_vid3()
+{
+	$postid = $_POST['postid'];
+
+	if(get_field('bottom_video3',$postid) != '')
+	{
+	?>
+	<div class="vid-group" id="process-video3">
+                                            <div id="poster-image3" class="posterimg">
+                                                <img src="<?php echo get_field('bottom_video3_poster_image',$postid); ?>" />
+                                            </div>
+                                            <iframe id="vimeoheader3" src="<?php echo get_field('bottom_video3',$postid); ?>" width="100%" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+                                            <div id="play-btn-header3"  class="play-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"><g id="Group_380" data-name="Group 380" transform="translate(-924 -391)"><circle id="Ellipse_2" data-name="Ellipse 2" cx="31" cy="31" r="31" transform="translate(924 391)" fill="#de4208" opacity="0.87"/><path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(960 416) rotate(90)" fill="#fff"/></g></svg>
+                                            </div>
+                                        </div>
+                                         <?php if(get_field('bottom_video3_title',$postid) != '') { ?>
+                                                <h4 class="vdtl"><?php echo get_field('bottom_video3_title',$postid); ?></h4>
+                                        <?php } ?>
+                                        <div class="language-sec-vid1">
+                                            <div class="lang-icnam">                                        
+                                                <img src="<?php echo get_field('language_flag',$postid) ?>">
+                                                <?php echo get_the_title($postid); ?>
+                                            </div>    
+                                            <div class="lang-dropa">
+                                            <button type="button" class="dropdown-toggle category-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                            <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="23" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+                                                            <path id="Path_3" data-name="Path 3" d="M11.383,0A11.383,11.383,0,1,0,22.766,11.383,11.4,11.4,0,0,0,11.383,0m9.708,11.383A9.671,9.671,0,0,1,19.08,17.29a1.551,1.551,0,0,1-.378-1.807,8.647,8.647,0,0,0,.371-3.3c-.079-.7-.445-2.4-1.44-2.419a2.3,2.3,0,0,1-2.265-1.522c-1.225-2.452,2.3-2.922,1.074-4.281-.343-.381-2.114,1.57-2.374-1.03a1.356,1.356,0,0,1,.4-.751,9.722,9.722,0,0,1,6.625,9.2M10.049,1.771c-.232.452-.845.636-1.218.976-.81.734-1.158.632-1.6,1.336S5.378,5.8,5.378,6.312s.716,1.11,1.075.993a3.828,3.828,0,0,1,1.858.084c.556.2,4.641.393,3.34,3.846-.412,1.1-2.221.913-2.7,2.732a14.84,14.84,0,0,0-.339,1.779c-.03.576.408,2.748-.148,2.748S6.4,16.551,6.4,16.2a22.275,22.275,0,0,1-.39-2.644c0-1.057-1.8-1.04-1.8-2.446,0-1.269.976-1.9.756-2.506s-1.929-.627-2.643-.7a9.732,9.732,0,0,1,7.724-6.132M8.33,20.6c.583-.308.642-.705,1.171-.727a10.755,10.755,0,0,0,1.779-.385,16.375,16.375,0,0,1,2.641-.825c.8-.065,2.389.042,2.816.818A9.668,9.668,0,0,1,8.33,20.6" transform="translate(0 -0.051)" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <ul id="bottom-vid-lang" class="btm-vid3">
+                                                    <?php $args = array(
+                                                        'post_type' => 'languages',
+                                                        'posts_per_page' => -1
+                                                    );
+                                                $query = new WP_Query($args);
+                                                if ($query->have_posts() ) : 
+                                                    
+                                                    while ( $query->have_posts() ) : $query->the_post(); 
+                                                		if(get_field('bottom_video3',get_the_ID()) != '') { ?>
+                                                        <li data-target="<?php echo get_the_ID(); ?>" class="dropdown-item"><?php echo get_the_title(); ?></li>
+                                                        <?php } ?>
+                                                <?php endwhile;
+                                                    
+                                                    wp_reset_postdata();
+                                                endif; ?>
+                                                    
+                                                </ul>
+                                            
+                                                <div></div>
+                                            </div>
+                                        </div></div>
+<?php
+	} 
+	else
+	{
+		echo "Sorry don't have videos";
+	}
+	exit;
+
+}
+add_action('wp_ajax_bottom_vid3','bottom_vid3');
+add_action('wp_ajax_nopriv_bottom_vid3','bottom_vid3');
+
+
+function bottom_vid4()
+{
+	$postid = $_POST['postid'];
+
+	if(get_field('bottom_video4',$postid) != '')
+	{
+	?>
+	<div class="vid-group" id="process-video4">
+                                            <div id="poster-image4" class="posterimg">
+                                                <img src="<?php echo get_field('bottom_video4_poster_image',$postid); ?>" />
+                                            </div>
+                                            <iframe id="vimeoheader4" src="<?php echo get_field('bottom_video4',$postid); ?>" width="100%" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+                                            <div id="play-btn-header4" class="play-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"><g id="Group_380" data-name="Group 380" transform="translate(-924 -391)"><circle id="Ellipse_2" data-name="Ellipse 2" cx="31" cy="31" r="31" transform="translate(924 391)" fill="#de4208" opacity="0.87"/><path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(960 416) rotate(90)" fill="#fff"/></g></svg>
+                                            </div>
+                                        </div>
+                                         <?php if(get_field('bottom_video4_title',$postid) != '') { ?>
+                                                <h4 class="vdtl"><?php echo get_field('bottom_video4_title',$postid); ?></h4>
+                                          <?php } ?>
+                                        <div class="language-sec-vid1">
+                                            <div class="lang-icnam">                                        
+                                                <img src="<?php echo get_field('language_flag',$postid) ?>">
+                                                <?php echo get_the_title($postid); ?>
+                                            </div>    
+                                            <div class="lang-dropa">
+                                            <button type="button" class="dropdown-toggle category-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                            <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="23" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+                                                            <path id="Path_3" data-name="Path 3" d="M11.383,0A11.383,11.383,0,1,0,22.766,11.383,11.4,11.4,0,0,0,11.383,0m9.708,11.383A9.671,9.671,0,0,1,19.08,17.29a1.551,1.551,0,0,1-.378-1.807,8.647,8.647,0,0,0,.371-3.3c-.079-.7-.445-2.4-1.44-2.419a2.3,2.3,0,0,1-2.265-1.522c-1.225-2.452,2.3-2.922,1.074-4.281-.343-.381-2.114,1.57-2.374-1.03a1.356,1.356,0,0,1,.4-.751,9.722,9.722,0,0,1,6.625,9.2M10.049,1.771c-.232.452-.845.636-1.218.976-.81.734-1.158.632-1.6,1.336S5.378,5.8,5.378,6.312s.716,1.11,1.075.993a3.828,3.828,0,0,1,1.858.084c.556.2,4.641.393,3.34,3.846-.412,1.1-2.221.913-2.7,2.732a14.84,14.84,0,0,0-.339,1.779c-.03.576.408,2.748-.148,2.748S6.4,16.551,6.4,16.2a22.275,22.275,0,0,1-.39-2.644c0-1.057-1.8-1.04-1.8-2.446,0-1.269.976-1.9.756-2.506s-1.929-.627-2.643-.7a9.732,9.732,0,0,1,7.724-6.132M8.33,20.6c.583-.308.642-.705,1.171-.727a10.755,10.755,0,0,0,1.779-.385,16.375,16.375,0,0,1,2.641-.825c.8-.065,2.389.042,2.816.818A9.668,9.668,0,0,1,8.33,20.6" transform="translate(0 -0.051)" fill="#1d1d1d" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <ul id="bottom-vid-lang" class="btm-vid4">
+                                                    <?php $args = array(
+                                                        'post_type' => 'languages',
+                                                        'posts_per_page' => -1
+                                                    );
+                                                $query = new WP_Query($args);
+                                                if ($query->have_posts() ) : 
+                                                    
+                                                    while ( $query->have_posts() ) : $query->the_post();
+                                                    if(get_field('bottom_video4',get_the_ID()) != '') {  ?>
+                                                        <li data-target="<?php echo get_the_ID(); ?>" class="dropdown-item"><?php echo get_the_title(); ?></li>
+                                                        <?php } ?>
+                                                <?php endwhile;
+                                                    
+                                                    wp_reset_postdata();
+                                                endif; ?>
+                                                    
+                                                </ul>
+                                            
+                                                <div></div></div>
+                                            </div>
+                                        </div>
+<?php
+	} 
+	else
+	{
+		echo "Sorry don't have videos";
+	}
+	exit;
+
+}
+add_action('wp_ajax_bottom_vid4','bottom_vid4');
+add_action('wp_ajax_nopriv_bottom_vid4','bottom_vid4');
+
+function pdf_files()
+{
+	$postid = $_POST['postid'];
+	 if(get_field('pdf_file',$postid) != '')
+	 { 
+		$img =  get_field('pdf_file_poster_image',$postid);
+		$link = get_field('pdf_file',$postid);
+		$flag = get_field('language_flag',$postid);
+		$lang_name = get_the_title($postid);
+		
+	}
+	echo $img."|".$link."|".$flag."|".$lang_name;
+	exit;
+
+}
+add_action('wp_ajax_pdf_files','pdf_files');
+add_action('wp_ajax_nopriv_pdf_files','pdf_files');
+
+function pdf_files_mobile()
+{
+	$postid = $_POST['postid'];
+	 //if(get_field('pdf_file_mobile',$postid) != '')
+	 //{ 
+		$img =  get_field('pdf_file_poster_image',$postid);
+		$linkmob = get_field('pdf_file_mobile',$postid);
+		$flag = get_field('language_flag',$postid);
+		$lang_name = get_the_title($postid);
+		
+	//}
+	echo $img."|".$linkmob."|".$flag."|".$lang_name;
+	exit;
+
+}
+add_action('wp_ajax_pdf_files_mobile','pdf_files_mobile');
+add_action('wp_ajax_nopriv_pdf_files_mobile','pdf_files_mobile');
 /**
  * Incude custom acf-functions
  */
 
 include( get_template_directory() . '/inc/acf-functions.php' );
+

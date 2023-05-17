@@ -101,6 +101,15 @@ jQuery( document ).ready(function() { jQuery(' .button_div').after('<div class="
 		}
 	});
 </script>
+
+<style type="text/css">
+  footer .all-media a
+  {
+    margin-top: 10px;
+  }
+</style>
+  
+</script>
    
 </body>
 </html>
