@@ -30,12 +30,12 @@
           <div class="row mt-2">
 		  
 		  <?php 						
-			$wp_query = new WP_Query('post_type=post'.','.'&order=asc&showposts=-1' .','.'&paged=' . $paged);
+			$wp_query = new WP_Query('post_type=post & order=desc & showposts=-1 & paged=' . $paged);
 			if ( $wp_query->have_posts() ) :
 			while ( $wp_query->have_posts() ) : $wp_query->the_post(); 
-			$pimgurl1 = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID ()), 'full' );
-      if($pimgurl1[0]){
-			 $pimgurl = $pimgurl1[0];
+			$pimgurl1 = get_the_post_thumbnail_url(get_the_ID());
+      if($pimgurl1){
+			 $pimgurl = $pimgurl1;
       }else{
         $pingUrlClass = 'post_default';
         $pimgurl = 'http://79.170.40.35/asif.info/wp-content/themes/asif/images/logo.png';

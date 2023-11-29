@@ -109,4 +109,165 @@ endif;
           </div>
           <!-- /.row -->
     </div>
+    <div class="wi-full membership-page content-offset page-text text-size text-title  world-map-homepage">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Member Organisations in ASIF</h2>
+            </div>
+            <!-- /.col-sm-12 -->
+
+            <div class="col-sm-12">
+              <div class="membership_area">
+                <div class="w100p">
+                  <h3>Europe</h3>
+                  <ul class="flag-list">
+				  <?php 
+				  $args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+              array(
+                'taxonomy'      => 'country_for',               
+                'terms'         => 'EUROPE',
+               'field' => 'name',             
+                'operator'      => 'IN' 
+              )));				
+			$wp_query = new WP_Query($args);
+			if ( $wp_query->have_posts() ) :
+			while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+                    <li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+                    <?php endwhile; ?>
+		<?php 		
+		endif;
+		wp_reset_query(); 
+		?>
+                  </ul>
+                </div>
+                <!-- /.w100p -->
+                <div class="w20p">
+                  <h3>Asia</h3>
+                  <ul class="flag-list">
+                   <?php 
+				  $args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+              array(
+                'taxonomy'      => 'country_for',               
+                'terms'         => 'ASIA',
+               'field' => 'name',             
+                'operator'      => 'IN' 
+              )));				
+			$wp_query = new WP_Query($args);
+			if ( $wp_query->have_posts() ) :
+			while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+                    <li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+                    <?php endwhile; ?>
+		<?php 		
+		endif;
+		wp_reset_query(); 
+		?>
+                  </ul>
+                </div>
+                <!-- /.w20p -->
+                <div class="w20p">
+                  <h3>America</h3>
+                  <ul class="flag-list">
+                      <?php 
+				  $args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+              array(
+                'taxonomy'      => 'country_for',               
+                'terms'         => 'AMERICA',
+               'field' => 'name',             
+                'operator'      => 'IN' 
+              )));				
+			$wp_query = new WP_Query($args);
+			if ( $wp_query->have_posts() ) :
+			while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+                    <li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+                    <?php endwhile; ?>
+		<?php 		
+		endif;
+		wp_reset_query(); 
+		?>
+                  </ul>
+                </div>
+                <!-- /.w20p -->
+                <div class="w20p">
+                  <h3>Australia</h3>
+                  <ul class="flag-list">
+                   <?php 
+				  $args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+              array(
+                'taxonomy'      => 'country_for',               
+                'terms'         => 'AUSTRALIA',
+               'field' => 'name',             
+                'operator'      => 'IN' 
+              )));				
+			$wp_query = new WP_Query($args);
+			if ( $wp_query->have_posts() ) :
+			while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+                    <li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+                    <?php endwhile; ?>
+		<?php 		
+		endif;
+		wp_reset_query(); 
+		?>
+                  </ul>
+                </div>
+                <!-- /.w20p -->
+                <div class="w20p">
+                  <h3>Africa</h3>
+                  <ul class="flag-list">
+                   <?php 
+				  $args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+              array(
+                'taxonomy'      => 'country_for',
+				'terms'         => 'AFRICA',
+				'field' => 'name',             
+                'operator'      => 'IN' 
+               
+              )));				
+			$wp_query = new WP_Query($args);
+			if ( $wp_query->have_posts() ) :
+			while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+                    <li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+                    <?php endwhile; ?>
+		<?php 		
+		endif;
+		wp_reset_query(); 
+		?>
+                  </ul>
+                </div>
+                <!-- /.w20p -->
+				  
+				  <div class="w20p">
+                  <h3>INTERNATIONAL</h3>
+                  <ul class="flag-list">
+                   <?php 
+				  	$args = array( 'post_type' => 'country','posts_per_page'=>-1,'orderby'=> 'title','order' => 'ASC', 'tax_query'  => array(
+					  array(
+						'taxonomy'      => 'country_for',
+						'terms'         => 'INTERNATIONAL',
+						'field' => 'name',             
+						'operator'      => 'IN' 
+
+					 )));				
+					$wp_query = new WP_Query($args);
+						if ( $wp_query->have_posts() ) :
+						while ( $wp_query->have_posts() ) : $wp_query->the_post();?> 		
+								<li><a href="<?php the_permalink(); ?>"><img src="<?php the_field('country_flag');?>" alt="<?php the_title();?>"> <?php the_title();?></a></li>
+								<?php endwhile; ?>
+						<?php 		
+						endif;
+						wp_reset_query(); 
+					?>
+                  </ul>
+                </div>
+                <!-- /.w20p -->
+              </div>
+            
+            </div>
+            <!-- /.col-sm-12 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.content-offset text-size text-title -->
 </div>

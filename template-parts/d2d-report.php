@@ -25,6 +25,21 @@ if ( ! post_password_required( $post ) ) { ?>
 			<p class="d2d-text"><?php the_sub_field('top_par_text'); ?></p>
 			<?php endwhile; endif;?>
 		</div>
+		<?php if( have_rows('download_repeater') ): ?>
+			<div class="report repeater-sec row">
+				<?php while ( have_rows('download_repeater') ) : the_row();	?>
+					<div class="report-bx col-lg-3">
+						<a href="<?php echo get_sub_field('button_link')['url']; ?>" target="<?php echo get_sub_field('button_link')['target']; ?>">
+							<img src="<?php echo get_sub_field('thumbnail_image'); ?>" alt="">
+						</a>
+						<a class="to-download" href="<?php echo get_sub_field('button_link')['url']; ?>" target="<?php echo get_sub_field('button_link')['target']; ?>">
+							<?php echo get_sub_field('button_link')['title']; ?>
+						</a>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		<?php endif; ?>
+
 		<div class="mx-auto mx-width text-center">
 			<h2 class="d2d-top-title d2d fixed-header-width">
 				<?php the_field('header_about'); ?>

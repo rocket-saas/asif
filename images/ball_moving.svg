@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="21" viewBox="0 0 62 21">
+  <defs>
+    <linearGradient id="linear-gradient" x2="0.934" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ff1a"/>
+      <stop offset="1" stop-color="#00ff1a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="ball_moving" transform="translate(-402 -979)">
+    <rect id="Rectangle_199" data-name="Rectangle 199" width="52" height="21" transform="translate(454 1000) rotate(180)" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="10.5" cy="10.5" r="10.5" transform="translate(443 979)" fill="#00ff1a"/>
+  </g>
+</svg>

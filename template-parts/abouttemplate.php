@@ -18,6 +18,7 @@
         </div>
       </nav>
  <?php $i = 1 ?>
+
       <div class="wi-full content-offset page-text text-size text-title">
         <div class="container">
           <div class="row">
@@ -28,6 +29,8 @@
 			endwhile; //resetting the page loop
 			wp_reset_query(); //resetting the page query
 			?>
+				
+				
         <div class="row align-items-center">
     			 <?php if( have_rows('sponsors_logos')): ?>
     			 <?php while ( have_rows('sponsors_logos') ) : the_row();
