@@ -20,11 +20,6 @@ if ( ! post_password_required( $post ) ) { ?>
 <section id="delay-to-diagnosis">
 	<section class="top-bg" style="background-image: url(<?php the_field('top_bg_image'); ?>);background-repeat: no-repeat; background-size: cover;">
 		<section class="container">
-			<div class="text-center mb-4">
-				<a href="https://asif.info/delay-to-diagnosis-report/" target=_blank>
-					<img src='https://asif.info/wp-content/uploads/2021/06/MF_ASIF_mock_webbanners_v12.png' style="width: 100%;" />
-				</a>
-			</div>
 			<div class="dflex dflex-d2d">
 				<div class="d2d-top-top-text">
 					<h2 class="d2d-top-title d2d">
@@ -128,7 +123,7 @@ if ( ! post_password_required( $post ) ) { ?>
 		</section>
 	</section>
 </section>
-<section id="sponsors">
+<!--section id="sponsors">
 				<div class="d2dbottom container">
 					<p class="d2d" style="font-size: 30px;">
 						<?php the_field('sponsors_text'); ?> 
@@ -144,11 +139,11 @@ if ( ! post_password_required( $post ) ) { ?>
 						</i>
 					</p>
 				</div>
-			</section>
+			</section-->
 </div>
-<div class="spacer spacer-medium">
+<div class="spacer spacer-medium" style="background-color: #f1f1f1;">
 
-			</div>
+</div>
 <?php } else { ?>
 	<section id="imas_date" class="passward_form">
 		<div class="container">

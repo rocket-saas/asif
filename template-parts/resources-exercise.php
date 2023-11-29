@@ -241,9 +241,8 @@ if (!post_password_required($post)) { ?>
 			</div>
 		</div>
 		
-		
-	<!-- test -->
 
+	
 <div class="row" id="axspa">
 			<div class="col-md-12">
 				<h1>
@@ -280,7 +279,32 @@ if (!post_password_required($post)) { ?>
 		</div>
 		
 		<!-- test -->
-
+	<!-- test -->
+		<div id="stretch-and-move" class="col-lg-12 main-video-section d-flex justify-content-between row">
+			<h1>
+				STRETCH AND MOVE
+			</h1>
+			<br>
+			<p class="col-lg-12 mb-3 main-video-premier">
+				<?php the_field('stretch_description'); ?>
+			</p>
+			<?php if (have_rows('stretch_videos')):
+		while (have_rows('stretch_videos')):
+			the_row(); ?>
+			<div class="col-lg-6 col-md-12">
+				<p class="mb-3 subtitle-video-premier">
+					<?php the_sub_field('title'); ?>	
+				</p>
+				<iframe class="analytics" id="<?php the_sub_field('analytics_id'); ?>" width="560" height="315" src="<?php the_sub_field('youtube_embed'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%;"></iframe>
+			</div>
+			<?php endwhile; endif; ?>
+			<div class="col-md-12 py-2">
+				<p class="mb-3 disclaimer-video-premier">
+					When participating in any exercise or exercise programme, there is the possibility of physical injury. If you engage in this exercise or exercise programme, you agree that you do so at your own risk, are voluntarily participating in these activities, assume all risk of injury to yourself, and agree to release and discharge Yoga for AS LTD and ASIF from any and all claims or causes of action, known or unknown, arising out of these videos.
+				</p>
+			</div>
+		</div>
+	<!-- test -->	
 
 				<div class="row" id="additional">
 			<div class="col-md-12">

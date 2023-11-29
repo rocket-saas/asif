@@ -262,19 +262,24 @@ if (!post_password_required($post)) { ?>
 					</p>
 											</a> -->
 					<a class="analytics" id="Resources-About-Discussion-Guide-pdf" download href="https://asif.info/wp-content/uploads/2023/03/Discussion-guide_Print.pdf" target="_blank" style="display:inline-block; padding-left:20px">
-				<img src="https://asif.info/wp-content/uploads/2023/03/talk_to_be_heard_discussion_guide.jpg">
-					<p>
-						Talk to be Heard discussion guide
-					</p>
-											</a>
+						<img src="https://asif.info/wp-content/uploads/2023/03/talk_to_be_heard_discussion_guide.jpg">
+						<p>
+							Talk to be Heard discussion guide
+						</p>
+					</a>
 
 					<a class="analytics padding-tools" id="Resources-About-Assesment-pdf" download href="https://asif.info/wp-content/uploads/2023/05/Clinical-Measurement-Infographic_ASIF-Website_Approved-1-1.pdf" target="_blank" style="display:inline-block;">
-				<img src="https://asif.info/wp-content/uploads/2023/05/Clinical-Measurement-Infographic_ASIF-Website_Approved-1.jpg">
-					<p>
-						Disease Assessment
-					</p>
-											</a>
-					
+						<img src="https://asif.info/wp-content/uploads/2023/05/Clinical-Measurement-Infographic_ASIF-Website_Approved-1.jpg">
+						<p>
+							Disease Assessment
+						</p>
+					</a>
+					<a class="analytics padding-tools" id="Resources-About-Clinical-Measurement-pdf" download href="https://asif.info/wp-content/uploads/2023/09/ASIF-axSpA-Patient-Perspective-Infographic_Approved.pdf" target="_blank" style="display:inline-block;">
+						<img src="https://asif.info/wp-content/uploads/2023/09/patientperspectivecover.jpg">
+						<p>
+							Building a Partnership with your Doctor
+						</p>
+					</a>
 				</div>
 				<div class="symptoms-checkers">
 						<h2>

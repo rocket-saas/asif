@@ -252,7 +252,13 @@ When participating in any exercise or exercise programme, there is the possibili
 					Thank you to everyone for joining us this World AS Day! We loved seeing everyone engaged, sharing and spreading awareness about axSpA on this special day and we hope to see you again next year!<br>
 <br>
 Remember that you can raise awareness all year, especially this month by joining <a class="analytics" id="WYAO-2023-Video-Session" href="https://walkyourasoff.com/" target=_blank><u>Walk You AS Off</u></a> and logging your steps! <br>
+<br></p>
+			<div class="text-center col-sm-12 mb-3">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/2QpS8aL84Gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="center-video-wasd"></iframe>		
+			</div>
 <br>
+<br>
+			<p class="col-lg-12 mb-3 main-video-premier">
 You can watch the two Stretch and Move sessions with Jamie and Geoff from <a class="analytics" id="Yoga-AS-2023-Video-Session" href="https://yogaforas.com/" target=_blank><u>Yoga for AS</u></a> sessions below.
 				</p>
 			<div class="col-lg-6 col-md-12">

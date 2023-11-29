@@ -237,6 +237,41 @@ if (!post_password_required($post)) { ?>
 
 			</div>
 		</div>
+		
+		<div class="row" id="asif-webinar">
+			<div class="col-md-12">
+				<h1>
+					ASIF WEBINARS
+				</h1>
+				<div class="row webinars">
+
+						<?php if (have_rows('patient_webinars')):
+		while (have_rows('patient_webinars')):
+			the_row(); ?>
+<div class="col-md-4 text-center">
+						<p class="resources">
+							<a class="fancybox analytics" id="<?php the_sub_field('analytics_id'); ?>" href='<?php the_sub_field('content'); ?>'>
+								<?php
+			$url = get_sub_field('content');
+			parse_str(parse_url($url, PHP_URL_QUERY), $my_array_of_vars);
+			$video_id = $video_id[1];
+			$thumbnail = "http://img.youtube.com/vi/" . $my_array_of_vars['v'] . "/0.jpg";
+			echo ("<img style='width:100%'src='" . $thumbnail . "'>");
+                                ?>
+
+							</a>
+						</p>
+						<h3 class="resources">
+							<?php the_sub_field('title'); ?>
+						</h3>
+						</div>
+
+						<?php endwhile; endif; ?>
+
+				</div>
+			</div>
+		</div>
+		
 				<div class="row" id="campaign">
 			<div class="col-md-12">
 				<h1>

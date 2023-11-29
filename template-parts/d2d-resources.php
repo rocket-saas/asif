@@ -33,7 +33,7 @@ if ( ! post_password_required( $post ) ) { ?>
 			<div class="videos">
 				<?php if( have_rows('video_repeter') ):
 					$count1 = 1;
-					while ( have_rows('video_repeter') ) : the_row(); if($count1 == 6): ?>
+					while ( have_rows('video_repeter') ) : the_row(); if($count1 == 12): ?>
 					<div class="pair">
 						<a href="https://asif.info/wp-content/uploads/2021/06/Delay-to-Diagnosis Members'-Tool-Kit.zip" target="_blank" class="member-tk"download><img src="<?php the_sub_field('list_video'); ?>" id="member-kit" style="width: 600px; margin-right: 100px;" class="top-image"></a>
 						<h3 class="d2d"><?php the_sub_field('video_title'); ?></h3>
@@ -57,7 +57,7 @@ if ( ! post_password_required( $post ) ) { ?>
 
 			</div>
 				<h2 class="d2d">
-					More resources
+					Further reading
 				</h2>
 									<div class="col-12">
 						<div class="imas_accordion">
@@ -86,13 +86,11 @@ if ( ! post_password_required( $post ) ) { ?>
 								    			<li>
 													
 								    				<p><?php the_sub_field('accordion_text'); ?></p>
-													<?php if( have_rows('file_rep') ):
-													while ( have_rows('file_rep') ) : the_row();	?>
-								    				<a href="<?php the_sub_field('accordion_file'); ?>" download>
-								    					<span class="download_icon" style="margin-top: -10px;">
+													
+								    				<a href="<?php the_sub_field('redir_link'); ?>" target=_blank>
+								    					<span class="download_icon" style="margin-top: -10px; transform: rotate(-90deg);">
 								    						<img src="<?php echo get_template_directory_uri();?>/images/openhealth/pdf-download.png" alt="#"></span>
 													</a>
-													<?php endwhile; endif;?>
 													
 													<?php if( have_rows('vid_rep') ):
 													while ( have_rows('vid_rep') ) : the_row();	?>
