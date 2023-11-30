@@ -57,6 +57,7 @@
                         "bulgaria": "Bulgaria",
                         "cambodia": "Cambodia",
                         "canada": "Canada",
+                        "caribbean": "Caribbean",
                         "chille": "Chille",
                         "china": "China",
                         "colombia": "Colombia",
@@ -284,5 +285,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629884151
+    "modified": 1701270916
 }
